@@ -1,10 +1,10 @@
 /*****************************************************************************
 * University of Southern Denmark
-* Embedded Programming (EMP)
+* Semester project
 *
 * MODULENAME.: spi.c
 *
-* PROJECT....: EMP
+* PROJECT....: 4. Semester project in bachelor robotics
 *
 * DESCRIPTION: See module specification file (.h-file).
 *

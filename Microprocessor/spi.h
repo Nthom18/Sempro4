@@ -1,10 +1,10 @@
 /*****************************************************************************
 * University of Southern Denmark
-*
+* Semester project
 *
 * MODULENAME.: spi.h
 *
-* PROJECT....: EMP
+* PROJECT....: 4. Semester project in bachelor robotics
 *
 * DESCRIPTION: Test.
 *
