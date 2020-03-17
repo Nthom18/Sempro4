@@ -1,10 +1,10 @@
 /*****************************************************************************
 * University of Southern Denmark
-* Semester project
+*
 *
 * MODULENAME.: spi.h
 *
-* PROJECT....: 4. Semester project in bachelor robotics
+* PROJECT....: EMP
 *
 * DESCRIPTION: Test.
 *
@@ -52,6 +52,13 @@ extern INT8U receive_byte();
 *   Input    : -
 *   Output   : Byte of data: 0-255
 *   Function : Receives byte of data via SPI. Returns when data transfer is complete.
+******************************************************************************/
+
+extern INT8U sr_byte(INT8U);
+/*****************************************************************************
+*   Input    : Byte of data: 0-255
+*   Output   : Byte of data: 0-255
+*   Function : Transmits/Receives byte of data via SPI. Returns when data transfer is complete.
 ******************************************************************************/
 
 void send_str();

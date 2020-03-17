@@ -1,21 +1,21 @@
 /*****************************************************************************
-* University of Southern Denmark
-* Semester project
-*
-* MODULENAME.: spi.c
-*
-* PROJECT....: 4. Semester project in bachelor robotics
-*
-* DESCRIPTION: See module specification file (.h-file).
-*
-* Change Log:
-*****************************************************************************
-* Date    Id    Change
-* YYMMDD
-* --------------------
-* 200306  CH    Module created.
-*
-*****************************************************************************/
+ * University of Southern Denmark
+ * Embedded Programming (EMP)
+ *
+ * MODULENAME.: spi.c
+ *
+ * PROJECT....: EMP
+ *
+ * DESCRIPTION: See module specification file (.h-file).
+ *
+ * Change Log:
+ *****************************************************************************
+ * Date    Id    Change
+ * YYMMDD
+ * --------------------
+ * 200306  CH    Module created.
+ *
+ *****************************************************************************/
 
 /***************************** Include files *******************************/
 #include "emp_type.h"
@@ -31,8 +31,8 @@
 
 extern void spi_init(INT8U DDS, INT8U CPSDVSR, BOOLEAN SPH, BOOLEAN SPO)
 /*****************************************************************************
-*   Function : See module specification (.h-file).
-*****************************************************************************/
+ *   Function : See module specification (.h-file).
+ *****************************************************************************/
 {
 	//Note: further division can be done in the SSI2_CR0_R register if necessary
 
@@ -46,7 +46,7 @@ extern void spi_init(INT8U DDS, INT8U CPSDVSR, BOOLEAN SPH, BOOLEAN SPO)
 	GPIO_PORTB_AFSEL_R |= (1 << 4) | (1 << 5) | (1 << 6) | (1 << 7);
 
 	//Enable SSI2Clk for PB4, SSI2Fss for PB5, SSI2Rx for PB6, and SSI2Tx for PB7
-	GPIO_PORTB_PCTL_R= 0x22220000;
+	GPIO_PORTB_PCTL_R = 0x22220000;
 
 	//Enable digital function of PB4, PB5, PB6, and PB7
 	GPIO_PORTB_DEN_R |= (1 << 4) | (1 << 5) | (1 << 6) | (1 << 7);
@@ -79,10 +79,11 @@ extern void spi_init(INT8U DDS, INT8U CPSDVSR, BOOLEAN SPH, BOOLEAN SPO)
 
 extern void send_byte(INT8U data) {
 	//Load FIFO transmit buffer with data
-	SSI2_DR_R = data;
+	SSI2_DR_R = (0x00FF & data);
 
 	//wait for transmit to complete
-	while((SSI2_SR_R & 1) == 0);
+	while ((SSI2_SR_R & 1) == 0)
+		;
 }
 
 extern INT8U receive_byte() {
@@ -93,32 +94,51 @@ extern INT8U receive_byte() {
 	SSI2_DR_R = 0x00;
 
 	//wait for receive to complete
-	while((SSI2_SR_R & 1) == 0);
+	while ((SSI2_SR_R & 1) == 0)
+		;
 
 	//Read bit 0 to 7
 	data = (SSI2_DR_R & 0x00FF);
 	return data;
 }
 
-void send_str(char *buffer){ //function for sending each byte of string one by one
-  while(*buffer!=0){
-  send_byte(*buffer);
+extern INT8U sr_byte(INT8U data_send) {
+	INT16U data_receive = 0;
+
+	//Load FIFO transmit buffer with data
+	SSI2_DR_R = data_send;
+
+	//wait for send/receive to complete
+	while ((SSI2_SR_R & 1) == 0)
+		;
+
+	//Second read to avoid duplicate data. Not sure how to get around this.
+	//Load FIFO transmit buffer with data
+	SSI2_DR_R = data_send;
+
+	//wait for send/receive to complete
+	while ((SSI2_SR_R & 1) == 0)
+		;
+
+	//Read bit 0 to 7
+	while (SSI2_SR_R & 0x04) {
+		data_receive = (SSI2_DR_R & 0x00FF);
+	}
+	return data_receive;
+}
+
+void send_str(char *buffer) { //function for sending each byte of string one by one
+	while (*buffer != 0) {
+		send_byte(*buffer);
 		buffer++;
 	}
 }
 
 void spi_handler() {
 	//Catch
-	while(1);
+	while (1)
+		;
 }
 
 /****************************** End Of Module *******************************/
-
-
-
-
-
-
-
-
 
