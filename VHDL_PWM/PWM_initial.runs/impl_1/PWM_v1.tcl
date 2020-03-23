@@ -67,7 +67,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 2
   open_checkpoint PWM_v1_routed.dcp
-  set_property webtalk.parent_dir C:/Users/dotte/Documents/Projekter_DIG/PWM_initial/PWM_initial.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/dotte/Documents/Sempro4/VHDL_PWM/PWM_initial.cache/wt [current_project]
   catch { write_mem_info -force PWM_v1.mmi }
   write_bitstream -force PWM_v1.bit 
   catch {write_debug_probes -quiet -force PWM_v1}

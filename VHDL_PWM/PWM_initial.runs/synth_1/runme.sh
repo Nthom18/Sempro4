@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/dotte/Documents/Projekter_DIG/PWM_initial/PWM_initial.runs/synth_1'
+HD_PWD='C:/Users/dotte/Documents/Sempro4/VHDL_PWM/PWM_initial.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

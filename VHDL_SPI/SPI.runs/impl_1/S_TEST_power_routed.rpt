@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Tue Mar 17 10:45:24 2020
-| Host             : LAPTOP-G803TVCQ running 64-bit major release  (build 9200)
+| Date             : Mon Mar 23 10:22:02 2020
+| Host             : LAPTOP-VKM5623S running 64-bit major release  (build 9200)
 | Command          : report_power -file S_TEST_power_routed.rpt -pb S_TEST_power_summary_routed.pb -rpx S_TEST_power_routed.rpx
 | Design           : S_TEST
 | Device           : xc7a35tcpg236-1
@@ -53,13 +53,13 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.000 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      173 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       80 |     20800 |            0.38 |
+| Slice Logic    |    <0.001 |      176 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       81 |     20800 |            0.39 |
 |   CARRY4       |    <0.001 |        8 |      8150 |            0.10 |
-|   Register     |    <0.001 |       74 |     41600 |            0.18 |
+|   Register     |    <0.001 |       75 |     41600 |            0.18 |
 |   BUFG         |    <0.001 |        2 |        32 |            6.25 |
-|   Others       |     0.000 |        9 |       --- |             --- |
-| Signals        |    <0.001 |      128 |       --- |             --- |
+|   Others       |     0.000 |       10 |       --- |             --- |
+| Signals        |    <0.001 |      130 |       --- |             --- |
 | I/O            |     0.002 |       28 |       106 |           26.42 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.075 |          |           |                 |

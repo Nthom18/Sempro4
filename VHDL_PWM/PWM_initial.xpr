@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="C:/Users/dotte/Documents/Projekter_DIG/PWM_initial/PWM_initial.xpr">
+<Project Version="7" Minor="44" Path="C:/Users/dotte/Documents/Sempro4/VHDL_PWM/PWM_initial.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="b8a377c3a8714165a7fb147f18c816b1"/>
@@ -73,7 +73,7 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PPRDIR/../Komigang_2/Includes/Basys3_Master.xdc">
+      <File Path="$PPRDIR/../../Projekter_DIG/Komigang_2/Includes/Basys3_Master.xdc">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/dotte/Documents/Projekter_DIG/Komigang_2/Includes/Basys3_Master.xdc rfile:../../../../Komigang_2/Includes/Basys3_Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/dotte/Documents/Sempro4/VHDL_PWM/PWM_initial.srcs/constr_1/imports/Basys3_Master.xdc rfile:../../../PWM_initial.srcs/constr_1/imports/Basys3_Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:11 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN W5 IOSTANDARD LVCMOS33 } [get_ports Clk]
 set_property src_info {type:XDC file:1 line:15 export:INPUT save:INPUT read:READ} [current_design]
