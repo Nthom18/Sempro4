@@ -1,1 +1,0 @@
--wto "b8a377c3a8714165a7fb147f18c816b1" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "PWM_behav" "xil_defaultlib.PWM" -log "elaborate.log" 
