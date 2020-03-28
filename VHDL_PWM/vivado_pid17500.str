@@ -1,0 +1,134 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 17500
+License: Customer
+
+Current time: 	Sat Mar 28 09:23:43 CET 2020
+Time zone: 	Central European Standard Time (Europe/Paris)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 2
+Available disk space: 239 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	dotte
+User home directory: C:/Users/dotte
+User working directory: C:/Users/dotte/Documents/Projekter_DIG/VHDL_PWM
+User country: 	DK
+User language: 	da
+User locale: 	da_DK
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.2
+RDI_DATADIR: C:/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/dotte/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/dotte/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/dotte/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/dotte/Documents/Projekter_DIG/VHDL_PWM/vivado.log
+Vivado journal file location: 	C:/Users/dotte/Documents/Projekter_DIG/VHDL_PWM/vivado.jou
+Engine tmp dir: 	C:/Users/dotte/Documents/Projekter_DIG/VHDL_PWM/.Xil/Vivado-17500-LAPTOP-VKM5623S
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 596 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  1038 ms.
+// TclEventType: PROJECT_OPEN_DIALOG
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\dotte\Documents\Projekter_DIG\VHDL_PWM\PWM_initial.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/dotte/Documents/Projekter_DIG/VHDL_PWM/PWM_initial.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 51 MB. Current time: 3/28/20, 9:23:45 AM CET
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/dotte/Documents/Projekter_DIG/VHDL_PWM/PWM_initial.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/dotte/Documents/Sempro4/VHDL_PWM' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 77 MB (+78198kb) [00:00:30]
+// [Engine Memory]: 709 MB (+592275kb) [00:00:30]
+// [GUI Memory]: 94 MB (+14292kb) [00:00:31]
+// [GUI Memory]: 107 MB (+8272kb) [00:00:35]
+// [Engine Memory]: 750 MB (+5929kb) [00:00:36]
+// WARNING: HEventQueue.dispatchEvent() is taking  9987 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1065 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 750 MB. GUI used memory: 57 MB. Current time: 3/28/20, 9:24:01 AM CET
+// WARNING: HEventQueue.dispatchEvent() is taking  2235 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:32 ; elapsed = 00:00:18 . Memory (MB): peak = 780.570 ; gain = 125.953 
+// Project name: PWM_initial; location: C:/Users/dotte/Documents/Projekter_DIG/VHDL_PWM; part: xc7a35tcpg236-1
+// WARNING: HEventQueue.dispatchEvent() is taking  1108 ms.
+// [Engine Memory]: 808 MB (+21151kb) [00:00:43]
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 578ms to process. Increasing delay to 3000 ms.
+dismissDialog("Open Project"); // bB (cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 113 MB (+103kb) [00:02:18]
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 632ms to process. Increasing delay to 3000 ms.
+// aj (cr): Synthesis Completed: addNotify
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
