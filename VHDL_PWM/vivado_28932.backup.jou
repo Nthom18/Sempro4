@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Mar 23 10:27:15 2020
+# Process ID: 28932
+# Current directory: C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_PWM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent46396 C:\Users\frida\Documents\4_semester\Projekt\Sempro4\VHDL_PWM\PWM_initial.xpr
+# Log file: C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_PWM/vivado.log
+# Journal file: C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_PWM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_PWM/PWM_initial.xpr
+update_compile_order -fileset sources_1

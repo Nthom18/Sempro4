@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Tue Mar 17 10:45:24 2020
-| Host         : LAPTOP-G803TVCQ running 64-bit major release  (build 9200)
+| Date         : Mon Mar 23 10:22:02 2020
+| Host         : LAPTOP-VKM5623S running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file S_TEST_timing_summary_routed.rpt -pb S_TEST_timing_summary_routed.pb -rpx S_TEST_timing_summary_routed.rpx -warn_on_violation
 | Design       : S_TEST
 | Device       : 7a35t-cpg236
@@ -54,7 +54,7 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 57 register/latch pins with no clock driven by root clock pin: sck (HIGH)
+ There are 58 register/latch pins with no clock driven by root clock pin: sck (HIGH)
 
  There are 9 register/latch pins with no clock driven by root clock pin: ss (HIGH)
 
@@ -89,7 +89,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 171 pins that are not constrained for maximum delay. (HIGH)
+ There are 173 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 

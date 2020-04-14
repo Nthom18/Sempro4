@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="C:/Users/sunes/SPI/SPI/SPI.xpr">
+<Project Version="7" Minor="44" Path="C:/Users/dotte/Documents/Sempro4/VHDL_SPI/SPI.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="fb7cf2f1a3fe478f83d7f98a46985941"/>
