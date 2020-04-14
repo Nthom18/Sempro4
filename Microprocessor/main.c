@@ -27,7 +27,7 @@
 /*****************************    Defines    *******************************/
 
 #define DATA_SIZE 	8
-#define CLK_PSCL	1
+#define CLK_PSCL	2	//Note, has to be at least 2, otherwise, prescaler is maxed.
 #define CLK_PH 		0
 #define CLK_PO 		0
 
