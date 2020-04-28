@@ -69,8 +69,8 @@ architecture Behavioral of TopLevel is
              enable_MISO : out STD_LOGIC;
              AngleMotor1: in std_logic_vector(15 downto 0);    
              AngleMotor2: in std_logic_vector(15 downto 0);
-             data_send: out std_logic(7 downto 0);
-             PWMMoter1: out std_logic_vector(7 downto 0);
+             data_send: out std_logic_vector(7 downto 0);
+             PWMMotor1: out std_logic_vector(7 downto 0);
              PWMMotor2: out std_logic_vector(7 downto 0));
         end COMPONENT;
         
