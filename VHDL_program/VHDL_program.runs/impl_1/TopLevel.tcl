@@ -65,16 +65,16 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 2
+  set_param chipscope.maxJobs 3
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/dotte/Documents/Projekter_DIG/VHDL_program_charaendring1/VHDL_program.cache/wt [current_project]
-  set_property parent.project_path C:/Users/dotte/Documents/Projekter_DIG/VHDL_program_charaendring1/VHDL_program.xpr [current_project]
-  set_property ip_output_repo C:/Users/dotte/Documents/Projekter_DIG/VHDL_program_charaendring1/VHDL_program.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.cache/wt [current_project]
+  set_property parent.project_path C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.xpr [current_project]
+  set_property ip_output_repo C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/dotte/Documents/Projekter_DIG/VHDL_program_charaendring1/VHDL_program.runs/synth_1/TopLevel.dcp
-  read_xdc C:/Users/dotte/Documents/Projekter_DIG/VHDL_program_charaendring1/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc
+  add_files -quiet C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.runs/synth_1/TopLevel.dcp
+  read_xdc C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc
   link_design -top TopLevel -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
@@ -163,6 +163,24 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
+  unset ACTIVE_STEP 
+}
+
+start_step write_bitstream
+set ACTIVE_STEP write_bitstream
+set rc [catch {
+  create_msg_db write_bitstream.pb
+  catch { write_mem_info -force TopLevel.mmi }
+  write_bitstream -force TopLevel.bit 
+  catch {write_debug_probes -quiet -force TopLevel}
+  catch {file copy -force TopLevel.ltx debug_nets.ltx}
+  close_msg_db -file write_bitstream.pb
+} RESULT]
+if {$rc} {
+  step_failed write_bitstream
+  return -code error $RESULT
+} else {
+  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 

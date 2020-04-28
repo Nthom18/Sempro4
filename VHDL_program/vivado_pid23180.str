@@ -1,0 +1,1474 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 23180
+License: Customer
+
+Current time: 	Tue Apr 28 10:30:42 CEST 2020
+Time zone: 	Central European Standard Time (Europe/Paris)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 3840x2160
+Screen resolution (DPI): 250
+Available screens: 1
+Available disk space: 816 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=30
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Programmer_P/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	C:/Programmer_P/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	frida
+User home directory: C:/Users/frida
+User working directory: C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Programmer_P/Vivado
+HDI_APPROOT: C:/Programmer_P/Vivado/2019.2
+RDI_DATADIR: C:/Programmer_P/Vivado/2019.2/data
+RDI_BINDIR: C:/Programmer_P/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/frida/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/frida/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/frida/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	C:/Programmer_P/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/vivado.log
+Vivado journal file location: 	C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/vivado.jou
+Engine tmp dir: 	C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/.Xil/Vivado-23180-DESKTOP-CI69V0G
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Programmer_P/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: C:/Programmer_P/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Programmer_P/Vivado/2019.2
+XILINX_VIVADO: C:/Programmer_P/Vivado/2019.2
+XILINX_VIVADO_HLS: C:/Programmer_P/Vivado/2019.2
+
+
+GUI allocated memory:	170 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 697 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\frida\Documents\4_semester\Projekt\Sempro4\VHDL_program\VHDL_program.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 121 MB (+124361kb) [00:00:10]
+// [Engine Memory]: 711 MB (+594389kb) [00:00:10]
+// [GUI Memory]: 139 MB (+13028kb) [00:00:10]
+// [GUI Memory]: 154 MB (+7812kb) [00:00:12]
+// [Engine Memory]: 751 MB (+3853kb) [00:00:12]
+// WARNING: HEventQueue.dispatchEvent() is taking  2691 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Programmer_P/Vivado/2019.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 751 MB. GUI used memory: 90 MB. Current time: 4/28/20, 10:30:45 AM CEST
+// Project name: VHDL_program; location: C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program; part: xc7a35tcpg236-1
+// [Engine Memory]: 807 MB (+19268kb) [00:00:13]
+dismissDialog("Open Project"); // bB (cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// bB (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Tue Apr 28 10:31:14 2020] Launched synth_1... Run output will be captured here: C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.runs/synth_1/runme.log [Tue Apr 28 10:31:14 2020] Launched impl_1... Run output will be captured here: C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 107 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bB (cr):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 854 MB. GUI used memory: 92 MB. Current time: 4/28/20, 10:33:04 AM CEST
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 1,661 MB (+853193kb) [00:02:44]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,661 MB. GUI used memory: 91 MB. Current time: 4/28/20, 10:33:17 AM CEST
+// [Engine Memory]: 1,766 MB (+23350kb) [00:02:45]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// TclEventType: DESIGN_NEW
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1561 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35tcpg236-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1083.156 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2019.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1740.324 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1740.324 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1740.324 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// TclEventType: DRC_ADDED
+// Device view-level: 0,0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1860.441 ; gain = 1023.668 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 176 MB (+15364kb) [00:02:48]
+// WARNING: HEventQueue.dispatchEvent() is taking  1094 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dQ' command handler elapsed time: 19 seconds
+// Device view-level: 0,3
+// Device view-level: 0,0
+// Elapsed time: 19 seconds
+dismissDialog("Open Implemented Design"); // bB (cr)
+// Elapsed time: 38 seconds
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[TopLevel, Nets (39)]", 1); // bD (O, cr)
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[TopLevel, Nets (39)]", 1); // bD (O, cr)
+// [GUI Memory]: 186 MB (+1361kb) [00:03:30]
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cr)
+closeTask("Implementation", "Implemented Design", "DesignTask.RESULTS_ANALYSIS");
+// A (cr): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bB (cr):  Close : addNotify
+dismissDialog("Confirm Close"); // A (cr)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,801 MB. GUI used memory: 118 MB. Current time: 4/28/20, 10:34:07 AM CEST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 1,801 MB. GUI used memory: 118 MB. Current time: 4/28/20, 10:34:07 AM CEST
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Close"); // bB (cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Hardware_Control_1 : PWM_Module(Behavioral) (PWM.vhd)]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Hardware_Control_2 : PWM_Module(Behavioral) (PWM.vhd)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), InterfaceTiva1 : SPI_MOSI(Behavioral) (SPI_MOSI.vhd)]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), InterfaceTiva2 : SPI_MISO(Behavioral) (SPI_MISO.vhd)]", 7, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), InterfaceTiva1 : SPI_MOSI(Behavioral) (SPI_MOSI.vhd)]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), InterfaceTiva1 : SPI_MOSI(Behavioral) (SPI_MOSI.vhd)]", 6, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Elapsed time: 141 seconds
+selectCodeEditor("SPI_MOSI.vhd", 68, 1227); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// [GUI Memory]: 232 MB (+38168kb) [00:06:55]
+// Elapsed time: 236 seconds
+selectCodeEditor("TopLevel.vhd", 353, 747); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 419, 675); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 519, 635); // ch (w, cr)
+// Elapsed time: 186 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1); // B (F, cr)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a (o, c)
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a (o, c)
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 15 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "SPI_Analysis"); // ac (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 23 seconds
+dismissDialog("Add Sources"); // c (cr)
+// Tcl Message: close [ open C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_Analysis.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_Analysis.vhd 
+// I (cr): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 89 seconds
+selectCodeEditor("TopLevel.vhd", 525, 622); // ch (w, cr)
+// Elapsed time: 38 seconds
+selectCodeEditor("TopLevel.vhd", 517, 626); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TopLevel.vhd", 569, 658); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 9, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 9, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Hardware_Control_1 : PWM_Module(Behavioral) (PWM.vhd)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Hardware_Control_1 : PWM_Module(Behavioral) (PWM.vhd)]", 3, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("PWM.vhd", 7, 18); // ch (w, cr)
+typeControlKey((HResource) null, "PWM.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("PWM.vhd", 209, 1114); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 9, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 9, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 9, false); // B (F, cr)
+selectCodeEditor("SPI_Analysis.vhd", 77, 1082); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 43, 1164); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 143, 1116); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 245, 822); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 107, 1122); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 2, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("TopLevel.vhd", 647, 546); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 671, 538); // ch (w, cr)
+typeControlKey((HResource) null, "TopLevel.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 505, 560); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 367, 838); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 697, 782); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 1089, 742); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 865, 826); // ch (w, cr)
+typeControlKey((HResource) null, "TopLevel.vhd", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("TopLevel.vhd", 759, 936); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("TopLevel.vhd", 651, 584); // ch (w, cr)
+typeControlKey((HResource) null, "TopLevel.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 567, 674); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 223, 900); // ch (w, cr)
+typeControlKey((HResource) null, "TopLevel.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 293, 1058); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 143, 944); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 551, 888); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 551, 1036); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 241, 586); // ch (w, cr)
+typeControlKey((HResource) null, "TopLevel.vhd", 'v'); // ch (w, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 2); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), SPI_MOSI(Behavioral) (SPI_MOSI.vhd)]", 7, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), SPI_MOSI(Behavioral) (SPI_MOSI.vhd)]", 7, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), SPI_MOSI(Behavioral) (SPI_MOSI.vhd)]", 7, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), xil_defaultlib.spi_mosi]", 10, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), xil_defaultlib.spi_mosi]", 10, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), PWM_Module(Behavioral) (PWM.vhd)]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), PWM_Module(Behavioral) (PWM.vhd)]", 5, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, TopLevel.vhd]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, TopLevel.vhd]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("TopLevel.vhd", 623, 892); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("SPI_Analysis.vhd", 187, 656); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 55, 666); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 473, 658); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 487, 768); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("SPI_Analysis.vhd", 501, 746); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 207, 872); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 589, 998); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 283, 846); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 595, 992); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 547, 424); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 407, 908); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 293, 684); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 35 seconds
+selectCodeEditor("SPI_Analysis.vhd", 361, 367); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,801 MB. GUI used memory: 101 MB. Current time: 4/28/20, 11:04:09 AM CEST
+// Elapsed time: 1496 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("SPI_Analysis.vhd", 340, 722); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 391, 684); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("SPI_Analysis.vhd", 509, 608); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 423, 486); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), InterfaceTiva1 : SPI_MOSI(Behavioral) (SPI_MOSI.vhd)]", 7, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), InterfaceTiva1 : SPI_MOSI(Behavioral) (SPI_MOSI.vhd)]", 7, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Elapsed time: 10 seconds
+selectCodeEditor("TopLevel.vhd", 359, 780); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 463, 600); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 429, 586); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("TopLevel.vhd", 623, 868, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("TopLevel.vhd", 325, 930); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 573, 910, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("TopLevel.vhd", 369, 894); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 419, 858); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 419, 858); // ch (w, cr)
+typeControlKey((HResource) null, "TopLevel.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 515, 610); // ch (w, cr)
+typeControlKey((HResource) null, "TopLevel.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 491, 620); // ch (w, cr)
+typeControlKey((HResource) null, "TopLevel.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 643, 706); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 643, 546); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 535, 982); // ch (w, cr)
+typeControlKey((HResource) null, "TopLevel.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 149, 1024); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 597, 1022); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectCodeEditor("TopLevel.vhd", 871, 884); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 989, 548); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 587, 540); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 725, 532); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 697, 582); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TopLevel.vhd", 1077, 544); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 1123, 544); // ch (w, cr)
+typeControlKey((HResource) null, "TopLevel.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 505, 584); // ch (w, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 2); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 7, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 7, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("SPI_Analysis.vhd", 459, 476); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 25, 510); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 33, 510); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 545, 554, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPI_Analysis.vhd", 345, 158); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, TopLevel.vhd]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, TopLevel.vhd]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("TopLevel.vhd", 29, 568, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("TopLevel.vhd", 1215, 570); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 561, 472); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 295, 600); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 491, 534, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("TopLevel.vhd", 447, 544); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 601, 730); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TopLevel.vhd", 697, 644); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false); // B (F, cr)
+// Elapsed time: 61 seconds
+selectCodeEditor("SPI_Analysis.vhd", 241, 558); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Hardware_Feedback_2 : Encoder(Behavioral) (Encoder.vhd)]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Hardware_Feedback_2 : Encoder(Behavioral) (Encoder.vhd)]", 5, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Hardware_Feedback_2 : Encoder(Behavioral) (Encoder.vhd)]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Hardware_Feedback_2 : Encoder(Behavioral) (Encoder.vhd)]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Hardware_Feedback_2 : Encoder(Behavioral) (Encoder.vhd)]", 5, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false); // B (F, cr)
+selectCodeEditor("SPI_Analysis.vhd", 159, 398); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 113, 450); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 105, 426); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Hardware_Feedback_2 : Encoder(Behavioral) (Encoder.vhd)]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Hardware_Feedback_2 : Encoder(Behavioral) (Encoder.vhd)]", 5, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Hardware_Feedback_2 : Encoder(Behavioral) (Encoder.vhd)]", 5, false); // B (F, cr)
+selectCodeEditor("Encoder.vhd", 5, 508); // ch (w, cr)
+typeControlKey((HResource) null, "Encoder.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("Encoder.vhd", 391, 1320); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false); // B (F, cr)
+selectCodeEditor("SPI_Analysis.vhd", 47, 1120); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 99, 1252); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 63, 1228); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 299, 1220); // ch (w, cr)
+typeControlKey(null, null, 'z');
+selectCodeEditor("SPI_Analysis.vhd", 289, 1202); // ch (w, cr)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // E (f, cr)
+selectCodeEditor("SPI_Analysis.vhd", 555, 390); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 539, 874); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 543, 824); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 7, 522); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 23, 462); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 381, 400); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 361, 394); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 395, 358); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 369, 378); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 137, 846); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 137, 816); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 14 seconds
+selectCodeEditor("SPI_Analysis.vhd", 381, 468); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("SPI_Analysis.vhd", 167, 536); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 157, 548); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 99, 580); // ch (w, cr)
+// Elapsed time: 45 seconds
+selectCodeEditor("SPI_Analysis.vhd", 479, 426, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPI_Analysis.vhd", 213, 522); // ch (w, cr)
+// Elapsed time: 27 seconds
+selectCodeEditor("SPI_Analysis.vhd", 335, 348); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 359, 456); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("SPI_Analysis.vhd", 563, 328); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("SPI_Analysis.vhd", 137, 362); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("SPI_Analysis.vhd", 227, 396); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 685, 602, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPI_Analysis.vhd", 571, 610); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 393, 720); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 313, 668); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 249, 630); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 243, 630, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPI_Analysis.vhd", 241, 630); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 229, 662); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("SPI_Analysis.vhd", 237, 614); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 265, 728); // ch (w, cr)
+// Elapsed time: 41 seconds
+selectCodeEditor("SPI_Analysis.vhd", 351, 982); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 353, 976); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("SPI_Analysis.vhd", 341, 996); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 441, 1038); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 179, 1062); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 389, 984); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 407, 1152); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectCodeEditor("SPI_Analysis.vhd", 363, 546); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 367, 732); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 351, 980); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 285, 1108); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 223, 952); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("TopLevel.vhd", 683, 816); // ch (w, cr)
+typeControlKey((HResource) null, "TopLevel.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 467, 822); // ch (w, cr)
+typeControlKey((HResource) null, "TopLevel.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 535, 878); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 449, 554); // ch (w, cr)
+typeControlKey((HResource) null, "TopLevel.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 571, 672); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false); // B (F, cr)
+selectCodeEditor("SPI_Analysis.vhd", 95, 842); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 333, 736); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 363, 822); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("SPI_Analysis.vhd", 325, 796); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("SPI_Analysis.vhd", 311, 736); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 147, 790); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 133, 790); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 641, 796); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("SPI_Analysis.vhd", 425, 836); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 319, 802); // ch (w, cr)
+// Elapsed time: 18 seconds
+selectCodeEditor("SPI_Analysis.vhd", 487, 772); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 487, 830); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("SPI_Analysis.vhd", 539, 858); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 527, 840); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 491, 824); // ch (w, cr)
+// Elapsed time: 27 seconds
+selectCodeEditor("SPI_Analysis.vhd", 537, 778); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 753, 770); // ch (w, cr)
+// Elapsed time: 82 seconds
+selectCodeEditor("SPI_Analysis.vhd", 427, 790); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 1489, 778, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPI_Analysis.vhd", 813, 770); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 1659, 786); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 331, 844); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 321, 814); // ch (w, cr)
+// Elapsed time: 51 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Elapsed time: 98 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), InterfaceTiva2 : SPI_MISO(Behavioral) (SPI_MISO.vhd)]", 8, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), InterfaceTiva2 : SPI_MISO(Behavioral) (SPI_MISO.vhd)]", 8, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), InterfaceTiva2 : SPI_MISO(Behavioral) (SPI_MISO.vhd)]", 8, false); // B (F, cr)
+// Elapsed time: 37 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Elapsed time: 108 seconds
+selectCodeEditor("TopLevel.vhd", 773, 1084); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 773, 1072); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 895, 1152); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 747, 1058); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 979, 1338); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TopLevel.vhd", 1147, 878); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 1119, 902); // ch (w, cr)
+// Elapsed time: 18 seconds
+selectCodeEditor("TopLevel.vhd", 307, 942); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 333, 980, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("TopLevel.vhd", 313, 978); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("TopLevel.vhd", 1323, 446, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("TopLevel.vhd", 585, 480); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 955, 458); // ch (w, cr)
+typeControlKey((HResource) null, "TopLevel.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 499, 508); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 323, 600); // ch (w, cr)
+typeControlKey((HResource) null, "TopLevel.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 431, 620, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("TopLevel.vhd", 399, 622); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 417, 624); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 177, 670, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("TopLevel.vhd", 171, 664); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 1317, 628, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("TopLevel.vhd", 657, 638); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 1329, 616); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 1305, 724); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 415, 750, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("TopLevel.vhd", 117, 738); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 999, 676); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 999, 674); // ch (w, cr)
+typeControlKey((HResource) null, "TopLevel.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 285, 486); // ch (w, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false); // B (F, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,801 MB. GUI used memory: 103 MB. Current time: 4/28/20, 11:34:09 AM CEST
+selectCodeEditor("SPI_Analysis.vhd", 1077, 184, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPI_Analysis.vhd", 965, 152); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 1015, 186); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 367, 236); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 559, 520); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 365, 240); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 389, 206); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 375, 274, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPI_Analysis.vhd", 243, 252); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 367, 266); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 367, 304); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 355, 384); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("SPI_Analysis.vhd", 589, 312); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 12 seconds
+selectCodeEditor("SPI_Analysis.vhd", 999, 131); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 1005, 198); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("SPI_Analysis.vhd", 1275, 200); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("TopLevel.vhd", 473, 468); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("TopLevel.vhd", 767, 588); // ch (w, cr)
+typeControlKey((HResource) null, "TopLevel.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 731, 622); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 701, 614); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 795, 586); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 485, 660); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 485, 646); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 481, 640); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 481, 630); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 481, 630); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("TopLevel.vhd", 429, 666); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 221, 656, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("TopLevel.vhd", 217, 656); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 539, 670, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("TopLevel.vhd", 531, 670); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 435, 700); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("TopLevel.vhd", 245, 724); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 229, 708); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 795, 786); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TopLevel.vhd", 499, 820); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 471, 1018); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false); // B (F, cr)
+selectCodeEditor("SPI_Analysis.vhd", 429, 230, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPI_Analysis.vhd", 409, 224); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 453, 528); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("SPI_Analysis.vhd", 325, 966); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 313, 954); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("SPI_Analysis.vhd", 431, 214, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPI_Analysis.vhd", 413, 232); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("TopLevel.vhd", 517, 472); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 605, 866); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("SPI_Analysis.vhd", 507, 988); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 447, 948); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1, true); // B (F, cr) - Node
+selectCodeEditor("TopLevel.vhd", 1065, 804); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 1071, 774); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectCodeEditor("TopLevel.vhd", 1043, 960); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 561, 880); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 401, 474); // ch (w, cr)
+typeControlKey((HResource) null, "TopLevel.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 511, 598); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 731, 572); // ch (w, cr)
+typeControlKey((HResource) null, "TopLevel.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("TopLevel.vhd", 725, 570); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TopLevel.vhd", 1011, 556); // ch (w, cr)
+typeControlKey((HResource) null, "TopLevel.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 147, 484); // ch (w, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false); // B (F, cr)
+selectCodeEditor("SPI_Analysis.vhd", 965, 308); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 965, 300); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 871, 558); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("SPI_Analysis.vhd", 343, 998); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("SPI_Analysis.vhd", 157, 970); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 313, 908); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 185, 1006); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 185, 978); // ch (w, cr)
+// Elapsed time: 32 seconds
+selectCodeEditor("SPI_Analysis.vhd", 153, 946); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 395, 982); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 51 seconds
+selectCodeEditor("SPI_Analysis.vhd", 33, 1278, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPI_Analysis.vhd", 391, 1318, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPI_Analysis.vhd", 39, 1290); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 157, 1296, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPI_Analysis.vhd", 69, 1284); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 157, 1306, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPI_Analysis.vhd", 37, 1272); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 363, 1294); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 373, 1102); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 299, 1108); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 613, 1102); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 829, 1118); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 341, 1190); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 291, 1178); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 785, 1188); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 835, 1310); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 423, 1068); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 355, 1172); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("SPI_Analysis.vhd", 185, 1132); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 135, 1138); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 425, 1052); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("SPI_Analysis.vhd", 695, 872); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+selectButton(RDIResource.BaseDialog_NO, "No"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 6 
+// Tcl Message: [Tue Apr 28 11:41:26 2020] Launched impl_1... Run output will be captured here: C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 8 seconds
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Implementation Completed: addNotify
+// Elapsed time: 55 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 4 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Tue Apr 28 11:42:27 2020] Launched synth_1... Run output will be captured here: C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.runs/synth_1/runme.log [Tue Apr 28 11:42:27 2020] Launched impl_1... Run output will be captured here: C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Synthesis Failed: addNotify
+// Elapsed time: 336 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // aj (cr)
+// WARNING: HEventQueue.dispatchEvent() is taking  59302 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,801 MB. GUI used memory: 106 MB. Current time: 4/28/20, 12:04:12 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,801 MB. GUI used memory: 103 MB. Current time: 4/28/20, 12:34:12 PM CEST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 128701 ms. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  128807 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  139552 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  671833 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1233501 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,801 MB. GUI used memory: 103 MB. Current time: 4/28/20, 1:13:14 PM CEST
+// Elapsed time: 5628 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2774] type std_logic does not match with the integer literal [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_Analysis.vhd:64]. ]", 1, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\frida\Documents\4_semester\Projekt\Sempro4\VHDL_program\VHDL_program.srcs\sources_1\new\SPI_Analysis.vhd;-;;-;16;-;line;-;64;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2774] type std_logic does not match with the integer literal [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_Analysis.vhd:64]. ]", 1, false, false, false, false, false, true); // ah (O, cr) - Double Click
+selectCodeEditor("SPI_Analysis.vhd", 467, 543); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 555, 461); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 539, 401); // ch (w, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// al (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bB (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// A (cr): No Implementation Results Available: addNotify
+dismissDialog("Save Project"); // al (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (cr)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 10 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Tue Apr 28 13:22:20 2020] Launched synth_1... Run output will be captured here: C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.runs/synth_1/runme.log [Tue Apr 28 13:22:20 2020] Launched impl_1... Run output will be captured here: C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Failed: addNotify
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 38 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // aj (cr)
+// Elapsed time: 302 seconds
+selectCodeEditor("SPI_Analysis.vhd", 565, 405); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// al (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bB (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// A (cr): No Implementation Results Available: addNotify
+dismissDialog("Save Project"); // al (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (cr)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectCheckBox(PAResourceItoN.LaunchPanel_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", true); // g (a, f): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 5 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bB (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Tue Apr 28 13:28:25 2020] Launched synth_1... Run output will be captured here: C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.runs/synth_1/runme.log [Tue Apr 28 13:28:25 2020] Launched impl_1... Run output will be captured here: C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Failed: addNotify
+// Elapsed time: 23 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // aj (cr)
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("SPI_Analysis.vhd", 815, 465); // ch (w, cr)
+// Elapsed time: 18 seconds
+selectCodeEditor("SPI_Analysis.vhd", 543, 473); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 213, 631); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 555, 513); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("SPI_Analysis.vhd", 555, 513); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 555, 513, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPI_Analysis.vhd", 569, 519); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 465, 519); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 759, 108); // ch (w, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_NO, "No"); // a (A)
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("No Implementation Results Available"); // A (cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (cr)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Resetting Runs"); // bB (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bB (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Tue Apr 28 13:29:53 2020] Launched synth_1... Run output will be captured here: C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.runs/synth_1/runme.log [Tue Apr 28 13:29:53 2020] Launched impl_1... Run output will be captured here: C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Synthesis Failed: addNotify
+// Elapsed time: 24 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // aj (cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("TopLevel.vhd", 1211, 455); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 865, 415); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 857, 605); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("TopLevel.vhd", 835, 929); // ch (w, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("SPI_Analysis.vhd", 571, 831); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 789, 829); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 803, 901); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 993, 755); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, cr)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (cr)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// 'cw' command handler elapsed time: 5 seconds
+dismissDialog("Resetting Runs"); // bB (cr)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bB (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Tue Apr 28 13:31:31 2020] Launched synth_1... Run output will be captured here: C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.runs/synth_1/runme.log [Tue Apr 28 13:31:31 2020] Launched impl_1... Run output will be captured here: C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 117 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bB (cr):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,801 MB. GUI used memory: 140 MB. Current time: 4/28/20, 1:33:31 PM CEST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1246 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1871.070 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2019.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.103 . Memory (MB): peak = 1875.352 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.104 . Memory (MB): peak = 1875.352 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1875.352 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// Device view-level: 0,0
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dQ' command handler elapsed time: 7 seconds
+// Device view-level: 0,3
+// Device view-level: 0,0
+dismissDialog("Open Implemented Design"); // bB (cr)
+// Elapsed time: 71 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cr)
+closeTask("Implementation", "Implemented Design", "DesignTask.RESULTS_ANALYSIS");
+// A (cr): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bB (cr):  Close : addNotify
+dismissDialog("Confirm Close"); // A (cr)
+// TclEventType: DESIGN_CLOSE
+// TclEventType: TIMING_RESULTS_UNLOAD
+// HMemoryUtils.trashcanNow. Engine heap size: 1,801 MB. GUI used memory: 111 MB. Current time: 4/28/20, 1:34:53 PM CEST
+// Engine heap size: 1,801 MB. GUI used memory: 111 MB. Current time: 4/28/20, 1:34:53 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  2352 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Close"); // bB (cr)
+// Elapsed time: 48 seconds
+selectCodeEditor("SPI_Analysis.vhd", 565, 993); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 11, 977); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 213, 1085); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 211, 1077); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 701, 653, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPI_Analysis.vhd", 679, 671); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 691, 723); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 689, 711); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 951, 659); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 109, 1139); // ch (w, cr)
+// Elapsed time: 41 seconds
+selectCodeEditor("SPI_Analysis.vhd", 109, 1139); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 1273, 1163); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 1025, 1179, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPI_Analysis.vhd", 993, 1179); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 1239, 1201); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 1221, 1171); // ch (w, cr)
+// Elapsed time: 38 seconds
+selectCodeEditor("SPI_Analysis.vhd", 1023, 1175); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 971, 1333); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 743, 1271); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 1043, 1181); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 711, 1321); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 629, 1297); // ch (w, cr)
+// Elapsed time: 137 seconds
+selectCodeEditor("SPI_Analysis.vhd", 111, 1177); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 137, 1257); // ch (w, cr)
+// Elapsed time: 111 seconds
+selectCodeEditor("SPI_Analysis.vhd", 457, 979); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 457, 979); // ch (w, cr)
+// Elapsed time: 23 seconds
+selectCodeEditor("SPI_Analysis.vhd", 181, 925); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 333, 941); // ch (w, cr)
+// Elapsed time: 34 seconds
+selectCodeEditor("SPI_Analysis.vhd", 649, 355); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 649, 365); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectCodeEditor("SPI_Analysis.vhd", 645, 818, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPI_Analysis.vhd", 569, 812); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 655, 826); // ch (w, cr)
+// Elapsed time: 150 seconds
+selectCodeEditor("SPI_Analysis.vhd", 655, 826); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 595, 904); // ch (w, cr)
+// Elapsed time: 19 seconds
+selectCodeEditor("SPI_Analysis.vhd", 1117, 416); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 499, 372); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 761, 512); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 783, 506); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 163, 866); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 699, 1034); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 953, 856); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 813, 874); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 65, 898); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 417, 918); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("SPI_Analysis.vhd", 595, 902); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 745, 896); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 1057, 906, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPI_Analysis.vhd", 967, 932); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 1041, 906); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("SPI_Analysis.vhd", 989, 626); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 395, 554); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 179, 534); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 65, 544); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 44 seconds
+selectCodeEditor("SPI_Analysis.vhd", 379, 1310); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 465, 1154); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 517, 1264); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 23 seconds
+selectCodeEditor("SPI_Analysis.vhd", 121, 1214); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("SPI_Analysis.vhd", 741, 532); // ch (w, cr)
+// Elapsed time: 19 seconds
+selectCodeEditor("SPI_Analysis.vhd", 61, 782); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 175, 684); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 153, 666); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 549, 634); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 399, 586); // ch (w, cr)
+// Elapsed time: 100 seconds
+selectCodeEditor("SPI_Analysis.vhd", 371, 420); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 471, 702); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 403, 800); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 383, 782); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 577, 794); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 985, 316); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 603, 1238); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 525, 1276); // ch (w, cr)
+// Elapsed time: 33 seconds
+selectCodeEditor("SPI_Analysis.vhd", 543, 538, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPI_Analysis.vhd", 433, 554); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("TopLevel.vhd", 369, 592); // ch (w, cr)
+typeControlKey((HResource) null, "TopLevel.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 233, 652); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 1071, 944, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("TopLevel.vhd", 1041, 944); // ch (w, cr)
+typeControlKey((HResource) null, "TopLevel.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 1267, 990); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TopLevel.vhd", 413, 946); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 417, 946); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 421, 1004); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TopLevel.vhd", 423, 1040); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 361, 1022); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TopLevel.vhd", 981, 1000, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("TopLevel.vhd", 643, 1054); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 235, 1028); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TopLevel.vhd", 523, 618); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("TopLevel.vhd", 929, 622); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 933, 646); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 933, 632); // ch (w, cr)
+typeControlKey((HResource) null, "TopLevel.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 439, 786); // ch (w, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : SPI_Analysis(Behavioral) (SPI_Analysis.vhd)]", 6, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("SPI_Analysis.vhd", 921, 426); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 921, 426); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 379, 462); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 809, 634); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("SPI_Analysis.vhd", 331, 522); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 389, 458); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 2, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("TopLevel.vhd", 433, 278); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 441, 308, false, true, false, false, false); // ch (w, cr) - Control Key
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TopLevel.vhd", 649, 586); // ch (w, cr)
+// Elapsed time: 29 seconds
+selectCodeEditor("TopLevel.vhd", 475, 874); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("TopLevel.vhd", 521, 1016); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 2); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Hardware_Feedback_2 : Encoder(Behavioral) (Encoder.vhd)]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : xil_defaultlib.SPI_Analysis_default]", 7, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : xil_defaultlib.SPI_Analysis_default]", 7, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : xil_defaultlib.SPI_Analysis_default]", 7, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : xil_defaultlib.SPI_Analysis_default]", 7, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : xil_defaultlib.SPI_Analysis_default]", 7, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("TopLevel.vhd", 109, 418); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : xil_defaultlib.SPI_Analysis_default]", 7, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : xil_defaultlib.SPI_Analysis_default]", 7, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : xil_defaultlib.SPI_Analysis_default]", 7, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : xil_defaultlib.SPI_Analysis_default]", 7, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Hardware_Feedback_1 : Encoder(Behavioral) (Encoder.vhd)]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Hardware_Feedback_1 : Encoder(Behavioral) (Encoder.vhd)]", 5, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : xil_defaultlib.SPI_Analysis_default]", 7, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : xil_defaultlib.SPI_Analysis_default]", 7, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : xil_defaultlib.SPI_Analysis_default]", 7, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : xil_defaultlib.SPI_Analysis_default]", 7, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : xil_defaultlib.SPI_Analysis_default]", 7, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : xil_defaultlib.SPI_Analysis_default]", 7, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : xil_defaultlib.SPI_Analysis_default]", 7, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : xil_defaultlib.SPI_Analysis_default]", 7, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : xil_defaultlib.SPI_Analysis_default]", 7, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : xil_defaultlib.SPI_Analysis_default]", 7, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : xil_defaultlib.SPI_Analysis_default]", 7, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 3, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 3, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("TopLevel.vhd", 659, 874); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 1075, 654); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectCodeEditor("TopLevel.vhd", 983, 614); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 473, 380); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 821, 696, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TopLevel.vhd", 761, 696); // ch (w, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 3); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : xil_defaultlib.SPI_Analysis_default]", 8, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : xil_defaultlib.SPI_Analysis_default]", 8, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, SPI_Analysis.vhd]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, SPI_Analysis.vhd]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("SPI_Analysis.vhd", 709, 886, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPI_Analysis.vhd", 467, 450); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd), Interface_Analysis : xil_defaultlib.SPI_Analysis_default]", 8, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 3, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 3, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 3, true); // B (F, cr) - Node
+// Elapsed time: 12 seconds
+selectCodeEditor("TopLevel.vhd", 667, 402); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 669, 382); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 489, 378); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 673, 386); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TopLevel.vhd", 663, 390, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("TopLevel.vhd", 623, 348); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 667, 392); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 667, 390); // ch (w, cr)
+typeControlKey((HResource) null, "TopLevel.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 1037, 436, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, SPI_Analysis.vhd]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, SPI_Analysis.vhd]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 3); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 3); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 3); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 3, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 3, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Elapsed time: 30 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, SPI_Analysis.vhd]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, SPI_Analysis.vhd]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, SPI_Analysis.vhd]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, SPI_Analysis.vhd]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 3, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel(Behavioral) (TopLevel.vhd)]", 3, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("TopLevel.vhd", 361, 988, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("TopLevel.vhd", 345, 980); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 407, 810); // ch (w, cr)
+selectCodeEditor("TopLevel.vhd", 227, 632); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, SPI_Analysis.vhd]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, SPI_Analysis.vhd]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, SPI_Analysis.vhd]", 2, false); // B (F, cr)
+selectCodeEditor("SPI_Analysis.vhd", 279, 462); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 395, 714); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 395, 714); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 195, 396); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 65, 1036); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 31, 940); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 29, 940); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 129, 756); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 113, 826); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 385, 498, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPI_Analysis.vhd", 349, 494, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPI_Analysis.vhd", 299, 494); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 375, 502); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 175, 732); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 247, 1002, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPI_Analysis.vhd", 53, 1096); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 281, 1010); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 555, 1296, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("SPI_Analysis.vhd", 515, 1296); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 49, 828); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 71, 738); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 399, 132, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPI_Analysis.vhd", 357, 136); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 413, 128); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 129, 866, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPI_Analysis.vhd", 93, 844); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("SPI_Analysis.vhd", 399, 738); // ch (w, cr)
+// Elapsed time: 22 seconds
+selectCodeEditor("SPI_Analysis.vhd", 557, 948); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("SPI_Analysis.vhd", 165, 934); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 209, 922); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 153, 942); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("SPI_Analysis.vhd", 371, 1206); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 231, 938); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 219, 616); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 191, 954); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 113, 784); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 655, 452); // ch (w, cr)
+// Elapsed time: 18 seconds
+selectCodeEditor("SPI_Analysis.vhd", 125, 398); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 371, 582); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 355, 556); // ch (w, cr)
+// Elapsed time: 21 seconds
+selectCodeEditor("SPI_Analysis.vhd", 297, 832); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 307, 830); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 527, 1012, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPI_Analysis.vhd", 513, 1012); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 293, 1024); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 325, 1152); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 307, 1138); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 327, 1142); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 283, 1006); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 325, 1136); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Analysis.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 457, 1146); // ch (w, cr)
+selectCodeEditor("SPI_Analysis.vhd", 537, 1216); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("SPI_Analysis.vhd", 351, 1212); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1585814181">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1588073491">
   <File Type="PA-TCL" Name="TopLevel.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="TopLevel_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="TopLevel_reports.tcl"/>
@@ -18,6 +18,12 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/PWM.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SPI_Analysis.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>

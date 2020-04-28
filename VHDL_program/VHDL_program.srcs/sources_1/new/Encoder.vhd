@@ -23,6 +23,9 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 --use IEEE.NUMERIC_STD.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+use IEEE.STD_LOGIC_ARITH.ALL;
+
 --use IEEE.STD_LOGIC_ARITH.ALL;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -37,6 +40,7 @@ entity Encoder is
   Port (Clk: in STD_LOGIC;
         A: in STD_LOGIC;
         B: in STD_LOGIC;
+        angle: out STD_LOGIC_VECTOR(15 downto 0);
         leds: out STD_LOGIC_VECTOR (14 downto 0));
 end Encoder;
 
@@ -45,7 +49,7 @@ architecture Behavioral of Encoder is
 begin
 process(Clk, A, B)
     variable ABab: std_logic_vector(3 downto 0) := "0000"; 
-    variable counter: integer range -1000 to 1000 := 0;  --Should be chosen to fit the application, 
+    variable counter: integer range -32678 to 32677 := 0;  --Should be chosen to fit the application, 
     variable reset: boolean := true; --Reset false means that this has already been registered as a switch
 begin
     if rising_edge(Clk) then
@@ -62,6 +66,7 @@ begin
             reset := true; 
         end if;
 
+        angle <= conv_std_logic_vector(counter, 16);
         
         --just for display purposes
         if counter = 0 then

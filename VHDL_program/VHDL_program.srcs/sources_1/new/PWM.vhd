@@ -35,8 +35,8 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use UNISIM.VComponents.all;
 
 entity PWM_Module is
-    generic (N: natural := 7; --Should be chosen to fit the applicaiton
-             MAX: natural := 128); --Should be chosen to fit the application
+    generic (N: natural := 8; --Should be chosen to fit the applicaiton (have chosen 8 bits because this is the number of bits pr data transfer, fix if nessesary)
+             MAX: natural := 256); --Should be chosen to fit the application
     Port ( Clk :   in STD_LOGIC;
            PCM :   in STD_LOGIC_VECTOR (N-1 downto 0);
            PWM :   out STD_LOGIC);
