@@ -2,10 +2,10 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Mon Mar 23 10:48:36 2020
-# Process ID: 12392
+# Start of session at: Thu Apr  2 09:40:19 2020
+# Process ID: 29724
 # Current directory: C:/Users/dotte/Documents/Sempro4/VHDL_SPI
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22272 C:\Users\dotte\Documents\Sempro4\VHDL_SPI\SPI.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7000 C:\Users\dotte\Documents\Sempro4\VHDL_SPI\SPI.xpr
 # Log file: C:/Users/dotte/Documents/Sempro4/VHDL_SPI/vivado.log
 # Journal file: C:/Users/dotte/Documents/Sempro4/VHDL_SPI\vivado.jou
 #-----------------------------------------------------------
@@ -16,7 +16,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
-open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 981.824 ; gain = 96.156
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 749.766 ; gain = 108.461
 update_compile_order -fileset sources_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Mar 23 10:49:24 2020...
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  2 09:46:27 2020...
