@@ -21,13 +21,12 @@
 #include <stdint.h>
 #include "tm4c123gh6pm.h"
 #include "emp_type.h"
-//#include "spi.h"
 #include "spi.h"
 #include "uart0.h"
 /*****************************    Defines    *******************************/
 
 #define DATA_SIZE 	8
-#define CLK_PSCL	2	//Note, has to be at least 2, otherwise, prescaler is maxed.
+#define CLK_PSCL	2
 #define CLK_PH 		0
 #define CLK_PO 		0
 

@@ -72,7 +72,7 @@ LOAD ./uart0.o
 .vtable
  *(.vtable)
 
-.text           0x00000280      0x8fc
+.text           0x00000280      0x8f8
  CREATE_OBJECT_SYMBOLS
  *(.text)
  .text          0x00000280        0x0 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crti.o
@@ -112,176 +112,176 @@ LOAD ./uart0.o
  .text.receive_byte
                 0x0000056c       0x20 ./spi.o
                 0x0000056c                receive_byte
- .text.sr_byte  0x0000058c       0x3c ./spi.o
+ .text.sr_byte  0x0000058c       0x38 ./spi.o
                 0x0000058c                sr_byte
  .text.send_str
-                0x000005c8       0x14 ./spi.o
-                0x000005c8                send_str
+                0x000005c4       0x14 ./spi.o
+                0x000005c4                send_str
  .text.spi_handler
-                0x000005dc        0x2 ./spi.o
-                0x000005dc                spi_handler
- *fill*         0x000005de        0x2 
+                0x000005d8        0x2 ./spi.o
+                0x000005d8                spi_handler
+ *fill*         0x000005da        0x2 
  .text.systick_handler
-                0x000005e0       0x10 ./systick.o
-                0x000005e0                systick_handler
+                0x000005dc       0x10 ./systick.o
+                0x000005dc                systick_handler
  .text.enable_global_int
-                0x000005f0        0x4 ./systick.o
-                0x000005f0                enable_global_int
+                0x000005ec        0x4 ./systick.o
+                0x000005ec                enable_global_int
  .text.disable_global_int
-                0x000005f4        0x4 ./systick.o
-                0x000005f4                disable_global_int
+                0x000005f0        0x4 ./systick.o
+                0x000005f0                disable_global_int
  .text.init_systick
-                0x000005f8       0x5c ./systick.o
-                0x000005f8                init_systick
- .text.NmiSR    0x00000654        0x2 ./tm4c123gh6pm_startup_ccs_gcc.o
+                0x000005f4       0x5c ./systick.o
+                0x000005f4                init_systick
+ .text.NmiSR    0x00000650        0x2 ./tm4c123gh6pm_startup_ccs_gcc.o
  .text.FaultISR
-                0x00000656        0x2 ./tm4c123gh6pm_startup_ccs_gcc.o
+                0x00000652        0x2 ./tm4c123gh6pm_startup_ccs_gcc.o
  .text.IntDefaultHandler
-                0x00000658        0x2 ./tm4c123gh6pm_startup_ccs_gcc.o
- *fill*         0x0000065a        0x2 
+                0x00000654        0x2 ./tm4c123gh6pm_startup_ccs_gcc.o
+ *fill*         0x00000656        0x2 
  .text.ResetISR
-                0x0000065c       0x50 ./tm4c123gh6pm_startup_ccs_gcc.o
-                0x0000065c                ResetISR
+                0x00000658       0x50 ./tm4c123gh6pm_startup_ccs_gcc.o
+                0x00000658                ResetISR
  .text.lcrh_databits
-                0x000006ac       0x10 ./uart0.o
-                0x000006ac                lcrh_databits
+                0x000006a8       0x10 ./uart0.o
+                0x000006a8                lcrh_databits
  .text.lcrh_stopbits
-                0x000006bc        0xc ./uart0.o
-                0x000006bc                lcrh_stopbits
+                0x000006b8        0xc ./uart0.o
+                0x000006b8                lcrh_stopbits
  .text.lcrh_parity
-                0x000006c8       0x26 ./uart0.o
-                0x000006c8                lcrh_parity
- *fill*         0x000006ee        0x2 
+                0x000006c4       0x26 ./uart0.o
+                0x000006c4                lcrh_parity
+ *fill*         0x000006ea        0x2 
  .text.uart0_fifos_enable
-                0x000006f0       0x10 ./uart0.o
-                0x000006f0                uart0_fifos_enable
+                0x000006ec       0x10 ./uart0.o
+                0x000006ec                uart0_fifos_enable
  .text.uart0_fifos_disable
-                0x00000700       0x10 ./uart0.o
-                0x00000700                uart0_fifos_disable
+                0x000006fc       0x10 ./uart0.o
+                0x000006fc                uart0_fifos_disable
  .text.uart0_rx_rdy
-                0x00000710       0x10 ./uart0.o
-                0x00000710                uart0_rx_rdy
+                0x0000070c       0x10 ./uart0.o
+                0x0000070c                uart0_rx_rdy
  .text.uart0_getc
-                0x00000720        0xc ./uart0.o
-                0x00000720                uart0_getc
+                0x0000071c        0xc ./uart0.o
+                0x0000071c                uart0_getc
  .text.uart0_tx_rdy
-                0x0000072c       0x10 ./uart0.o
-                0x0000072c                uart0_tx_rdy
+                0x00000728       0x10 ./uart0.o
+                0x00000728                uart0_tx_rdy
  .text.uart0_putc
-                0x0000073c       0x18 ./uart0.o
-                0x0000073c                uart0_putc
+                0x00000738       0x18 ./uart0.o
+                0x00000738                uart0_putc
  .text.uart0_putca
-                0x00000754       0x34 ./uart0.o
-                0x00000754                uart0_putca
+                0x00000750       0x34 ./uart0.o
+                0x00000750                uart0_putca
  .text.uart0_init
-                0x00000788       0xac ./uart0.o
-                0x00000788                uart0_init
- .text.exit     0x00000834       0x20 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-exit.o)
-                0x00000834                exit
+                0x00000784       0xac ./uart0.o
+                0x00000784                uart0_init
+ .text.exit     0x00000830       0x20 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-exit.o)
+                0x00000830                exit
  .text.__libc_init_array
-                0x00000854       0x48 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-init.o)
-                0x00000854                __libc_init_array
- .text.memset   0x0000089c       0x94 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-memset.o)
-                0x0000089c                memset
+                0x00000850       0x48 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-init.o)
+                0x00000850                __libc_init_array
+ .text.memset   0x00000898       0x94 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-memset.o)
+                0x00000898                memset
  .text.startup.register_fini
-                0x00000930       0x14 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-__call_atexit.o)
+                0x0000092c       0x14 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-__call_atexit.o)
  .text.__call_exitprocs
-                0x00000944       0xe8 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-__call_atexit.o)
-                0x00000944                __call_exitprocs
- .text.atexit   0x00000a2c        0xc c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-atexit.o)
-                0x00000a2c                atexit
+                0x00000940       0xe8 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-__call_atexit.o)
+                0x00000940                __call_exitprocs
+ .text.atexit   0x00000a28        0xc c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-atexit.o)
+                0x00000a28                atexit
  .text.__libc_fini_array
-                0x00000a38       0x34 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-fini.o)
-                0x00000a38                __libc_fini_array
+                0x00000a34       0x34 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-fini.o)
+                0x00000a34                __libc_fini_array
  .text.__retarget_lock_init
-                0x00000a6c        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
-                0x00000a6c                __retarget_lock_init
+                0x00000a68        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+                0x00000a68                __retarget_lock_init
  .text.__retarget_lock_init_recursive
-                0x00000a70        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
-                0x00000a70                __retarget_lock_init_recursive
+                0x00000a6c        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+                0x00000a6c                __retarget_lock_init_recursive
  .text.__retarget_lock_close
-                0x00000a74        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
-                0x00000a74                __retarget_lock_close
+                0x00000a70        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+                0x00000a70                __retarget_lock_close
  .text.__retarget_lock_close_recursive
-                0x00000a78        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
-                0x00000a78                __retarget_lock_close_recursive
+                0x00000a74        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+                0x00000a74                __retarget_lock_close_recursive
  .text.__retarget_lock_acquire
-                0x00000a7c        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
-                0x00000a7c                __retarget_lock_acquire
+                0x00000a78        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+                0x00000a78                __retarget_lock_acquire
  .text.__retarget_lock_acquire_recursive
-                0x00000a80        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
-                0x00000a80                __retarget_lock_acquire_recursive
+                0x00000a7c        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+                0x00000a7c                __retarget_lock_acquire_recursive
  .text.__retarget_lock_try_acquire
-                0x00000a84        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
-                0x00000a84                __retarget_lock_try_acquire
+                0x00000a80        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+                0x00000a80                __retarget_lock_try_acquire
  .text.__retarget_lock_try_acquire_recursive
-                0x00000a88        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
-                0x00000a88                __retarget_lock_try_acquire_recursive
+                0x00000a84        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+                0x00000a84                __retarget_lock_try_acquire_recursive
  .text.__retarget_lock_release
-                0x00000a8c        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
-                0x00000a8c                __retarget_lock_release
+                0x00000a88        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+                0x00000a88                __retarget_lock_release
  .text.__retarget_lock_release_recursive
-                0x00000a90        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
-                0x00000a90                __retarget_lock_release_recursive
+                0x00000a8c        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+                0x00000a8c                __retarget_lock_release_recursive
  .text.__register_exitproc
-                0x00000a94       0xc0 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-__atexit.o)
-                0x00000a94                __register_exitproc
- .text._exit    0x00000b54        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(_exit.o)
-                0x00000b54                _exit
-                0x00000b58                . = ALIGN (0x4)
+                0x00000a90       0xc0 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-__atexit.o)
+                0x00000a90                __register_exitproc
+ .text._exit    0x00000b50        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(_exit.o)
+                0x00000b50                _exit
+                0x00000b54                . = ALIGN (0x4)
  *(.ctors)
-                0x00000b58                . = ALIGN (0x4)
+                0x00000b54                . = ALIGN (0x4)
  *(.dtors)
-                0x00000b58                . = ALIGN (0x4)
-                0x00000b58                __init_array_start = .
+                0x00000b54                . = ALIGN (0x4)
+                0x00000b54                __init_array_start = .
  *(.init_array*)
- .init_array    0x00000b58        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+ .init_array    0x00000b54        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
  .init_array.00000
-                0x00000b5c        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-__call_atexit.o)
-                0x00000b60                __init_array_end = .
+                0x00000b58        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-__call_atexit.o)
+                0x00000b5c                __init_array_end = .
  *(.init)
- .init          0x00000b60        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crti.o
-                0x00000b60                _init
- .init          0x00000b64        0x8 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
+ .init          0x00000b5c        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crti.o
+                0x00000b5c                _init
+ .init          0x00000b60        0x8 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
  *(.fini*)
- .fini          0x00000b6c        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crti.o
-                0x00000b6c                _fini
- .fini_array    0x00000b70        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
- .fini          0x00000b74        0x8 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
+ .fini          0x00000b68        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crti.o
+                0x00000b68                _fini
+ .fini_array    0x00000b6c        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+ .fini          0x00000b70        0x8 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
                 [!provide]                PROVIDE (__etext, .)
                 [!provide]                PROVIDE (_etext, .)
                 [!provide]                PROVIDE (etext, .)
 
-.glue_7         0x00000b7c        0x0
- .glue_7        0x00000b7c        0x0 linker stubs
+.glue_7         0x00000b78        0x0
+ .glue_7        0x00000b78        0x0 linker stubs
 
-.glue_7t        0x00000b7c        0x0
- .glue_7t       0x00000b7c        0x0 linker stubs
+.glue_7t        0x00000b78        0x0
+ .glue_7t       0x00000b78        0x0 linker stubs
 
-.vfp11_veneer   0x00000b7c        0x0
- .vfp11_veneer  0x00000b7c        0x0 linker stubs
+.vfp11_veneer   0x00000b78        0x0
+ .vfp11_veneer  0x00000b78        0x0 linker stubs
 
-.v4_bx          0x00000b7c        0x0
- .v4_bx         0x00000b7c        0x0 linker stubs
+.v4_bx          0x00000b78        0x0
+ .v4_bx         0x00000b78        0x0 linker stubs
 
-.iplt           0x00000b7c        0x0
- .iplt          0x00000b7c        0x0 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+.iplt           0x00000b78        0x0
+ .iplt          0x00000b78        0x0 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
 
-.rodata         0x00000b7c       0x14
+.rodata         0x00000b78       0x14
  *(.rodata)
  *(.rodata*)
  .rodata.main.str1.4
-                0x00000b7c       0x10 ./main.o
+                0x00000b78       0x10 ./main.o
  .rodata._global_impure_ptr
-                0x00000b8c        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-impure.o)
-                0x00000b8c                _global_impure_ptr
+                0x00000b88        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-impure.o)
+                0x00000b88                _global_impure_ptr
 
-.eh_frame       0x00000b90        0x4
- .eh_frame      0x00000b90        0x0 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
- .eh_frame      0x00000b90        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtend.o
+.eh_frame       0x00000b8c        0x4
+ .eh_frame      0x00000b8c        0x0 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+ .eh_frame      0x00000b8c        0x4 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtend.o
 
-.data           0x20000000      0x434 load address 0x00000b94
-                0x00000b94                __data_load__ = LOADADDR (.data)
+.data           0x20000000      0x434 load address 0x00000b90
+                0x00000b90                __data_load__ = LOADADDR (.data)
                 0x20000000                __data_start__ = .
  *(.data)
  .data          0x20000000        0x0 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crti.o
@@ -318,21 +318,21 @@ LOAD ./uart0.o
                 0x20000434                . = ALIGN (0x4)
                 0x20000434                __data_end__ = .
 
-.igot.plt       0x20000434        0x0 load address 0x00000fc8
+.igot.plt       0x20000434        0x0 load address 0x00000fc4
  .igot.plt      0x20000434        0x0 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
 
-.ARM.exidx      0x00000fc8        0x8
-                0x00000fc8                __exidx_start = .
+.ARM.exidx      0x00000fc4        0x8
+                0x00000fc4                __exidx_start = .
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x00000fc8        0x8 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/crt0.o
-                0x00000fd0                __exidx_end = .
+ .ARM.exidx     0x00000fc4        0x8 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/crt0.o
+                0x00000fcc                __exidx_end = .
 
-.ARM.extab      0x00000fd0        0x0
+.ARM.extab      0x00000fcc        0x0
  *(.ARM.extab* .gnu.linkonce.armextab.*)
- .ARM.extab     0x00000fd0        0x0 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/crt0.o
+ .ARM.extab     0x00000fcc        0x0 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/crt0.o
 
-.rel.dyn        0x00000fd0        0x0
- .rel.iplt      0x00000fd0        0x0 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+.rel.dyn        0x00000fcc        0x0
+ .rel.iplt      0x00000fcc        0x0 c:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
 
 .bss            0x20000434      0x244
                 0x20000434                __bss_start__ = .
@@ -499,12 +499,12 @@ OUTPUT(SPI_test.out elf32-littlearm)
  .debug_ranges  0x00000070       0x28 ./tm4c123gh6pm_startup_ccs_gcc.o
  .debug_ranges  0x00000098       0x60 ./uart0.o
 
-.debug_line     0x00000000      0x8d1
+.debug_line     0x00000000      0x8d0
  .debug_line    0x00000000      0x180 ./main.o
- .debug_line    0x00000180      0x1e0 ./spi.o
- .debug_line    0x00000360      0x1ab ./systick.o
- .debug_line    0x0000050b      0x16d ./tm4c123gh6pm_startup_ccs_gcc.o
- .debug_line    0x00000678      0x259 ./uart0.o
+ .debug_line    0x00000180      0x1df ./spi.o
+ .debug_line    0x0000035f      0x1ab ./systick.o
+ .debug_line    0x0000050a      0x16d ./tm4c123gh6pm_startup_ccs_gcc.o
+ .debug_line    0x00000677      0x259 ./uart0.o
 
 .debug_str      0x00000000      0x418
  .debug_str     0x00000000      0x1d6 ./main.o

@@ -1,0 +1,122 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri May  1 11:07:20 2020
+| Host         : DESKTOP-35CQKCL running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TopLevel_control_sets_placed.rpt
+| Design       : TopLevel
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    44 |
+|    Minimum number of control sets                        |    44 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   258 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    44 |
+| >= 0 to < 4        |    35 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     3 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              80 |           26 |
+| No           | No                    | Yes                    |               7 |            7 |
+| No           | Yes                   | No                     |              34 |           15 |
+| Yes          | No                    | No                     |              16 |           11 |
+| Yes          | No                    | Yes                    |              40 |           17 |
+| Yes          | Yes                   | No                     |               5 |            2 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------+----------------------------------------+----------------------------------+------------------+----------------+
+|                 Clock Signal                 |              Enable Signal             |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
++----------------------------------------------+----------------------------------------+----------------------------------+------------------+----------------+
+|  InterfaceTiva1/SPI_angle_send__0            |                                        |                                  |                1 |              1 |
+|  Interface_Analysis/JA[1]_12                 |                                        | Interface_Analysis/JA[1]_4       |                1 |              1 |
+|  Interface_Analysis/JA[1]_7                  |                                        | Interface_Analysis/JA[1]         |                1 |              1 |
+|  Interface_Analysis/JA[1]_8                  |                                        | Interface_Analysis/JA[1]_0       |                1 |              1 |
+|  JA_IBUF_BUFG[0]                             | InterfaceTiva1/p_0_in[0]               |                                  |                1 |              1 |
+|  JA_IBUF_BUFG[0]                             | InterfaceTiva1/p_0_in[5]               |                                  |                1 |              1 |
+|  JA_IBUF_BUFG[0]                             | InterfaceTiva1/p_0_in[1]               |                                  |                1 |              1 |
+|  JA_IBUF_BUFG[0]                             | InterfaceTiva1/p_0_in[2]               |                                  |                1 |              1 |
+|  JA_IBUF_BUFG[0]                             | InterfaceTiva1/p_0_in[3]               |                                  |                1 |              1 |
+|  JA_IBUF_BUFG[0]                             | InterfaceTiva1/p_0_in[4]               |                                  |                1 |              1 |
+|  Interface_Analysis/JA[1]_14                 |                                        | Interface_Analysis/JA[1]_6       |                1 |              1 |
+|  JA_IBUF_BUFG[0]                             | InterfaceTiva1/p_0_in[6]               |                                  |                1 |              1 |
+|  JA_IBUF_BUFG[0]                             | InterfaceTiva1/p_0_in[7]               |                                  |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                             |                                        | Interface_Analysis/JA[1]         |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                             |                                        | Interface_Analysis/JA[1]_0       |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                             |                                        | Interface_Analysis/JA[1]_3       |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                             |                                        | Interface_Analysis/JA[1]_4       |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                             |                                        | Interface_Analysis/JA[1]_5       |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                             |                                        | Interface_Analysis/JA[1]_2       |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                             |                                        | Interface_Analysis/JA[1]_1       |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                             | InterfaceTiva1/JA_IBUF_BUFG[1]_inst[0] | Interface_Analysis/JA[1]_10      |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                             | InterfaceTiva1/JA_IBUF_BUFG[1]_inst[0] | Interface_Analysis/JA[1]_9       |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                             | InterfaceTiva1/JA_IBUF_BUFG[1]_inst[0] | Interface_Analysis/JA[1]_11      |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                             | InterfaceTiva1/JA_IBUF_BUFG[1]_inst[0] | Interface_Analysis/JA[1]_12      |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                             | InterfaceTiva1/JA_IBUF_BUFG[1]_inst[0] | Interface_Analysis/JA[1]_7       |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                             | InterfaceTiva1/JA_IBUF_BUFG[1]_inst[0] | Interface_Analysis/JA[1]_8       |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                             | InterfaceTiva1/JA_IBUF_BUFG[1]_inst[0] | Interface_Analysis/JA[1]_14      |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                             | InterfaceTiva1/JA_IBUF_BUFG[1]_inst[0] | Interface_Analysis/JA[1]_13      |                1 |              1 |
+|  Interface_Analysis/JA[1]_11                 |                                        | Interface_Analysis/JA[1]_3       |                1 |              1 |
+| ~JA_IBUF_BUFG[1]                             |                                        |                                  |                1 |              1 |
+|  Interface_Analysis/JA[1]_10                 |                                        | Interface_Analysis/JA[1]_2       |                1 |              1 |
+|  Interface_Analysis/JA[1]_9                  |                                        | Interface_Analysis/JA[1]_1       |                1 |              1 |
+|  Interface_Analysis/JA[1]_13                 |                                        | Interface_Analysis/JA[1]_5       |                1 |              1 |
+|  clk_IBUF_BUFG                               | Hardware_Control_1/Scaled_clk          |                                  |                1 |              2 |
+|  clk_IBUF_BUFG                               | Hardware_Feedback_1/p_0_out[14]        |                                  |                1 |              2 |
+|  clk_IBUF_BUFG                               | Hardware_Feedback_1/p_0_out[3]         |                                  |                1 |              4 |
+|  clk_IBUF_BUFG                               | Hardware_Control_1/Scaled_clk          | Hardware_Control_1/PWM_Count     |                2 |              5 |
+|  InterfaceTiva1/E[0]                         |                                        |                                  |                2 |              7 |
+|  InterfaceTiva1/data_temp_reg[7]_0[0]        |                                        |                                  |                3 |              8 |
+|  InterfaceTiva1/index[31]                    |                                        |                                  |                2 |              8 |
+|  Interface_Analysis/PWMMotor1_reg[7]_i_1_n_0 |                                        |                                  |                2 |              8 |
+|  clk_IBUF_BUFG                               |                                        | Hardware_Control_1/clear         |                7 |             26 |
+|  JA_IBUF_BUFG[0]                             | InterfaceTiva1/JA_IBUF_BUFG[1]_inst[0] | InterfaceTiva1/index[31]_i_1_n_0 |                9 |             32 |
+|  clk_IBUF_BUFG                               |                                        |                                  |               15 |             47 |
++----------------------------------------------+----------------------------------------+----------------------------------+------------------+----------------+
+
+

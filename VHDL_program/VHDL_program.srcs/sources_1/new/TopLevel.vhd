@@ -114,11 +114,12 @@ architecture Behavioral of TopLevel is
     
     --temporary signals
     signal Leds_temp: std_logic_vector(14 downto 0) := (others => '0');
+    signal led15_temp: std_logic := '0';
     
 begin
     Hardware_Control_1: PWM_Module PORT MAP(Clk => clk, PCM => PWMMotor1, PWM => led(15));
     
-    Hardware_Control_2: PWM_Module PORT MAP(Clk => clk, PCM => PWMMotor2, PWM => led(15));
+    Hardware_Control_2: PWM_Module PORT MAP(Clk => clk, PCM => PWMMotor2, PWM => led15_temp);
     
     --Use signals from motor 2 in this
     Hardware_Feedback_1: Encoder PORT MAP(Clk => clk, A => JB(6), B => JB(2), angle => AngleMotor1, leds => led(14 downto 0));

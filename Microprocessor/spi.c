@@ -112,18 +112,13 @@ extern INT8U sr_byte(INT8U data_send) {
 	while ((SSI2_SR_R & 1) == 0)
 		;
 
-	//Second read to avoid duplicate data. Not sure how to get around this.
-	//Load FIFO transmit buffer with data
-	SSI2_DR_R = data_send;
-
-	//wait for send/receive to complete
-	while ((SSI2_SR_R & 1) == 0)
-		;
+	while((SSI2_SR_R & 0x04) == 0);		//wait until data is in the receive FIFO before reading
 
 	//Read bit 0 to 7
 	while (SSI2_SR_R & 0x04) {
 		data_receive = (SSI2_DR_R & 0x00FF);
 	}
+	//data_receive = (SSI2_DR_R & 0x00FF);
 	return data_receive;
 }
 
