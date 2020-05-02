@@ -61,18 +61,18 @@ extern INT8U sr_byte(INT8U);
 *   Function : Transmits/Receives byte of data via SPI. Returns when data transfer is complete.
 ******************************************************************************/
 
-extern void send_pwm(INT8U, INT8U);
+extern INT16U sr_word(INT16U);
 /*****************************************************************************
-*   Input    : Byte of data: 0-255, motor number (1 or 2).
-*   Output   :
-*   Function : Transmits pwm instruction
+*   Input    : 16 bits of data: 0x0000 to 0xFFFF
+*   Output   : 16 bits of data: 0x0000 to 0xFFFF
+*   Function : Transmits/Receives 16 bits of data via SPI. Returns when data transfer is complete.
 ******************************************************************************/
 
-extern INT8U receive_angle(INT8U);
+extern INT16U FPGA_update(INT16U, INT16U);
 /*****************************************************************************
-*   Input    : Motor number (1 or 2).
-*   Output   :
-*   Function : Receives angular position of chosen motor.
+*   Input    : 2x8 bits of PWM values. First 8 are for motor1, last 8 are for motor2.
+*   Output   : 16 bits of data: 0x0000 to 0xFFFF (Upper 8 bits are relative position change of motor1 since last transfer, lower 8 for motor2)
+*   Function : Transmits/Receives 16 bits of data via SPI. Returns when data transfer is complete.
 ******************************************************************************/
 
 void send_str();

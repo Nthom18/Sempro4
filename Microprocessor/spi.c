@@ -122,33 +122,47 @@ extern INT8U sr_byte(INT8U data_send) {
 	return data_receive;
 }
 
-extern void send_pwm(INT8U pwm_value, INT8U motor_number) {
-	INT8U instruction_data = 0x80;
-	if (motor_number == 1)
-		instruction_data = instruction_data | 0x02;
-	else if (motor_number == 2)
-		instruction_data = instruction_data | 0x03;
-	else
-		return;
+extern INT16U sr_word(INT16U data_send16) {
+	INT16U data_receive16 = 0;
 
-	sr_byte(instruction_data);
-	sr_byte(pwm_value);
+	//Load FIFO transmit buffer with data
+	SSI2_DR_R = data_send16;
+
+	//wait for send/receive to complete
+	while ((SSI2_SR_R & 1) == 0)
+		;
+
+	while((SSI2_SR_R & 0x04) == 0);		//wait until data is in the receive FIFO before reading
+
+	//Read word
+	while (SSI2_SR_R & 0x04) {
+		data_receive16 = SSI2_DR_R;
+	}
+
+	return data_receive16;
 }
 
-extern INT8U receive_angle(INT8U motor_number) {
-	INT8U instruction_data = 0x00;
-	INT8U angle;
-	if (motor_number == 1)
-			instruction_data = instruction_data | 0x00;
-		else if (motor_number == 2)
-			instruction_data = instruction_data | 0x01;
-		else
-			return -1; //Temporary return if invalid motor number
+extern INT16U FPGA_update(INT16U PWM1, INT16U PWM2) {
+	//Create 16 bit value with both PWM values.
+	INT16U send_data = (PWM1 << 8) | PWM2;
 
-	sr_byte(instruction_data);
-	angle = sr_byte(0x00);	//dummy transfer to receive data;
+	//Load FIFO transmit buffer with data
+	SSI2_DR_R = send_data;
 
-	return angle;
+	//wait for send/receive to complete
+	while ((SSI2_SR_R & 1) == 0);
+
+	//wait until data is in the receive FIFO before reading
+	while((SSI2_SR_R & 0x04) == 0);
+
+	//Read word
+	INT16U data_receive;
+	while (SSI2_SR_R & 0x04) {
+		data_receive = SSI2_DR_R;
+	}
+
+	return data_receive;
+
 }
 
 void send_str(char *buffer) { //function for sending each byte of string one by one

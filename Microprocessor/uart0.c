@@ -164,6 +164,50 @@ extern void uart0_putca(INT8U ch[])
 	}
 }
 
+extern void uart0_putnumber_u( INT16U number)
+/*****************************************************************************
+ *   Function : See module specification (.h-file).
+ *****************************************************************************/
+{
+	INT8U i10000, i1000, i100, i10, i1;
+
+	i10000 = number / 10000;
+	number -= i10000*10000;
+
+	i1000 = number / 1000;
+	number -= i1000*1000;
+
+	i100 = number / 100;
+	number -= i100*100;
+
+	i10 = number / 10;
+	number -= i10*10;
+
+	i1 = number;
+
+	uart0_putc(i10000 + 48);
+	uart0_putc(i1000 + 48);
+	uart0_putc(i100 + 48);
+	uart0_putc(i10 + 48);
+	uart0_putc(i1 + 48);
+}
+
+extern void uart0_putnumber_s( INT16S number)
+/*****************************************************************************
+ *   Function : See module specification (.h-file).
+ *****************************************************************************/
+{
+	INT16U unsigned_number;
+	if (number < 0) {
+		unsigned_number = ~(number - 1);
+		uart0_putc('-');
+		uart0_putnumber_u(unsigned_number);
+	} else {
+		unsigned_number = number;
+		uart0_putnumber_u(unsigned_number);
+	}
+}
+
 extern void uart0_init(INT32U baud_rate, INT8U databits, INT8U stopbits,
 						INT8U parity)
 /*****************************************************************************

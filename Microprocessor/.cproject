@@ -49,7 +49,6 @@
 									<listOptionValue builtIn="false" value="&quot;C:\Users\chris\Desktop\UNI\4 Semester\EMP\CodeComposer\Header&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;C:\Users\chris\Desktop\UNI\4 Semester\EMP\CodeComposer\Example files&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;C:\Users\chris\workspace_v8\Includes&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:\Users\sunes\Documents\4.semester\Sempro4\Microprocessor&quot;"/>
 								</option>
 								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_7.0.compilerID.ASM_SPECIFIC_FLAGS.992732379" name="Miscellaneous assembly source specific flags" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_7.0.compilerID.ASM_SPECIFIC_FLAGS" useByScannerDiscovery="false" valueType="stringList">
 									<listOptionValue builtIn="false" value="-x assembler-with-cpp"/>
@@ -119,7 +118,6 @@
 									<listOptionValue builtIn="false" value="${CG_TOOL_INCLUDE_PATH}"/>
 									<listOptionValue builtIn="false" value="&quot;C:\Users\chris\Desktop\UNI\4 Semester\EMP\CodeComposer\Header&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;C:\Users\chris\Desktop\UNI\4 Semester\EMP\CodeComposer\Example files&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:\Users\sunes\Documents\4.semester\Sempro4\Microprocessor&quot;"/>
 								</option>
 								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_7.0.compilerID.ASM_SPECIFIC_FLAGS.1627957238" name="Miscellaneous assembly source specific flags" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_7.0.compilerID.ASM_SPECIFIC_FLAGS" useByScannerDiscovery="false" valueType="stringList">
 									<listOptionValue builtIn="false" value="-x assembler-with-cpp"/>
