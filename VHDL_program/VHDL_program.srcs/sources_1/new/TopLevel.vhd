@@ -32,13 +32,15 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity TopLevel is
-    GENERIC(data_length : INTEGER := 8);
+    GENERIC(data_length : INTEGER := 16);
         Port (clk :   in STD_LOGIC;
               JA: in STD_LOGIC_VECTOR (2 downto 0); --perhaps fix inout thing
               JB: in STD_LOGIC_VECTOR (7 downto 2);
               --JB: in STD_LOGIC_VECTOR (6 downto 7);
               JA3: out STD_LOGIC;
-              led: out STD_LOGIC_VECTOR (15 downto 0)); --Should only be the one
+              led: out STD_LOGIC_VECTOR (15 downto 0); --Should only be the one
+              JC: out STD_LOGIC_VECTOR (7 downto 0)); 
+              
              -- sw : in STD_LOGIC_VECTOR (15 downto 0)); -- Maybee not used
 end TopLevel;
 
@@ -51,25 +53,27 @@ architecture Behavioral of TopLevel is
                     MAX: natural := 128); --Should be chosen to fit the application
             Port ( Clk :   in STD_LOGIC;
                    PCM :   in STD_LOGIC_VECTOR (N-1 downto 0);
-                   PWM :   out STD_LOGIC);
+                   PWM_pos :   out STD_LOGIC;
+                   PWM_neg : out STD_LOGIC);
         end COMPONENT;
-        constant PWM_temp: STD_LOGIC_VECTOR (6 downto 0) := "1000000";
+        
         
         COMPONENT Encoder
             Port (Clk: in STD_LOGIC;
                   A: in STD_LOGIC;
                   B: in STD_LOGIC;
-                  angle: out STD_LOGIC_VECTOR(15 downto 0);
+                  RESET_COUNT : in STD_LOGIC;
+                  angle: out STD_LOGIC_VECTOR (7 downto 0);
                   leds: out STD_LOGIC_VECTOR (14 downto 0));
         end COMPONENT;
         
         COMPONENT SPI_Analysis
         Port(Clk: in STD_LOGIC;
-             data_received : in STD_LOGIC_VECTOR (7 downto 0);
+             data_received : in STD_LOGIC_VECTOR (15 downto 0);
              enable_MISO : out STD_LOGIC;
-             AngleMotor1: in std_logic_vector(15 downto 0);    
-             AngleMotor2: in std_logic_vector(15 downto 0);
-             data_send: out std_logic_vector(7 downto 0);
+             AngleMotor1: in std_logic_vector(7 downto 0);    
+             AngleMotor2: in std_logic_vector(7 downto 0);
+             data_send: out std_logic_vector(15 downto 0);
              PWMMotor1: out std_logic_vector(7 downto 0);
              PWMMotor2: out std_logic_vector(7 downto 0));
         end COMPONENT;
@@ -94,18 +98,20 @@ architecture Behavioral of TopLevel is
               busy : out std_logic);
     end component;
 
-    signal data_send : STD_LOGIC_VECTOR (7 downto 0) := "10110100"; --should be set to be output from encoder (perhaps)
+    signal data_send : STD_LOGIC_VECTOR (15 downto 0); -- := "10110100"; --should be set to be output from encoder (perhaps)
    
     signal busy_MISO : std_logic;
-    signal data_receive : STD_LOGIC_VECTOR (7 downto 0);
+    signal data_receive : STD_LOGIC_VECTOR (15 downto 0);
     signal ready : STD_LOGIC;
     signal busy : STD_LOGIC;    
         
         
     --Variable registers 
     --shared variable 
-    signal AngleMotor1: std_logic_vector(15 downto 0) := (others => '0');    
-    signal AngleMotor2: std_logic_vector(15 downto 0) := (others => '0');
+    signal AngleMotor1: std_logic_vector(7 downto 0) := (others => '0');    
+    signal AngleMotor2: std_logic_vector(7 downto 0) := (others => '0');
+    signal RESET_ANGLE1 : std_logic := '0';
+    signal RESET_ANGLE2 : std_logic := '0';
     signal VelocityMotor1: std_logic_vector(15 downto 0) := (others => '0');
     signal VelocityMotor2: std_logic_vector(15 downto 0) := (others => '0');
     signal PWMMotor1: std_logic_vector(7 downto 0) := (others => '0');
@@ -115,17 +121,22 @@ architecture Behavioral of TopLevel is
     --temporary signals
     signal Leds_temp: std_logic_vector(14 downto 0) := (others => '0');
     signal led15_temp: std_logic := '0';
+    signal Leds_temp2: std_logic_vector(14 downto 0) := (others => '0');
     
-begin
-    Hardware_Control_1: PWM_Module PORT MAP(Clk => clk, PCM => PWMMotor1, PWM => led(15));
+begin 
+    -- EN_A and EN_B signals. These allow the PWM signals to control the motors. Perhaps not always on.
+    JC(0) <= '1'; -- EN_A
+    JC(4) <= '1'; -- EN_B
     
-    Hardware_Control_2: PWM_Module PORT MAP(Clk => clk, PCM => PWMMotor2, PWM => led15_temp);
+    Hardware_Control_1: PWM_Module PORT MAP(Clk => clk, PCM => PWMMotor1, PWM_pos => JC(6), PWM_neg => JC(5));
+    
+    Hardware_Control_2: PWM_Module PORT MAP(Clk => clk, PCM => PWMMotor2, PWM_pos => JC(2), PWM_neg => JC(1));
     
     --Use signals from motor 2 in this
-    Hardware_Feedback_1: Encoder PORT MAP(Clk => clk, A => JB(6), B => JB(2), angle => AngleMotor1, leds => led(14 downto 0));
+    Hardware_Feedback_1: Encoder PORT MAP(Clk => clk, A => JB(6), B => JB(2), RESET_COUNT => ready, angle => AngleMotor1, leds => Leds_temp2);
     
     --Use signals from motor 2 in this
-    Hardware_Feedback_2: Encoder PORT MAP(Clk => clk, A => JB(7), B => JB(3), angle => AngleMotor2, leds => Leds_temp);
+    Hardware_Feedback_2: Encoder PORT MAP(Clk => clk, A => JB(7), B => JB(3), RESET_COUNT => ready, angle => AngleMotor2, leds => Leds_temp);
 
     Interface_Analysis : SPI_Analysis
     port map (Clk => clk,

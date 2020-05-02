@@ -122,6 +122,35 @@ extern INT8U sr_byte(INT8U data_send) {
 	return data_receive;
 }
 
+extern void send_pwm(INT8U pwm_value, INT8U motor_number) {
+	INT8U instruction_data = 0x80;
+	if (motor_number == 1)
+		instruction_data = instruction_data | 0x02;
+	else if (motor_number == 2)
+		instruction_data = instruction_data | 0x03;
+	else
+		return;
+
+	sr_byte(instruction_data);
+	sr_byte(pwm_value);
+}
+
+extern INT8U receive_angle(INT8U motor_number) {
+	INT8U instruction_data = 0x00;
+	INT8U angle;
+	if (motor_number == 1)
+			instruction_data = instruction_data | 0x00;
+		else if (motor_number == 2)
+			instruction_data = instruction_data | 0x01;
+		else
+			return -1; //Temporary return if invalid motor number
+
+	sr_byte(instruction_data);
+	angle = sr_byte(0x00);	//dummy transfer to receive data;
+
+	return angle;
+}
+
 void send_str(char *buffer) { //function for sending each byte of string one by one
 	while (*buffer != 0) {
 		send_byte(*buffer);

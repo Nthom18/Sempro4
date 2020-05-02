@@ -42,6 +42,7 @@ int main(void) {
 	INT16U timer = 0;
 
 	INT8U send_data;
+	INT8U command;
 	INT8U receive_data;
 	INT8U count = 0;
 
@@ -69,44 +70,19 @@ int main(void) {
 
 
 		if (uart0_rx_rdy()) {
-			send_data = uart0_getc() - 48;
+			command = uart0_getc() - 48;
 
-			//Send test
-			//send_byte(send_data);
-			//send_byte(count);
-			//count++;
-			//uart0_putc('\n');
+			if (command == 1) {receive_data = receive_angle(1);}
+			else if (command == 2) {receive_data = receive_angle(2);}
+			else if (command == 3) {send_pwm(128, 1);}
+			else if (command == 4) {send_pwm(128, 2);}
 
-			//Receive test
-			receive_data = sr_byte(send_data) + 48;
 			uart0_putc('\n');
 			uart0_putca(">> ");
-			uart0_putc(receive_data);
+			if (command == 1 || command == 2)
+				uart0_putc(receive_data);
 			uart0_putc('\n');
 		}
-//		timer++;
-//		if (timer == 1000) {
-//
-//			//Set LED
-//			GPIO_PORTF_DATA_R ^= 0x08;
-//
-//			//timer = 0;
-//			send_byte(0b10101010);
-//			//send_str("Test");
-//
-//			//Clear LED
-//			//GPIO_PORTF_DATA_R &= 0x00;
-//		}
-//		else if (timer >= 2000) {
-//
-//			//Set LED
-//			GPIO_PORTF_DATA_R ^= 0x08;
-//
-//			send_byte(0b01010101);
-//
-//			timer = 0;
-//		}
-
 	}
 	return (0);
 }

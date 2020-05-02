@@ -36,15 +36,17 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity PWM_Module is
     generic (N: natural := 8; --Should be chosen to fit the applicaiton (have chosen 8 bits because this is the number of bits pr data transfer, fix if nessesary)
-             MAX: natural := 256); --Should be chosen to fit the application
+             MAX: natural := 128); --Should be chosen to fit the application
     Port ( Clk :   in STD_LOGIC;
            PCM :   in STD_LOGIC_VECTOR (N-1 downto 0);
-           PWM :   out STD_LOGIC);
+           PWM_pos :   out STD_LOGIC;
+           PWM_neg :   out STD_LOGIC);
 end PWM_Module;
 
 architecture Behavioral of PWM_Module is
     signal PWM_Count:  STD_LOGIC_VECTOR (N-1 downto 0) := (others=> '0');
     signal Scaled_clk: STD_LOGIC;
+    signal PWM : STD_LOGIC;
 begin
 
     process(Clk)
@@ -62,8 +64,8 @@ begin
         end if;   
     end if;
    end process;
-
-   PWM_Generator: process( Clk, PWM_Count, PCM)
+    
+   PWM_Generator: process( Clk, PCM)
     begin
       if rising_edge(Clk) then
           if Scaled_Clk='1' then
@@ -74,12 +76,25 @@ begin
                 end if; 
             end if;
      end if;
-    if PWM_Count < PCM then
+    if PWM_Count < (PCM and "01111111") then
             PWM <= '1';
         else
             PWM <= '0';
         end if; 
     
+    end process;
+    
+    process (Clk)
+    begin
+        if Rising_edge(clk) then
+            if PCM(7) = '0' then
+                PWM_pos <= PWM;
+                PWM_neg <= '0';
+            else
+                PWM_neg <= PWM;
+                PWM_pos <= '0';
+            end if;
+        end if;
     end process;
     
 end Behavioral;

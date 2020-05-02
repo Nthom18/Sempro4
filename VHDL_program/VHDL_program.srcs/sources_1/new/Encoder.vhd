@@ -40,16 +40,17 @@ entity Encoder is
   Port (Clk: in STD_LOGIC;
         A: in STD_LOGIC;
         B: in STD_LOGIC;
-        angle: out STD_LOGIC_VECTOR(15 downto 0);
+        RESET_COUNT : in STD_LOGIC;
+        angle: out STD_LOGIC_VECTOR(7 downto 0);
         leds: out STD_LOGIC_VECTOR (14 downto 0));
 end Encoder;
 
 architecture Behavioral of Encoder is
-
+    signal false_boi : std_logic := '0';
 begin
-process(Clk, A, B)
+process(Clk, A, B, RESET_COUNT)
     variable ABab: std_logic_vector(3 downto 0) := "0000"; 
-    variable counter: integer range -32678 to 32677 := 0;  --Should be chosen to fit the application, 
+    variable counter: integer range -128 to 127 := 0;  --Should be chosen to fit the application, 
     variable reset: boolean := true; --Reset false means that this has already been registered as a switch
 begin
     if rising_edge(Clk) then
@@ -66,7 +67,7 @@ begin
             reset := true; 
         end if;
 
-        angle <= conv_std_logic_vector(counter, 16);
+        angle <= conv_std_logic_vector(counter, 8);
         
         --just for display purposes
         if counter = 0 then
@@ -82,6 +83,11 @@ begin
         else
             leds(3 downto 0) <= "1111";
         end if;
+    end if;
+    
+    -- Reset counter if transfer is ongoing
+    if RESET_COUNT = '0' then
+        counter := 0;
     end if;
 end process;
 end Behavioral;

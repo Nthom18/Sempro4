@@ -61,6 +61,20 @@ extern INT8U sr_byte(INT8U);
 *   Function : Transmits/Receives byte of data via SPI. Returns when data transfer is complete.
 ******************************************************************************/
 
+extern void send_pwm(INT8U, INT8U);
+/*****************************************************************************
+*   Input    : Byte of data: 0-255, motor number (1 or 2).
+*   Output   :
+*   Function : Transmits pwm instruction
+******************************************************************************/
+
+extern INT8U receive_angle(INT8U);
+/*****************************************************************************
+*   Input    : Motor number (1 or 2).
+*   Output   :
+*   Function : Receives angular position of chosen motor.
+******************************************************************************/
+
 void send_str();
 
 /****************************** End Of Module *******************************/
