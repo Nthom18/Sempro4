@@ -60,7 +60,7 @@ void driver_test_led()
 {
     static const TickType_t xDelay500ms = pdMS_TO_TICKS( 500 );
     BaseType_t xStatus;
-    INT8U test_data = 'r';
+    INT8U test_data = 'F';
 
     while(1)
     {

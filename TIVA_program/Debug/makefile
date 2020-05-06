@@ -22,6 +22,10 @@ ORDERED_OBJS += \
 "./task_manager.o" \
 "./tasks.o" \
 "./uart0.o" \
+"./frt10/src/croutine.o" \
+"./frt10/src/event_groups.o" \
+"./frt10/src/stream_buffer.o" \
+"./frt10/src/timers.o" \
 -Wl,-T"../tm4c123gh6pm.lds" \
 $(GEN_CMDS__FLAG) \
 
@@ -33,7 +37,9 @@ RMDIR := RMDIR /S/Q
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include subdir_vars.mk
+-include frt10/src/subdir_vars.mk
 -include subdir_rules.mk
+-include frt10/src/subdir_rules.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -164,8 +170,8 @@ Tiva_program.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "gpio.o" "heap_2.o" "list.o" "main.o" "port.o" "queue.o" "spi.o" "startup_frt.o" "systick_frt.o" "task_manager.o" "tasks.o" "uart0.o" 
-	-$(RM) "gpio.d" "heap_2.d" "list.d" "main.d" "port.d" "queue.d" "spi.d" "startup_frt.d" "systick_frt.d" "task_manager.d" "tasks.d" "uart0.d" 
+	-$(RM) "gpio.o" "heap_2.o" "list.o" "main.o" "port.o" "queue.o" "spi.o" "startup_frt.o" "systick_frt.o" "task_manager.o" "tasks.o" "uart0.o" "frt10\src\croutine.o" "frt10\src\event_groups.o" "frt10\src\stream_buffer.o" "frt10\src\timers.o" 
+	-$(RM) "gpio.d" "heap_2.d" "list.d" "main.d" "port.d" "queue.d" "spi.d" "startup_frt.d" "systick_frt.d" "task_manager.d" "tasks.d" "uart0.d" "frt10\src\croutine.d" "frt10\src\event_groups.d" "frt10\src\stream_buffer.d" "frt10\src\timers.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 
