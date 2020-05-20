@@ -60,14 +60,14 @@ void driver_test_led()
 {
     static const TickType_t xDelay500ms = pdMS_TO_TICKS( 500 );
     BaseType_t xStatus;
-    INT8U test_data = 'V';
+    //INT8U test_data = 'V';
 
     while(1)
     {
 
         GPIO_PORTF_DATA_R ^= (0x02); //Clears LED on tiva//red/turns on RED LED on green board
 
-        xStatus = xQueueSendToBack( uart0Queue, &test_data, 0);
+        //xStatus = xQueueSendToBack( uart0Queue, &test_data, 0);
 
         vTaskDelay( xDelay500ms );
 
@@ -89,14 +89,14 @@ void task_manager()
                  "SPI",
                  configMINIMAL_STACK_SIZE,
                  NULL,
-                 2,
+                 3,
                  NULL);
 
     xTaskCreate( uart0_task,
                  "Uart0",
-                 configMINIMAL_STACK_SIZE,
+                 256,//configMINIMAL_STACK_SIZE,
                  NULL,
-                 1,
+                 2,
                  NULL);
 
     xTaskCreate( driver_test_led,

@@ -194,7 +194,7 @@ void uart0_task()
         uart0_putc(receivedValue);
 
 
-        vTaskDelay( xDelay100ms );
+        //vTaskDelay( xDelay100ms );
     }
 }
 
