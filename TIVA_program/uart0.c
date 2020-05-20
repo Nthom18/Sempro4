@@ -180,7 +180,7 @@ void uart0_task()
 {
     //static const TickType_t xDelay1ms = pdMS_TO_TICKS( 1 );
     //Test
-    static const TickType_t xDelay500ms = pdMS_TO_TICKS( 500 );
+    static const TickType_t xDelay100ms = pdMS_TO_TICKS( 100 );
 
     INT8U receivedValue;
     BaseType_t xStatus;
@@ -192,6 +192,9 @@ void uart0_task()
 
         //Send received value via. uart0
         uart0_putc(receivedValue);
+
+
+        vTaskDelay( xDelay100ms );
     }
 }
 

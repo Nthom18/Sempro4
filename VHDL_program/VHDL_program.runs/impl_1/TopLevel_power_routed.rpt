@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Sat May  2 16:26:32 2020
-| Host             : LAPTOP-G803TVCQ running 64-bit major release  (build 9200)
+| Date             : Tue May 12 11:31:57 2020
+| Host             : DESKTOP-CI69V0G running 64-bit major release  (build 9200)
 | Command          : report_power -file TopLevel_power_routed.rpt -pb TopLevel_power_summary_routed.pb -rpx TopLevel_power_routed.rpx
 | Design           : TopLevel
 | Device           : xc7a35tcpg236-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.247        |
+| Total On-Chip Power (W)  | 2.256        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.169        |
+| Dynamic (W)              | 2.178        |
 | Device Static (W)        | 0.077        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 73.8         |
-| Junction Temperature (C) | 36.2         |
+| Max Ambient (C)          | 73.7         |
+| Junction Temperature (C) | 36.3         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.914 |      532 |       --- |             --- |
-|   LUT as Logic |     0.690 |      197 |     20800 |            0.95 |
-|   CARRY4       |     0.148 |       40 |      8150 |            0.49 |
-|   Register     |     0.063 |      223 |     41600 |            0.54 |
+| Slice Logic    |     1.035 |      462 |       --- |             --- |
+|   LUT as Logic |     0.827 |      161 |     20800 |            0.77 |
+|   CARRY4       |     0.126 |       36 |      8150 |            0.44 |
+|   Register     |     0.070 |      195 |     41600 |            0.47 |
 |   BUFG         |     0.012 |        3 |        32 |            9.38 |
-|   Others       |     0.000 |       17 |       --- |             --- |
-| Signals        |     0.827 |      345 |       --- |             --- |
-| I/O            |     0.428 |       33 |       106 |           31.13 |
+|   Others       |     0.000 |       15 |       --- |             --- |
+| Signals        |     0.715 |      288 |       --- |             --- |
+| I/O            |     0.428 |       31 |       106 |           29.25 |
 | Static Power   |     0.077 |          |           |                 |
-| Total          |     2.247 |          |           |                 |
+| Total          |     2.256 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     1.780 |       1.766 |      0.014 |
+| Vccint    |       1.000 |     1.781 |       1.767 |      0.014 |
 | Vccaux    |       1.800 |     0.028 |       0.015 |      0.013 |
-| Vcco33    |       3.300 |     0.115 |       0.114 |      0.001 |
+| Vcco33    |       3.300 |     0.118 |       0.117 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -138,13 +138,12 @@ Table of Contents
 +-----------------------+-----------+
 | Name                  | Power (W) |
 +-----------------------+-----------+
-| TopLevel              |     2.169 |
-|   Hardware_Control_1  |     0.259 |
-|   Hardware_Control_2  |     0.230 |
-|   Hardware_Feedback_1 |     0.359 |
-|   Hardware_Feedback_2 |     0.332 |
-|   InterfaceTiva1      |     0.401 |
-|   InterfaceTiva2      |     0.074 |
+| TopLevel              |     2.178 |
+|   Hardware_Control_1  |     0.242 |
+|   Hardware_Control_2  |     0.236 |
+|   Hardware_Feedback_1 |     0.336 |
+|   InterfaceTiva1      |     0.865 |
+|   InterfaceTiva2      |     0.004 |
 +-----------------------+-----------+
 
 

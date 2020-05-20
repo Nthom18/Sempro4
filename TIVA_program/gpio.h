@@ -1,12 +1,11 @@
 /*****************************************************************************
 * University of Southern Denmark
-* Embedded C Programming (ECP)
 *
 * MODULENAME.: gpio.h
 *
-* PROJECT....: ECP
+* PROJECT....: Semester project F20
 *
-* DESCRIPTION: Test.
+* DESCRIPTION: Setup of GPIO.
 *
 * Change Log:
 ******************************************************************************

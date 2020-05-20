@@ -98,7 +98,11 @@ architecture Behavioral of TopLevel is
               busy : out std_logic);
     end component;
 
-    signal data_send : STD_LOGIC_VECTOR (15 downto 0); -- := "10110100"; --should be set to be output from encoder (perhaps)
+    signal data_send : STD_LOGIC_VECTOR (15 downto 0) := (others => '0');--; -- := "10110100"; --should be set to be output from encoder (perhaps)
+   
+   --test
+    signal data_send2 : STD_LOGIC_VECTOR (15 downto 0) := "1011010010110100"; --should be set to be output from encoder (perhaps)
+   --test end
    
     signal busy_MISO : std_logic;
     signal data_receive : STD_LOGIC_VECTOR (15 downto 0);
@@ -108,8 +112,8 @@ architecture Behavioral of TopLevel is
         
     --Variable registers 
     --shared variable 
-    signal AngleMotor1: std_logic_vector(7 downto 0) := (others => '0');    
-    signal AngleMotor2: std_logic_vector(7 downto 0) := (others => '0');
+    signal AngleMotor1: std_logic_vector(7 downto 0) := "01100101"; --(others => '0');    
+    signal AngleMotor2: std_logic_vector(7 downto 0) := "01100101"; --(others => '0');
     signal RESET_ANGLE1 : std_logic := '0';
     signal RESET_ANGLE2 : std_logic := '0';
     signal VelocityMotor1: std_logic_vector(15 downto 0) := (others => '0');
@@ -133,10 +137,10 @@ begin
     Hardware_Control_2: PWM_Module PORT MAP(Clk => clk, PCM => PWMMotor2, PWM_pos => JC(2), PWM_neg => JC(1));
     
     --Use signals from motor 2 in this
-    Hardware_Feedback_1: Encoder PORT MAP(Clk => clk, A => JB(6), B => JB(2), RESET_COUNT => ready, angle => AngleMotor1, leds => Leds_temp2);
+    Hardware_Feedback_1: Encoder PORT MAP(Clk => clk, A => JB(4), B => JB(5), RESET_COUNT => ready, angle => AngleMotor1, leds => Leds_temp2); --(Clk => clk, A => JB(6), B => JB(2), RESET_COUNT => ready, angle => AngleMotor1, leds => Leds_temp2);
     
     --Use signals from motor 2 in this
-    Hardware_Feedback_2: Encoder PORT MAP(Clk => clk, A => JB(7), B => JB(3), RESET_COUNT => ready, angle => AngleMotor2, leds => Leds_temp);
+    Hardware_Feedback_2: Encoder PORT MAP(Clk => clk, A => JB(4), B => JB(5), RESET_COUNT => ready, angle => AngleMotor2, leds => Leds_temp); --(Clk => clk, A => JB(7), B => JB(3), RESET_COUNT => ready, angle => AngleMotor2, leds => Leds_temp);
 
     Interface_Analysis : SPI_Analysis
     port map (Clk => clk,
@@ -159,7 +163,7 @@ begin
     InterfaceTiva2 : SPI_MISO   --Out
     port map (sck  => JA(0),
               ss   => JA(1),
-              data => data_send,
+              data => data_send,---2,  --              data => data_send,  --
               miso => JA3,
               busy => busy_MISO);
               

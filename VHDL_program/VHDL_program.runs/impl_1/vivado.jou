@@ -2,11 +2,11 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Sat May  2 16:25:08 2020
-# Process ID: 9832
-# Current directory: C:/Users/sunes/VHDL_program/VHDL_program.runs/impl_1
+# Start of session at: Tue May 12 11:32:15 2020
+# Process ID: 43532
+# Current directory: C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.runs/impl_1
 # Command line: vivado.exe -log TopLevel.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TopLevel.tcl -notrace
-# Log file: C:/Users/sunes/VHDL_program/VHDL_program.runs/impl_1/TopLevel.vdi
-# Journal file: C:/Users/sunes/VHDL_program/VHDL_program.runs/impl_1\vivado.jou
+# Log file: C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.runs/impl_1/TopLevel.vdi
+# Journal file: C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source TopLevel.tcl -notrace

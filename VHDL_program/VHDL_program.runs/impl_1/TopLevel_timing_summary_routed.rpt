@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sat May  2 16:26:32 2020
-| Host         : LAPTOP-G803TVCQ running 64-bit major release  (build 9200)
+| Date         : Tue May 12 11:31:57 2020
+| Host         : DESKTOP-CI69V0G running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file TopLevel_timing_summary_routed.rpt -pb TopLevel_timing_summary_routed.pb -rpx TopLevel_timing_summary_routed.rpx -warn_on_violation
 | Design       : TopLevel
 | Device       : 7a35t-cpg236
@@ -54,11 +54,11 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 80 register/latch pins with no clock driven by root clock pin: JA[0] (HIGH)
+ There are 79 register/latch pins with no clock driven by root clock pin: JA[0] (HIGH)
 
- There are 17 register/latch pins with no clock driven by root clock pin: JA[1] (HIGH)
+ There are 9 register/latch pins with no clock driven by root clock pin: JA[1] (HIGH)
 
- There are 110 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+ There are 91 register/latch pins with no clock driven by root clock pin: clk (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: Hardware_Feedback_1/angle_reg[0]/Q (HIGH)
 
@@ -76,22 +76,6 @@ Table of Contents
 
  There is 1 register/latch pin with no clock driven by root clock pin: Hardware_Feedback_1/angle_reg[7]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: Hardware_Feedback_2/angle_reg[0]/Q (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: Hardware_Feedback_2/angle_reg[1]/Q (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: Hardware_Feedback_2/angle_reg[2]/Q (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: Hardware_Feedback_2/angle_reg[3]/Q (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: Hardware_Feedback_2/angle_reg[4]/Q (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: Hardware_Feedback_2/angle_reg[5]/Q (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: Hardware_Feedback_2/angle_reg[6]/Q (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: Hardware_Feedback_2/angle_reg[7]/Q (HIGH)
-
  There are 16 register/latch pins with no clock driven by root clock pin: InterfaceTiva1/index_reg[31]/Q (HIGH)
 
 
@@ -107,14 +91,14 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 447 pins that are not constrained for maximum delay. (HIGH)
+ There are 401 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
 
 5. checking no_input_delay
 --------------------------
- There are 6 input ports with no input delay specified. (HIGH)
+ There are 4 input ports with no input delay specified. (HIGH)
 
  There are 0 input ports with no input delay but user has a false path constraint.
 

@@ -1,10 +1,9 @@
 /*****************************************************************************
 * University of Southern Denmark
-* Embedded Programming (EMP)
 *
 * MODULENAME.: gpio.c
 *
-* PROJECT....: EMP
+* PROJECT....: Semester project F20
 *
 * DESCRIPTION: See module specification file (.h-file).
 *
@@ -34,13 +33,13 @@ void init_gpio(void)
 /*****************************************************************************
 *   Input    :
 *   Output   :
-*   Function : The super loop.
+*   Function : GPIO setup.
 ******************************************************************************/
 {
   int dummy;
 
   // Enable the GPIO port that is used for the on-board LED.
-  SYSCTL_RCGC2_R = SYSCTL_RCGC2_GPIOA | SYSCTL_RCGC2_GPIOF | SYSCTL_RCGC2_GPIOD | SYSCTL_RCGC2_GPIOC; //Added the last bit "| SYSCTL_RCGC2_GPIOC" because oscar did
+  SYSCTL_RCGC2_R = SYSCTL_RCGC2_GPIOA | SYSCTL_RCGC2_GPIOF | SYSCTL_RCGC2_GPIOD | SYSCTL_RCGC2_GPIOC;
 
   // Do a dummy read to insert a few cycles after enabling the peripheral.
   dummy = SYSCTL_RCGC2_R;

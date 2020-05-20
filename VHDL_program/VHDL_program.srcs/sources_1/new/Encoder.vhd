@@ -48,7 +48,7 @@ end Encoder;
 architecture Behavioral of Encoder is
     signal false_boi : std_logic := '0';
 begin
-process(Clk, A, B, RESET_COUNT)
+process(Clk, A, B)--, RESET_COUNT)
     variable ABab: std_logic_vector(3 downto 0) := "0000"; 
     variable counter: integer range -128 to 127 := 0;  --Should be chosen to fit the application, 
     variable reset: boolean := true; --Reset false means that this has already been registered as a switch
@@ -86,8 +86,8 @@ begin
     end if;
     
     -- Reset counter if transfer is ongoing
-    if RESET_COUNT = '0' then
-        counter := 0;
-    end if;
+--    if RESET_COUNT = '0' then
+--        counter := 0;
+--    end if;
 end process;
 end Behavioral;

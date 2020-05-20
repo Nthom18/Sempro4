@@ -47,8 +47,8 @@ QueueHandle_t placementFrame2Queue;
 
 
 //PWM Motor 1 register
-INT8U pwm_motor1 = 0;
-INT8U pwm_motor2 = 0;
+INT8U pwm_motor1 = 'a';    //0;
+INT8U pwm_motor2 = 'b';    //0;
 
 /*****************************   Functions   *******************************/
 
@@ -60,7 +60,7 @@ void driver_test_led()
 {
     static const TickType_t xDelay500ms = pdMS_TO_TICKS( 500 );
     BaseType_t xStatus;
-    INT8U test_data = 'F';
+    INT8U test_data = 'V';
 
     while(1)
     {
@@ -80,7 +80,7 @@ void task_manager()
 *****************************************************************************/
 {
 
-    uart0Queue = xQueueCreate(16, sizeof(INT8U));
+    uart0Queue = xQueueCreate(48, sizeof(INT8U));
     placementFrame1Queue = xQueueCreate(16, sizeof(INT8U));
     placementFrame2Queue = xQueueCreate(16, sizeof(INT8U));
 
@@ -89,7 +89,7 @@ void task_manager()
                  "SPI",
                  configMINIMAL_STACK_SIZE,
                  NULL,
-                 1,
+                 2,
                  NULL);
 
     xTaskCreate( uart0_task,

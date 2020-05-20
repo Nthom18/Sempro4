@@ -9,6 +9,7 @@ LDS_SRCS += \
 ../tm4c123gh6pm.lds 
 
 C_SRCS += \
+../controller.c \
 ../gpio.c \
 ../heap_2.c \
 ../list.c \
@@ -23,6 +24,7 @@ C_SRCS += \
 ../uart0.c 
 
 C_DEPS += \
+./controller.d \
 ./gpio.d \
 ./heap_2.d \
 ./list.d \
@@ -37,6 +39,7 @@ C_DEPS += \
 ./uart0.d 
 
 OBJS += \
+./controller.o \
 ./gpio.o \
 ./heap_2.o \
 ./list.o \
@@ -51,6 +54,7 @@ OBJS += \
 ./uart0.o 
 
 OBJS__QUOTED += \
+"controller.o" \
 "gpio.o" \
 "heap_2.o" \
 "list.o" \
@@ -65,6 +69,7 @@ OBJS__QUOTED += \
 "uart0.o" 
 
 C_DEPS__QUOTED += \
+"controller.d" \
 "gpio.d" \
 "heap_2.d" \
 "list.d" \
@@ -79,6 +84,7 @@ C_DEPS__QUOTED += \
 "uart0.d" 
 
 C_SRCS__QUOTED += \
+"../controller.c" \
 "../gpio.c" \
 "../heap_2.c" \
 "../list.c" \

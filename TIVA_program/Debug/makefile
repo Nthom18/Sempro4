@@ -4,12 +4,13 @@
 
 SHELL = cmd.exe
 
-CG_TOOL_ROOT := C:/Programmer_P/CodeComposer/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32
+CG_TOOL_ROOT := C:/Programmer_P/CCS8/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32
 
 GEN_OPTS__FLAG := 
 GEN_CMDS__FLAG := 
 
 ORDERED_OBJS += \
+"./controller.o" \
 "./gpio.o" \
 "./heap_2.o" \
 "./list.o" \
@@ -156,22 +157,22 @@ all: $(OBJS) $(LDS_SRCS) $(GEN_CMDS)
 Tiva_program.out: $(OBJS) $(LDS_SRCS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: GNU Linker'
-	"C:/Programmer_P/CodeComposer/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -DPART_TM4C123GH6PM -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -Wl,-Map,"Tiva_program.map" -o"Tiva_program.out" $(ORDERED_OBJS)
+	"C:/Programmer_P/CCS8/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -DPART_TM4C123GH6PM -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -Wl,-Map,"Tiva_program.map" -o"Tiva_program.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
 Tiva_program.hex: $(EXE_OUTPUTS)
 	@echo 'Building files: $(strip $(EXE_OUTPUTS__QUOTED))'
 	@echo 'Invoking: GNU Objcopy Utility'
-	"C:/Programmer_P/CodeComposer/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-objcopy.exe"  $(EXE_OUTPUTS__QUOTED) "Tiva_program.hex"
+	"C:/Programmer_P/CCS8/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-objcopy.exe"  $(EXE_OUTPUTS__QUOTED) "Tiva_program.hex"
 	@echo 'Finished building: $(strip $(EXE_OUTPUTS__QUOTED))'
 	@echo ' '
 
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "gpio.o" "heap_2.o" "list.o" "main.o" "port.o" "queue.o" "spi.o" "startup_frt.o" "systick_frt.o" "task_manager.o" "tasks.o" "uart0.o" "frt10\src\croutine.o" "frt10\src\event_groups.o" "frt10\src\stream_buffer.o" "frt10\src\timers.o" 
-	-$(RM) "gpio.d" "heap_2.d" "list.d" "main.d" "port.d" "queue.d" "spi.d" "startup_frt.d" "systick_frt.d" "task_manager.d" "tasks.d" "uart0.d" "frt10\src\croutine.d" "frt10\src\event_groups.d" "frt10\src\stream_buffer.d" "frt10\src\timers.d" 
+	-$(RM) "controller.o" "gpio.o" "heap_2.o" "list.o" "main.o" "port.o" "queue.o" "spi.o" "startup_frt.o" "systick_frt.o" "task_manager.o" "tasks.o" "uart0.o" "frt10\src\croutine.o" "frt10\src\event_groups.o" "frt10\src\stream_buffer.o" "frt10\src\timers.o" 
+	-$(RM) "controller.d" "gpio.d" "heap_2.d" "list.d" "main.d" "port.d" "queue.d" "spi.d" "startup_frt.d" "systick_frt.d" "task_manager.d" "tasks.d" "uart0.d" "frt10\src\croutine.d" "frt10\src\event_groups.d" "frt10\src\stream_buffer.d" "frt10\src\timers.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 
