@@ -109,13 +109,19 @@ architecture Behavioral of TopLevel is
     signal ready : STD_LOGIC;
     signal busy : STD_LOGIC;    
         
+    
+    --????
+    signal EN_A : STD_LOGIC;
+    signal EN_B : STD_LOGIC;
+    ---???
+    
         
     --Variable registers 
     --shared variable 
     signal AngleMotor1: std_logic_vector(7 downto 0) := "01100101"; --(others => '0');    
     signal AngleMotor2: std_logic_vector(7 downto 0) := "01100101"; --(others => '0');
-    signal RESET_ANGLE1 : std_logic := '0';
-    signal RESET_ANGLE2 : std_logic := '0';
+    signal RESET_ANGLE1 : std_logic := EN_A;-- '0';
+    signal RESET_ANGLE2 : std_logic := EN_B; ---'0';
     signal VelocityMotor1: std_logic_vector(15 downto 0) := (others => '0');
     signal VelocityMotor2: std_logic_vector(15 downto 0) := (others => '0');
     signal PWMMotor1: std_logic_vector(7 downto 0) := (others => '0');
@@ -129,8 +135,8 @@ architecture Behavioral of TopLevel is
     
 begin 
     -- EN_A and EN_B signals. These allow the PWM signals to control the motors. Perhaps not always on.
-    JC(0) <= '1'; -- EN_A
-    JC(4) <= '1'; -- EN_B
+    JC(0) <= '1';--EN_A; -- EN_A  -- '1';
+    JC(4) <= '1'; --EN_B; -- EN_B  -- '1'; 
     
     Hardware_Control_1: PWM_Module PORT MAP(Clk => clk, PCM => PWMMotor1, PWM_pos => JC(6), PWM_neg => JC(5));
     

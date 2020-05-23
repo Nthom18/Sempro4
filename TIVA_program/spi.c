@@ -45,8 +45,8 @@ extern QueueHandle_t uart0Queue;
 //End test
 
 //PWM Motor registers
-extern INT8U pwm_motor1;
-extern INT8U pwm_motor2;
+extern INT8U pwm_pan;
+extern INT8U pwm_tilt;
 /*****************************   Functions   *******************************/
 
 
@@ -208,45 +208,42 @@ void spi_task()
 
 
         //Following function to transmit PWM signals and receive placement of M1 and M2
-        received_data = FPGA_update(pwm_motor1, pwm_motor2);
+        received_data = FPGA_update(pwm_pan, pwm_tilt);
+
+
 
         //test
         //received_data = '9U';
 
         //if(received_data != 0){
             //received_data_frame1 = ((received_data & 0xFF00) >> 8)+ '0';
-            received_data_frame2 = (received_data & 0xFF) + '0';
-            xStatus = xQueueSendToBack( uart0Queue, &received_data_frame2, 0);
+//            received_data_frame2 = (received_data & 0xFF) + '0';
+//            xStatus = xQueueSendToBack( uart0Queue, &received_data_frame2, 0);
         //}
         //end test
 
 
 
-//        received_data_frame1 = ((received_data & 0xFF00) >> 8);
-//        received_data_frame2 = (received_data & 0xFF);
+        received_data_frame1 = ((received_data & 0xFF00) >> 8);
+        received_data_frame2 = (received_data & 0xFF);
 
         //Store samples from frame 1 and 2 in respective queues,
-//        xStatus = xQueueSendToBack( placementFrame1Queue, &received_data_frame1, 0);
-//        xStatus = xQueueSendToBack( placementFrame2Queue, &received_data_frame2, 0);
+        xStatus = xQueueSendToBack( placementFrame1Queue, &received_data_frame1, 0);
+        xStatus = xQueueSendToBack( placementFrame2Queue, &received_data_frame2, 0);
 
-        //Test code
-        //xStatus = xQueueSendToBack( uart0Queue, &received_data_frame1, 0);
-//        xStatus = xQueueSendToBack( uart0Queue, &received_data_frame2, 0);
+
+        //Test code / send data via uart,
+        xStatus = xQueueSendToBack( uart0Queue, &received_data_frame1, 0);
+        xStatus = xQueueSendToBack( uart0Queue, &received_data_frame2, 0);
         //end test
 
 
         //test
-        received_data = 0;
+        //received_data = 0;
         //end test
-
-        //Insert code to be executed, when done proceed to the last statement statement,
 
 
         vTaskDelayUntil( &xLastWakeTime, pdMS_TO_TICKS(100) );
-
-        //Test
-        //vTaskDelay( xDelay100ms );
-        //End test
     }
 
 

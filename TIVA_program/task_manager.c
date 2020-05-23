@@ -32,6 +32,7 @@
 #include "uart0.h"
 #include "spi.h"
 #include "glob_def.h"
+#include "controller.h"
 
 
 /*****************************    Defines    *******************************/
@@ -47,8 +48,8 @@ QueueHandle_t placementFrame2Queue;
 
 
 //PWM Motor 1 register
-INT8U pwm_motor1 = 'a';    //0;
-INT8U pwm_motor2 = 'b';    //0;
+INT8U pwm_pan = 'a';    //0;
+INT8U pwm_tilt = 'b';    //0;
 
 /*****************************   Functions   *******************************/
 
@@ -105,6 +106,22 @@ void task_manager()
                  NULL,
                  1,
                  NULL);
+
+    xTaskCreate( pid_controller_tilt,
+                 "tilt",
+                 configMINIMAL_STACK_SIZE,
+                 NULL,
+                 1,
+                 NULL);
+
+    xTaskCreate( pid_controller_pan,
+                 "Pan",
+                 configMINIMAL_STACK_SIZE,
+                 NULL,
+                 1,
+                 NULL);
+
+
 
     vTaskStartScheduler();
 

@@ -60,7 +60,7 @@ INT32U lcrh_stopbits(INT8U antal_stopbits)
  *   Input    :
  *   Output   :
  *   Function : sets bit 3 according to the wanted number of stop bits.
- *   		    1 stpobit:  bit3 = 0 (default).
+ *   		    1 stopbit:  bit3 = 0 (default).
  *   		    2 stopbits: bit3 = 1.
  *   		   all other bits are returned = 0
  ******************************************************************************/
@@ -191,7 +191,7 @@ void uart0_task()
         xStatus = xQueueReceive( uart0Queue, &receivedValue,  portMAX_DELAY );
 
         //Send received value via. uart0
-        uart0_putc(receivedValue);
+        uart0_putc(receivedValue + '0');  //Add '0' is used to convert from hex to char,
 
 
         //vTaskDelay( xDelay100ms );

@@ -13,7 +13,7 @@ task_manager.o: ../task_manager.c \
  C:/Users/frida/Documents/4_semester/Projekt/Sempro4/TIVA_program/frt10/inc/list.h \
  C:/Users/frida/Documents/4_semester/Projekt/Sempro4/TIVA_program/frt10/inc/queue.h \
  C:/Users/frida/Documents/4_semester/Projekt/Sempro4/TIVA_program/frt10/inc/task.h \
- ../uart0.h ../spi.h ../glob_def.h
+ ../uart0.h ../spi.h ../glob_def.h ../controller.h
 
 C:/Users/frida/Documents/4_semester/Projekt/Sempro4/TIVA_program/includes/tm4c123gh6pm.h:
 
@@ -48,3 +48,5 @@ C:/Users/frida/Documents/4_semester/Projekt/Sempro4/TIVA_program/frt10/inc/task.
 ../spi.h:
 
 ../glob_def.h:
+
+../controller.h:

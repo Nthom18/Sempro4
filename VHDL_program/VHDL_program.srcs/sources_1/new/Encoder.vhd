@@ -85,6 +85,7 @@ begin
         end if;
     end if;
     
+    --HERE!
     -- Reset counter if transfer is ongoing
 --    if RESET_COUNT = '0' then
 --        counter := 0;

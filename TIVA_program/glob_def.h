@@ -37,6 +37,7 @@
 #define OFF     0
 #define ONEMINUTE 12000
 #define ONESECOND 200
+#define PI      3.141592
 
 #define DONE    2
 
