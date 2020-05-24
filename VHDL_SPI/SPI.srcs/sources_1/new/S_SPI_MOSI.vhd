@@ -3,7 +3,7 @@ USE IEEE.STD_LOGIC_1164.ALL;
 
 
 ENTITY S_SPI_MOSI IS
-    GENERIC(data_length : INTEGER := 8);
+    GENERIC(data_length : INTEGER := 16);
     PORT(sck   : IN STD_LOGIC;
          ss    : IN STD_LOGIC;
          mosi  : IN STD_LOGIC;

@@ -22,17 +22,17 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/dotte/Documents/Sempro4/VHDL_SPI/SPI.cache/wt [current_project]
-set_property parent.project_path C:/Users/dotte/Documents/Sempro4/VHDL_SPI/SPI.xpr [current_project]
+set_property webtalk.parent_dir {C:/Users/chris/Desktop/UNI/4 Semester/PRO4/Sempro4/VHDL_SPI/SPI.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/chris/Desktop/UNI/4 Semester/PRO4/Sempro4/VHDL_SPI/SPI.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/dotte/Documents/Sempro4/VHDL_SPI/SPI.cache/ip [current_project]
+set_property ip_output_repo {c:/Users/chris/Desktop/UNI/4 Semester/PRO4/Sempro4/VHDL_SPI/SPI.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  C:/Users/dotte/Documents/Sempro4/VHDL_SPI/SPI.srcs/sources_1/new/S_SPI_MISO.vhd
-  C:/Users/dotte/Documents/Sempro4/VHDL_SPI/SPI.srcs/sources_1/new/S_SPI_MOSI.vhd
-  C:/Users/dotte/Documents/Sempro4/VHDL_SPI/SPI.srcs/sources_1/new/S_SPI_TOPMODULE.vhd
-  C:/Users/dotte/Documents/Sempro4/VHDL_SPI/SPI.srcs/sources_1/new/S_TEST.vhd
+  {C:/Users/chris/Desktop/UNI/4 Semester/PRO4/Sempro4/VHDL_SPI/SPI.srcs/sources_1/new/S_SPI_MISO.vhd}
+  {C:/Users/chris/Desktop/UNI/4 Semester/PRO4/Sempro4/VHDL_SPI/SPI.srcs/sources_1/new/S_SPI_MOSI.vhd}
+  {C:/Users/chris/Desktop/UNI/4 Semester/PRO4/Sempro4/VHDL_SPI/SPI.srcs/sources_1/new/S_SPI_TOPMODULE.vhd}
+  {C:/Users/chris/Desktop/UNI/4 Semester/PRO4/Sempro4/VHDL_SPI/SPI.srcs/sources_1/new/S_TEST.vhd}
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -42,8 +42,8 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/dotte/Documents/Sempro4/VHDL_SPI/SPI.srcs/constrs_1/imports/SPI/Basys-3-Master_v2.xdc
-set_property used_in_implementation false [get_files C:/Users/dotte/Documents/Sempro4/VHDL_SPI/SPI.srcs/constrs_1/imports/SPI/Basys-3-Master_v2.xdc]
+read_xdc {{C:/Users/chris/Desktop/UNI/4 Semester/PRO4/Sempro4/VHDL_SPI/SPI.srcs/constrs_1/imports/SPI/Basys-3-Master_v2.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/chris/Desktop/UNI/4 Semester/PRO4/Sempro4/VHDL_SPI/SPI.srcs/constrs_1/imports/SPI/Basys-3-Master_v2.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

@@ -7,7 +7,7 @@ LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 
 ENTITY S_SPI_TOPMODULE IS
-    GENERIC(data_length : INTEGER := 8);
+    GENERIC(data_length : INTEGER := 16);
     PORT(sck : IN STD_LOGIC;
          ss : IN STD_LOGIC;
          data_receive : OUT STD_LOGIC_VECTOR (data_length-1 downto 0);

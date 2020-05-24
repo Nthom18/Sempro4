@@ -10,6 +10,7 @@ LDS_SRCS += \
 
 C_SRCS += \
 ../controller.c \
+../conversion.c \
 ../gpio.c \
 ../heap_2.c \
 ../list.c \
@@ -25,6 +26,7 @@ C_SRCS += \
 
 C_DEPS += \
 ./controller.d \
+./conversion.d \
 ./gpio.d \
 ./heap_2.d \
 ./list.d \
@@ -40,6 +42,7 @@ C_DEPS += \
 
 OBJS += \
 ./controller.o \
+./conversion.o \
 ./gpio.o \
 ./heap_2.o \
 ./list.o \
@@ -55,6 +58,7 @@ OBJS += \
 
 OBJS__QUOTED += \
 "controller.o" \
+"conversion.o" \
 "gpio.o" \
 "heap_2.o" \
 "list.o" \
@@ -70,6 +74,7 @@ OBJS__QUOTED += \
 
 C_DEPS__QUOTED += \
 "controller.d" \
+"conversion.d" \
 "gpio.d" \
 "heap_2.d" \
 "list.d" \
@@ -85,6 +90,7 @@ C_DEPS__QUOTED += \
 
 C_SRCS__QUOTED += \
 "../controller.c" \
+"../conversion.c" \
 "../gpio.c" \
 "../heap_2.c" \
 "../list.c" \

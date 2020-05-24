@@ -40,10 +40,17 @@ extern volatile INT16S ticks;
 
 int main(void) {
 
+<<<<<<< Updated upstream
 	INT8U PWM1 = 0b01000000;
 	INT8U PWM2 = 0b11000000;
 	INT16U receive_data;
 	INT8S motor1_angle, motor2_angle;
+=======
+	INT8U send_data;
+	INT8U command;
+	INT8U receive_data;
+	INT8U count = 0;
+>>>>>>> Stashed changes
 
 	//LEDS
 	SYSCTL_RCGC2_R = SYSCTL_RCGC2_GPIOF;
@@ -68,6 +75,7 @@ int main(void) {
 		ticks--;
 
 		if (uart0_rx_rdy()) {
+<<<<<<< Updated upstream
 			uart0_getc();
 
 			uart0_putc('\n');
@@ -81,6 +89,19 @@ int main(void) {
 			uart0_putc('\n');
 			uart0_putca(">> Motor2 relative angle: ");
 			uart0_putnumber_s(motor2_angle);
+=======
+			command = uart0_getc() - 48;
+
+			if (command == 1) {receive_data = receive_angle(1);}
+			else if (command == 2) {receive_data = receive_angle(2);}
+			else if (command == 3) {send_pwm(128, 1);}
+			else if (command == 4) {send_pwm(128, 2);}
+
+			uart0_putc('\n');
+			uart0_putca(">> ");
+			if (command == 1 || command == 2)
+				uart0_putc(receive_data);
+>>>>>>> Stashed changes
 			uart0_putc('\n');
 		}
 	}

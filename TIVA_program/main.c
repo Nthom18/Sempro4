@@ -11,8 +11,8 @@
 #include "uart0.h"
 
 /*****************************    Defines    *******************************/
-#define DATA_SIZE   8
-#define CLK_PSCL    1
+#define DATA_SIZE   16
+#define CLK_PSCL    2
 #define CLK_PH      0
 #define CLK_PO      0
 

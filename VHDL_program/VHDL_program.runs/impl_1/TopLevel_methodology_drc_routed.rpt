@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sat May 23 10:40:25 2020
-| Host         : DESKTOP-CI69V0G running 64-bit major release  (build 9200)
+| Date         : Sun May 24 15:29:58 2020
+| Host         : LAPTOP-G803TVCQ running 64-bit major release  (build 9200)
 | Command      : report_methodology -file TopLevel_methodology_drc_routed.rpt -pb TopLevel_methodology_drc_routed.pb -rpx TopLevel_methodology_drc_routed.rpx
 | Design       : TopLevel
 | Device       : xc7a35tcpg236-1
@@ -23,13 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 212
+             Violations found: 258
 +-----------+------------------+------------------------------+------------+
 | Rule      | Severity         | Description                  | Violations |
 +-----------+------------------+------------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell  | 170        |
-| LUTAR-1   | Warning          | LUT drives async reset alert | 17         |
-| TIMING-20 | Warning          | Non-clocked latch            | 25         |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell  | 192        |
+| LUTAR-1   | Warning          | LUT drives async reset alert | 33         |
+| TIMING-20 | Warning          | Non-clocked latch            | 33         |
 +-----------+------------------+------------------------------+------------+
 
 2. REPORT DETAILS
@@ -486,467 +486,577 @@ Related violations: <none>
 
 TIMING-17#91 Critical Warning
 Non-clocked sequential cell  
-The clock pin Hardware_Feedback_1/reset_reg/C is not reached by a timing clock
+The clock pin Hardware_Feedback_2/ABab_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#92 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/data_temp_reg[0]/C is not reached by a timing clock
+The clock pin Hardware_Feedback_2/ABab_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#93 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/data_temp_reg[10]/C is not reached by a timing clock
+The clock pin Hardware_Feedback_2/angle_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#94 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/data_temp_reg[11]/C is not reached by a timing clock
+The clock pin Hardware_Feedback_2/angle_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#95 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/data_temp_reg[12]/C is not reached by a timing clock
+The clock pin Hardware_Feedback_2/angle_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#96 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/data_temp_reg[13]/C is not reached by a timing clock
+The clock pin Hardware_Feedback_2/angle_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#97 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/data_temp_reg[14]/C is not reached by a timing clock
+The clock pin Hardware_Feedback_2/angle_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#98 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/data_temp_reg[15]/C is not reached by a timing clock
+The clock pin Hardware_Feedback_2/angle_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#99 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/data_temp_reg[1]/C is not reached by a timing clock
+The clock pin Hardware_Feedback_2/angle_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#100 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/data_temp_reg[2]/C is not reached by a timing clock
+The clock pin Hardware_Feedback_2/angle_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#101 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/data_temp_reg[3]/C is not reached by a timing clock
+The clock pin Hardware_Feedback_2/counter_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#102 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/data_temp_reg[4]/C is not reached by a timing clock
+The clock pin Hardware_Feedback_2/counter_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#103 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/data_temp_reg[5]/C is not reached by a timing clock
+The clock pin Hardware_Feedback_2/counter_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#104 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/data_temp_reg[6]/C is not reached by a timing clock
+The clock pin Hardware_Feedback_2/counter_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#105 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/data_temp_reg[7]/C is not reached by a timing clock
+The clock pin Hardware_Feedback_2/counter_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#106 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/data_temp_reg[8]/C is not reached by a timing clock
+The clock pin Hardware_Feedback_2/counter_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#107 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/data_temp_reg[9]/C is not reached by a timing clock
+The clock pin Hardware_Feedback_2/counter_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#108 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[0]/C is not reached by a timing clock
+The clock pin Hardware_Feedback_2/counter_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#109 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[10]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/data_temp_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#110 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[11]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/data_temp_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#111 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[12]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/data_temp_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#112 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[13]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/data_temp_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#113 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[14]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/data_temp_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#114 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[15]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/data_temp_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#115 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[16]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/data_temp_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#116 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[17]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/data_temp_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#117 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[18]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/data_temp_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#118 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[19]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/data_temp_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#119 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[1]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/data_temp_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#120 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[20]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/data_temp_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#121 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[21]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/data_temp_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#122 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[22]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/data_temp_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#123 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[23]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/data_temp_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#124 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[24]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/data_temp_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#125 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[25]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#126 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[26]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#127 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[27]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#128 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[28]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#129 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[29]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#130 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[2]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#131 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[30]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#132 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[31]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#133 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[3]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#134 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[4]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#135 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[5]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#136 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[6]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#137 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[7]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#138 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[8]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#139 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva1/index_reg[9]/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#140 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[0]_P/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#141 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[10]_C/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#142 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[10]_P/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#143 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[11]_C/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#144 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[11]_P/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[27]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#145 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[12]_C/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#146 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[12]_P/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[29]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#147 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[13]_C/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#148 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[13]_P/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[30]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#149 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[14]_C/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[31]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#150 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[14]_P/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#151 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[15]_C/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#152 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[15]_P/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#153 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[1]_C/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#154 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[1]_P/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#155 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[2]_C/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#156 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[2]_P/C is not reached by a timing clock
+The clock pin InterfaceTiva1/index_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#157 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[3]_C/C is not reached by a timing clock
+The clock pin InterfaceTiva2/busy_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#158 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[3]_P/C is not reached by a timing clock
+The clock pin InterfaceTiva2/data_out_reg[0]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#159 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[4]_C/C is not reached by a timing clock
+The clock pin InterfaceTiva2/data_out_reg[10]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#160 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[4]_P/C is not reached by a timing clock
+The clock pin InterfaceTiva2/data_out_reg[10]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#161 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[5]_C/C is not reached by a timing clock
+The clock pin InterfaceTiva2/data_out_reg[11]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#162 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[5]_P/C is not reached by a timing clock
+The clock pin InterfaceTiva2/data_out_reg[11]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#163 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[6]_C/C is not reached by a timing clock
+The clock pin InterfaceTiva2/data_out_reg[12]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#164 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[6]_P/C is not reached by a timing clock
+The clock pin InterfaceTiva2/data_out_reg[12]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#165 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[7]_C/C is not reached by a timing clock
+The clock pin InterfaceTiva2/data_out_reg[13]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#166 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[7]_P/C is not reached by a timing clock
+The clock pin InterfaceTiva2/data_out_reg[13]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#167 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[8]_C/C is not reached by a timing clock
+The clock pin InterfaceTiva2/data_out_reg[14]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#168 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[8]_P/C is not reached by a timing clock
+The clock pin InterfaceTiva2/data_out_reg[14]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#169 Critical Warning
 Non-clocked sequential cell  
-The clock pin InterfaceTiva2/data_out_reg[9]_C/C is not reached by a timing clock
+The clock pin InterfaceTiva2/data_out_reg[15]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#170 Critical Warning
 Non-clocked sequential cell  
+The clock pin InterfaceTiva2/data_out_reg[15]_P/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#171 Critical Warning
+Non-clocked sequential cell  
+The clock pin InterfaceTiva2/data_out_reg[1]_C/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#172 Critical Warning
+Non-clocked sequential cell  
+The clock pin InterfaceTiva2/data_out_reg[1]_P/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#173 Critical Warning
+Non-clocked sequential cell  
+The clock pin InterfaceTiva2/data_out_reg[2]_C/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#174 Critical Warning
+Non-clocked sequential cell  
+The clock pin InterfaceTiva2/data_out_reg[2]_P/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#175 Critical Warning
+Non-clocked sequential cell  
+The clock pin InterfaceTiva2/data_out_reg[3]_C/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#176 Critical Warning
+Non-clocked sequential cell  
+The clock pin InterfaceTiva2/data_out_reg[3]_P/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#177 Critical Warning
+Non-clocked sequential cell  
+The clock pin InterfaceTiva2/data_out_reg[4]_C/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#178 Critical Warning
+Non-clocked sequential cell  
+The clock pin InterfaceTiva2/data_out_reg[4]_P/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#179 Critical Warning
+Non-clocked sequential cell  
+The clock pin InterfaceTiva2/data_out_reg[5]_C/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#180 Critical Warning
+Non-clocked sequential cell  
+The clock pin InterfaceTiva2/data_out_reg[5]_P/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#181 Critical Warning
+Non-clocked sequential cell  
+The clock pin InterfaceTiva2/data_out_reg[6]_C/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#182 Critical Warning
+Non-clocked sequential cell  
+The clock pin InterfaceTiva2/data_out_reg[6]_P/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#183 Critical Warning
+Non-clocked sequential cell  
+The clock pin InterfaceTiva2/data_out_reg[7]_C/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#184 Critical Warning
+Non-clocked sequential cell  
+The clock pin InterfaceTiva2/data_out_reg[7]_P/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#185 Critical Warning
+Non-clocked sequential cell  
+The clock pin InterfaceTiva2/data_out_reg[8]_C/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#186 Critical Warning
+Non-clocked sequential cell  
+The clock pin InterfaceTiva2/data_out_reg[8]_P/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#187 Critical Warning
+Non-clocked sequential cell  
+The clock pin InterfaceTiva2/data_out_reg[9]_C/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#188 Critical Warning
+Non-clocked sequential cell  
 The clock pin InterfaceTiva2/data_out_reg[9]_P/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#189 Critical Warning
+Non-clocked sequential cell  
+The clock pin encoder_filter_1/Ax_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#190 Critical Warning
+Non-clocked sequential cell  
+The clock pin encoder_filter_1/Bx_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#191 Critical Warning
+Non-clocked sequential cell  
+The clock pin encoder_filter_2/Ax_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#192 Critical Warning
+Non-clocked sequential cell  
+The clock pin encoder_filter_2/Bx_reg/C is not reached by a timing clock
 Related violations: <none>
 
 LUTAR-1#1 Warning
 LUT drives async reset alert  
-LUT cell Hardware_Feedback_1/data_out_reg[10]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[10]_P/PRE, InterfaceTiva2/data_out_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Hardware_Feedback_1/data_out_reg[10]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[10]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#2 Warning
 LUT drives async reset alert  
-LUT cell Hardware_Feedback_1/data_out_reg[10]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[10]_C/CLR, InterfaceTiva2/data_out_reg[10]_LDC/CLR, InterfaceTiva2/data_out_reg[2]_C/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Hardware_Feedback_1/data_out_reg[10]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[10]_C/CLR, InterfaceTiva2/data_out_reg[10]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#3 Warning
 LUT drives async reset alert  
-LUT cell Hardware_Feedback_1/data_out_reg[11]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[11]_P/PRE, InterfaceTiva2/data_out_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Hardware_Feedback_1/data_out_reg[11]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[11]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#4 Warning
 LUT drives async reset alert  
-LUT cell Hardware_Feedback_1/data_out_reg[11]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[11]_C/CLR, InterfaceTiva2/data_out_reg[11]_LDC/CLR, InterfaceTiva2/data_out_reg[3]_C/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Hardware_Feedback_1/data_out_reg[11]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[11]_C/CLR, InterfaceTiva2/data_out_reg[11]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#5 Warning
 LUT drives async reset alert  
-LUT cell Hardware_Feedback_1/data_out_reg[12]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[12]_P/PRE, InterfaceTiva2/data_out_reg[4]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Hardware_Feedback_1/data_out_reg[12]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[12]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#6 Warning
 LUT drives async reset alert  
-LUT cell Hardware_Feedback_1/data_out_reg[12]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[12]_C/CLR, InterfaceTiva2/data_out_reg[12]_LDC/CLR, InterfaceTiva2/data_out_reg[4]_C/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Hardware_Feedback_1/data_out_reg[12]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[12]_C/CLR, InterfaceTiva2/data_out_reg[12]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#7 Warning
 LUT drives async reset alert  
-LUT cell Hardware_Feedback_1/data_out_reg[13]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[13]_P/PRE, InterfaceTiva2/data_out_reg[5]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Hardware_Feedback_1/data_out_reg[13]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[13]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#8 Warning
 LUT drives async reset alert  
-LUT cell Hardware_Feedback_1/data_out_reg[13]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[13]_C/CLR, InterfaceTiva2/data_out_reg[13]_LDC/CLR, InterfaceTiva2/data_out_reg[5]_C/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Hardware_Feedback_1/data_out_reg[13]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[13]_C/CLR, InterfaceTiva2/data_out_reg[13]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#9 Warning
 LUT drives async reset alert  
-LUT cell Hardware_Feedback_1/data_out_reg[14]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[14]_P/PRE, InterfaceTiva2/data_out_reg[6]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Hardware_Feedback_1/data_out_reg[14]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[14]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#10 Warning
 LUT drives async reset alert  
-LUT cell Hardware_Feedback_1/data_out_reg[14]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[14]_C/CLR, InterfaceTiva2/data_out_reg[14]_LDC/CLR, InterfaceTiva2/data_out_reg[6]_C/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Hardware_Feedback_1/data_out_reg[14]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[14]_C/CLR, InterfaceTiva2/data_out_reg[14]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#11 Warning
 LUT drives async reset alert  
-LUT cell Hardware_Feedback_1/data_out_reg[15]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[15]_P/PRE, InterfaceTiva2/data_out_reg[7]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Hardware_Feedback_1/data_out_reg[15]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[15]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#12 Warning
 LUT drives async reset alert  
-LUT cell Hardware_Feedback_1/data_out_reg[15]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[15]_C/CLR, InterfaceTiva2/data_out_reg[15]_LDC/CLR, InterfaceTiva2/data_out_reg[7]_C/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Hardware_Feedback_1/data_out_reg[15]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[15]_C/CLR, InterfaceTiva2/data_out_reg[15]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#13 Warning
 LUT drives async reset alert  
-LUT cell Hardware_Feedback_1/data_out_reg[8]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[0]_P/PRE, InterfaceTiva2/data_out_reg[8]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Hardware_Feedback_1/data_out_reg[8]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[8]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#14 Warning
@@ -956,15 +1066,95 @@ Related violations: <none>
 
 LUTAR-1#15 Warning
 LUT drives async reset alert  
-LUT cell Hardware_Feedback_1/data_out_reg[9]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[1]_P/PRE, InterfaceTiva2/data_out_reg[9]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Hardware_Feedback_1/data_out_reg[9]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[9]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#16 Warning
 LUT drives async reset alert  
-LUT cell Hardware_Feedback_1/data_out_reg[9]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[1]_C/CLR, InterfaceTiva2/data_out_reg[9]_C/CLR, InterfaceTiva2/data_out_reg[9]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell Hardware_Feedback_1/data_out_reg[9]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[9]_C/CLR, InterfaceTiva2/data_out_reg[9]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#17 Warning
+LUT drives async reset alert  
+LUT cell Hardware_Feedback_2/data_out_reg[0]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#18 Warning
+LUT drives async reset alert  
+LUT cell Hardware_Feedback_2/data_out_reg[0]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#19 Warning
+LUT drives async reset alert  
+LUT cell Hardware_Feedback_2/data_out_reg[1]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#20 Warning
+LUT drives async reset alert  
+LUT cell Hardware_Feedback_2/data_out_reg[1]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[1]_C/CLR, InterfaceTiva2/data_out_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#21 Warning
+LUT drives async reset alert  
+LUT cell Hardware_Feedback_2/data_out_reg[2]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#22 Warning
+LUT drives async reset alert  
+LUT cell Hardware_Feedback_2/data_out_reg[2]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[2]_C/CLR, InterfaceTiva2/data_out_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#23 Warning
+LUT drives async reset alert  
+LUT cell Hardware_Feedback_2/data_out_reg[3]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#24 Warning
+LUT drives async reset alert  
+LUT cell Hardware_Feedback_2/data_out_reg[3]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[3]_C/CLR, InterfaceTiva2/data_out_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#25 Warning
+LUT drives async reset alert  
+LUT cell Hardware_Feedback_2/data_out_reg[4]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[4]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#26 Warning
+LUT drives async reset alert  
+LUT cell Hardware_Feedback_2/data_out_reg[4]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[4]_C/CLR, InterfaceTiva2/data_out_reg[4]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#27 Warning
+LUT drives async reset alert  
+LUT cell Hardware_Feedback_2/data_out_reg[5]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[5]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#28 Warning
+LUT drives async reset alert  
+LUT cell Hardware_Feedback_2/data_out_reg[5]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[5]_C/CLR, InterfaceTiva2/data_out_reg[5]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#29 Warning
+LUT drives async reset alert  
+LUT cell Hardware_Feedback_2/data_out_reg[6]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[6]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#30 Warning
+LUT drives async reset alert  
+LUT cell Hardware_Feedback_2/data_out_reg[6]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[6]_C/CLR, InterfaceTiva2/data_out_reg[6]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#31 Warning
+LUT drives async reset alert  
+LUT cell Hardware_Feedback_2/data_out_reg[7]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[7]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#32 Warning
+LUT drives async reset alert  
+LUT cell Hardware_Feedback_2/data_out_reg[7]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva2/data_out_reg[7]_C/CLR, InterfaceTiva2/data_out_reg[7]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#33 Warning
 LUT drives async reset alert  
 LUT cell InterfaceTiva1/index[31]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) InterfaceTiva1/index_reg[10]/CLR, InterfaceTiva1/index_reg[11]/CLR, InterfaceTiva1/index_reg[12]/CLR, InterfaceTiva1/index_reg[13]/CLR, InterfaceTiva1/index_reg[14]/CLR, InterfaceTiva1/index_reg[15]/CLR, InterfaceTiva1/index_reg[16]/CLR, InterfaceTiva1/index_reg[17]/CLR, InterfaceTiva1/index_reg[18]/CLR, InterfaceTiva1/index_reg[19]/CLR, InterfaceTiva1/index_reg[20]/CLR, InterfaceTiva1/index_reg[21]/CLR, InterfaceTiva1/index_reg[22]/CLR, InterfaceTiva1/index_reg[23]/CLR, InterfaceTiva1/index_reg[24]/CLR (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
@@ -1051,45 +1241,85 @@ Related violations: <none>
 
 TIMING-20#17 Warning
 Non-clocked latch  
-The latch InterfaceTiva2/data_out_reg[10]_LDC cannot be properly analyzed as its control pin InterfaceTiva2/data_out_reg[10]_LDC/G is not reached by a timing clock
+The latch InterfaceTiva2/data_out_reg[0]_LDC cannot be properly analyzed as its control pin InterfaceTiva2/data_out_reg[0]_LDC/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#18 Warning
 Non-clocked latch  
-The latch InterfaceTiva2/data_out_reg[11]_LDC cannot be properly analyzed as its control pin InterfaceTiva2/data_out_reg[11]_LDC/G is not reached by a timing clock
+The latch InterfaceTiva2/data_out_reg[10]_LDC cannot be properly analyzed as its control pin InterfaceTiva2/data_out_reg[10]_LDC/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#19 Warning
 Non-clocked latch  
-The latch InterfaceTiva2/data_out_reg[12]_LDC cannot be properly analyzed as its control pin InterfaceTiva2/data_out_reg[12]_LDC/G is not reached by a timing clock
+The latch InterfaceTiva2/data_out_reg[11]_LDC cannot be properly analyzed as its control pin InterfaceTiva2/data_out_reg[11]_LDC/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#20 Warning
 Non-clocked latch  
-The latch InterfaceTiva2/data_out_reg[13]_LDC cannot be properly analyzed as its control pin InterfaceTiva2/data_out_reg[13]_LDC/G is not reached by a timing clock
+The latch InterfaceTiva2/data_out_reg[12]_LDC cannot be properly analyzed as its control pin InterfaceTiva2/data_out_reg[12]_LDC/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#21 Warning
 Non-clocked latch  
-The latch InterfaceTiva2/data_out_reg[14]_LDC cannot be properly analyzed as its control pin InterfaceTiva2/data_out_reg[14]_LDC/G is not reached by a timing clock
+The latch InterfaceTiva2/data_out_reg[13]_LDC cannot be properly analyzed as its control pin InterfaceTiva2/data_out_reg[13]_LDC/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#22 Warning
 Non-clocked latch  
-The latch InterfaceTiva2/data_out_reg[15]_LDC cannot be properly analyzed as its control pin InterfaceTiva2/data_out_reg[15]_LDC/G is not reached by a timing clock
+The latch InterfaceTiva2/data_out_reg[14]_LDC cannot be properly analyzed as its control pin InterfaceTiva2/data_out_reg[14]_LDC/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#23 Warning
 Non-clocked latch  
-The latch InterfaceTiva2/data_out_reg[8]_LDC cannot be properly analyzed as its control pin InterfaceTiva2/data_out_reg[8]_LDC/G is not reached by a timing clock
+The latch InterfaceTiva2/data_out_reg[15]_LDC cannot be properly analyzed as its control pin InterfaceTiva2/data_out_reg[15]_LDC/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#24 Warning
 Non-clocked latch  
-The latch InterfaceTiva2/data_out_reg[9]_LDC cannot be properly analyzed as its control pin InterfaceTiva2/data_out_reg[9]_LDC/G is not reached by a timing clock
+The latch InterfaceTiva2/data_out_reg[1]_LDC cannot be properly analyzed as its control pin InterfaceTiva2/data_out_reg[1]_LDC/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#25 Warning
+Non-clocked latch  
+The latch InterfaceTiva2/data_out_reg[2]_LDC cannot be properly analyzed as its control pin InterfaceTiva2/data_out_reg[2]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch InterfaceTiva2/data_out_reg[3]_LDC cannot be properly analyzed as its control pin InterfaceTiva2/data_out_reg[3]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch InterfaceTiva2/data_out_reg[4]_LDC cannot be properly analyzed as its control pin InterfaceTiva2/data_out_reg[4]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch InterfaceTiva2/data_out_reg[5]_LDC cannot be properly analyzed as its control pin InterfaceTiva2/data_out_reg[5]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch InterfaceTiva2/data_out_reg[6]_LDC cannot be properly analyzed as its control pin InterfaceTiva2/data_out_reg[6]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch InterfaceTiva2/data_out_reg[7]_LDC cannot be properly analyzed as its control pin InterfaceTiva2/data_out_reg[7]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch InterfaceTiva2/data_out_reg[8]_LDC cannot be properly analyzed as its control pin InterfaceTiva2/data_out_reg[8]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch InterfaceTiva2/data_out_reg[9]_LDC cannot be properly analyzed as its control pin InterfaceTiva2/data_out_reg[9]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
 Non-clocked latch  
 The latch InterfaceTiva2/miso_reg cannot be properly analyzed as its control pin InterfaceTiva2/miso_reg/G is not reached by a timing clock
 Related violations: <none>

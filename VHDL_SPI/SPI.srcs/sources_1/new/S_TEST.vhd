@@ -4,7 +4,7 @@ USE IEEE.STD_LOGIC_1164.ALL;
 
 
 ENTITY S_TEST IS
-    GENERIC(data_length : INTEGER := 8);
+    GENERIC(data_length : INTEGER := 16);
     Port (clk : IN STD_LOGIC;
           sck : IN STD_LOGIC; --sck
           ss : IN STD_LOGIC; --ss
@@ -36,7 +36,7 @@ ARCHITECTURE Behavioral OF S_TEST IS
 
 
 BEGIN
-   data_send <= sw(7 downto 0);
+   data_send <= sw(15 downto 0);
    
    SLAVE_SPI : S_SPI_TOPMODULE
     port map (sck          => sck,
@@ -49,8 +49,8 @@ BEGIN
               ready        => ready);
 
 
-    led(7 downto 0) <= data_receive;
+    led(15 downto 0) <= data_receive;
     --led(15 downto 8) <= data_send;
-    led(14) <= ready;
-    led(15) <= busy;
+    --led(14) <= ready;
+    --led(15) <= busy;
 END Behavioral;

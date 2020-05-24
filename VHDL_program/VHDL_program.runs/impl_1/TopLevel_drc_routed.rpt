@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sat May 23 10:40:24 2020
-| Host         : DESKTOP-CI69V0G running 64-bit major release  (build 9200)
+| Date         : Sun May 24 15:29:56 2020
+| Host         : LAPTOP-G803TVCQ running 64-bit major release  (build 9200)
 | Command      : report_drc -file TopLevel_drc_routed.rpt -pb TopLevel_drc_routed.pb -rpx TopLevel_drc_routed.rpx
 | Design       : TopLevel
 | Device       : xc7a35tcpg236-1
@@ -24,11 +24,11 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 10
+             Violations found: 18
 +----------+----------+---------------------+------------+
 | Rule     | Severity | Description         | Violations |
 +----------+----------+---------------------+------------+
-| PDRC-153 | Warning  | Gated clock check   | 8          |
+| PDRC-153 | Warning  | Gated clock check   | 16         |
 | PLCK-12  | Warning  | Clock Placer Checks | 2          |
 +----------+----------+---------------------+------------+
 
@@ -72,6 +72,46 @@ Related violations: <none>
 PDRC-153#8 Warning
 Gated clock check  
 Net Hardware_Feedback_1/angle_reg[7]_1 is a gated clock net sourced by a combinational pin Hardware_Feedback_1/data_out_reg[15]_LDC_i_1/O, cell Hardware_Feedback_1/data_out_reg[15]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net Hardware_Feedback_2/angle_reg[0]_1 is a gated clock net sourced by a combinational pin Hardware_Feedback_2/data_out_reg[0]_LDC_i_1/O, cell Hardware_Feedback_2/data_out_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net Hardware_Feedback_2/angle_reg[1]_1 is a gated clock net sourced by a combinational pin Hardware_Feedback_2/data_out_reg[1]_LDC_i_1/O, cell Hardware_Feedback_2/data_out_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net Hardware_Feedback_2/angle_reg[2]_1 is a gated clock net sourced by a combinational pin Hardware_Feedback_2/data_out_reg[2]_LDC_i_1/O, cell Hardware_Feedback_2/data_out_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net Hardware_Feedback_2/angle_reg[3]_1 is a gated clock net sourced by a combinational pin Hardware_Feedback_2/data_out_reg[3]_LDC_i_1/O, cell Hardware_Feedback_2/data_out_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net Hardware_Feedback_2/angle_reg[4]_1 is a gated clock net sourced by a combinational pin Hardware_Feedback_2/data_out_reg[4]_LDC_i_1/O, cell Hardware_Feedback_2/data_out_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net Hardware_Feedback_2/angle_reg[5]_1 is a gated clock net sourced by a combinational pin Hardware_Feedback_2/data_out_reg[5]_LDC_i_1/O, cell Hardware_Feedback_2/data_out_reg[5]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net Hardware_Feedback_2/angle_reg[6]_1 is a gated clock net sourced by a combinational pin Hardware_Feedback_2/data_out_reg[6]_LDC_i_1/O, cell Hardware_Feedback_2/data_out_reg[6]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net Hardware_Feedback_2/angle_reg[7]_1 is a gated clock net sourced by a combinational pin Hardware_Feedback_2/data_out_reg[7]_LDC_i_1/O, cell Hardware_Feedback_2/data_out_reg[7]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PLCK-12#1 Warning

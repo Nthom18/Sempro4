@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sat May 23 10:40:04 2020
-| Host         : DESKTOP-CI69V0G running 64-bit major release  (build 9200)
+| Date         : Sun May 24 15:29:08 2020
+| Host         : LAPTOP-G803TVCQ running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file TopLevel_control_sets_placed.rpt
 | Design       : TopLevel
 | Device       : xc7a35t
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    54 |
-|    Minimum number of control sets                        |    54 |
+| Total control sets                                       |    81 |
+|    Minimum number of control sets                        |    81 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |   333 |
+| Unused register locations in slices containing registers |   527 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    54 |
-| >= 0 to < 4        |    47 |
+| Total control sets |    81 |
+| >= 0 to < 4        |    73 |
 | >= 4 to < 6        |     2 |
 | >= 6 to < 8        |     0 |
 | >= 8 to < 10       |     0 |
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
-| >= 16              |     5 |
+| >= 16              |     6 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,11 +58,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              38 |           14 |
-| No           | No                    | Yes                    |              15 |            8 |
-| No           | Yes                   | No                     |              64 |           26 |
-| Yes          | No                    | No                     |              20 |           18 |
-| Yes          | No                    | Yes                    |              48 |           17 |
+| No           | No                    | No                     |              41 |           20 |
+| No           | No                    | Yes                    |              15 |           15 |
+| No           | Yes                   | No                     |              88 |           39 |
+| Yes          | No                    | No                     |              22 |           20 |
+| Yes          | No                    | Yes                    |              49 |           26 |
 | Yes          | Yes                   | No                     |              10 |            2 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -73,57 +73,84 @@ Table of Contents
 +-------------------------------------+--------------------------------------+---------------------------------------------+------------------+----------------+
 |             Clock Signal            |             Enable Signal            |               Set/Reset Signal              | Slice Load Count | Bel Load Count |
 +-------------------------------------+--------------------------------------+---------------------------------------------+------------------+----------------+
-|  Hardware_Feedback_1/angle_reg[4]_1 |                                      | Hardware_Feedback_1/angle_reg[4]_0          |                1 |              1 |
-|  Hardware_Feedback_1/angle_reg[5]_1 |                                      | Hardware_Feedback_1/angle_reg[5]_0          |                1 |              1 |
-|  Hardware_Feedback_1/angle_reg[2]_1 |                                      | Hardware_Feedback_1/angle_reg[2]_0          |                1 |              1 |
+|  clk_IBUF_BUFG                      | encoder_filter_2/Ax_i_1__0_n_0       |                                             |                1 |              1 |
 |  Hardware_Feedback_1/angle_reg[6]_1 |                                      | Hardware_Feedback_1/angle_reg[6]_0          |                1 |              1 |
 |  Hardware_Feedback_1/angle_reg[7]_1 |                                      | Hardware_Feedback_1/angle_reg[7]_0          |                1 |              1 |
-|  Hardware_Feedback_1/angle_reg[0]_1 |                                      | Hardware_Feedback_1/angle_reg[0]_0          |                1 |              1 |
-|  Hardware_Feedback_1/angle_reg[1]_1 |                                      | Hardware_Feedback_1/angle_reg[1]_0          |                1 |              1 |
-|  Hardware_Feedback_1/angle_reg[3]_1 |                                      | Hardware_Feedback_1/angle_reg[3]_0          |                1 |              1 |
-|  JA_IBUF_BUFG[0]                    | InterfaceTiva1/data_temp[5]_i_1_n_0  |                                             |                1 |              1 |
-| ~JA_IBUF_BUFG[1]                    |                                      |                                             |                1 |              1 |
-|  JA_IBUF_BUFG[0]                    | InterfaceTiva1/data_temp[9]_i_1_n_0  |                                             |                1 |              1 |
-|  JA_IBUF_BUFG[0]                    | InterfaceTiva1/data_temp[1]_i_1_n_0  |                                             |                1 |              1 |
-|  JA_IBUF_BUFG[0]                    | InterfaceTiva1/data_temp[8]_i_1_n_0  |                                             |                1 |              1 |
+|  Hardware_Feedback_2/angle_reg[1]_1 |                                      | Hardware_Feedback_2/angle_reg[1]_0          |                1 |              1 |
+|  Hardware_Feedback_2/angle_reg[0]_1 |                                      | Hardware_Feedback_2/angle_reg[0]_0          |                1 |              1 |
 |  clk_IBUF_BUFG                      |                                      | InterfaceTiva1/data_temp_reg[7]_0           |                1 |              1 |
-|  clk_IBUF_BUFG                      |                                      | InterfaceTiva1/p_0_in                       |                1 |              1 |
-|  clk_IBUF_BUFG                      |                                      | InterfaceTiva1/Q[3]                         |                1 |              1 |
 |  clk_IBUF_BUFG                      |                                      | InterfaceTiva1/Q[7]                         |                1 |              1 |
+|  clk_IBUF_BUFG                      |                                      | InterfaceTiva1/p_0_in                       |                1 |              1 |
+|  clk_IBUF_BUFG                      |                                      | InterfaceTiva1/Q[15]                        |                1 |              1 |
+|  clk_IBUF_BUFG                      | encoder_filter_1/Ax_i_1_n_0          |                                             |                1 |              1 |
+|  JA_IBUF_BUFG[0]                    | InterfaceTiva1/data_temp[10]_i_1_n_0 |                                             |                1 |              1 |
+|  Hardware_Feedback_2/angle_reg[2]_1 |                                      | Hardware_Feedback_2/angle_reg[2]_0          |                1 |              1 |
+|  Hardware_Feedback_2/angle_reg[5]_1 |                                      | Hardware_Feedback_2/angle_reg[5]_0          |                1 |              1 |
+|  Hardware_Feedback_2/angle_reg[6]_1 |                                      | Hardware_Feedback_2/angle_reg[6]_0          |                1 |              1 |
+|  Hardware_Feedback_2/angle_reg[4]_1 |                                      | Hardware_Feedback_2/angle_reg[4]_0          |                1 |              1 |
+|  JA_IBUF_BUFG[0]                    | InterfaceTiva1/data_temp[0]_i_1_n_0  |                                             |                1 |              1 |
+|  JA_IBUF_BUFG[0]                    | InterfaceTiva1/data_temp[1]_i_1_n_0  |                                             |                1 |              1 |
 |  JA_IBUF_BUFG[0]                    | InterfaceTiva1/data_temp[2]_i_1_n_0  |                                             |                1 |              1 |
+|  JA_IBUF_BUFG[0]                    | InterfaceTiva1/data_temp[8]_i_1_n_0  |                                             |                1 |              1 |
+|  JA_IBUF_BUFG[0]                    | InterfaceTiva1/data_temp[12]_i_1_n_0 |                                             |                1 |              1 |
+|  Hardware_Feedback_2/angle_reg[7]_1 |                                      | Hardware_Feedback_2/angle_reg[7]_0          |                1 |              1 |
 |  JA_IBUF_BUFG[0]                    | InterfaceTiva1/data_temp[7]_i_1_n_0  |                                             |                1 |              1 |
-|  JA_IBUF_BUFG[0]                    | InterfaceTiva1/data_temp[4]_i_1_n_0  |                                             |                1 |              1 |
-| ~JA_IBUF_BUFG[0]                    |                                      | Hardware_Feedback_1/angle_reg[0]_0          |                1 |              1 |
+|  JA_IBUF_BUFG[0]                    | InterfaceTiva1/data_temp[15]_i_1_n_0 |                                             |                1 |              1 |
 |  JA_IBUF_BUFG[0]                    | InterfaceTiva1/data_temp[11]_i_1_n_0 |                                             |                1 |              1 |
 |  JA_IBUF_BUFG[0]                    | InterfaceTiva1/data_temp[14]_i_1_n_0 |                                             |                1 |              1 |
-|  JA_IBUF_BUFG[0]                    | InterfaceTiva1/data_temp[0]_i_1_n_0  |                                             |                1 |              1 |
-|  JA_IBUF_BUFG[0]                    | InterfaceTiva1/data_temp[10]_i_1_n_0 |                                             |                1 |              1 |
-|  JA_IBUF_BUFG[0]                    | InterfaceTiva1/data_temp[12]_i_1_n_0 |                                             |                1 |              1 |
-|  JA_IBUF_BUFG[0]                    | InterfaceTiva1/data_temp[13]_i_1_n_0 |                                             |                1 |              1 |
-|  JA_IBUF_BUFG[0]                    | InterfaceTiva1/data_temp[15]_i_1_n_0 |                                             |                1 |              1 |
 |  JA_IBUF_BUFG[0]                    | InterfaceTiva1/data_temp[3]_i_1_n_0  |                                             |                1 |              1 |
+|  JA_IBUF_BUFG[0]                    | InterfaceTiva1/data_temp[5]_i_1_n_0  |                                             |                1 |              1 |
 |  JA_IBUF_BUFG[0]                    | InterfaceTiva1/data_temp[6]_i_1_n_0  |                                             |                1 |              1 |
+|  JA_IBUF_BUFG[0]                    | InterfaceTiva1/data_temp[9]_i_1_n_0  |                                             |                1 |              1 |
+|  JA_IBUF_BUFG[0]                    | InterfaceTiva1/data_temp[13]_i_1_n_0 |                                             |                1 |              1 |
+|  JA_IBUF_BUFG[0]                    | InterfaceTiva1/data_temp[4]_i_1_n_0  |                                             |                1 |              1 |
+|  Hardware_Feedback_2/angle_reg[3]_1 |                                      | Hardware_Feedback_2/angle_reg[3]_0          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    |                                      | Hardware_Feedback_1/angle_reg[0]_0          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    |                                      | Hardware_Feedback_1/angle_reg[3]_0          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    |                                      | Hardware_Feedback_1/angle_reg[4]_0          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    |                                      | Hardware_Feedback_1/angle_reg[5]_0          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    |                                      | Hardware_Feedback_1/angle_reg[2]_0          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    |                                      | Hardware_Feedback_1/angle_reg[1]_0          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    |                                      | Hardware_Feedback_1/angle_reg[6]_0          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    |                                      | Hardware_Feedback_1/angle_reg[7]_0          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    |                                      | Hardware_Feedback_2/angle_reg[1]_0          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    |                                      | Hardware_Feedback_2/angle_reg[2]_0          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    |                                      | Hardware_Feedback_2/angle_reg[4]_0          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    |                                      | Hardware_Feedback_2/angle_reg[5]_0          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    |                                      | Hardware_Feedback_2/angle_reg[3]_0          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    |                                      | Hardware_Feedback_2/angle_reg[6]_0          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    |                                      | Hardware_Feedback_2/angle_reg[7]_0          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    | InterfaceTiva1/E[0]                  | JA_IBUF_BUFG[1]                             |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    | InterfaceTiva1/E[0]                  | Hardware_Feedback_1/angle_reg[2]_1          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    | InterfaceTiva1/E[0]                  | Hardware_Feedback_1/angle_reg[3]_1          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    | InterfaceTiva1/E[0]                  | Hardware_Feedback_1/angle_reg[4]_1          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    | InterfaceTiva1/E[0]                  | Hardware_Feedback_1/angle_reg[0]_1          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    | InterfaceTiva1/E[0]                  | Hardware_Feedback_1/angle_reg[1]_1          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    | InterfaceTiva1/E[0]                  | Hardware_Feedback_1/angle_reg[5]_1          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    | InterfaceTiva1/E[0]                  | Hardware_Feedback_1/angle_reg[6]_1          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    | InterfaceTiva1/E[0]                  | Hardware_Feedback_1/angle_reg[7]_1          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    | InterfaceTiva1/E[0]                  | Hardware_Feedback_2/angle_reg[1]_1          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    | InterfaceTiva1/E[0]                  | Hardware_Feedback_2/angle_reg[0]_1          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    | InterfaceTiva1/E[0]                  | Hardware_Feedback_2/angle_reg[2]_1          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    | InterfaceTiva1/E[0]                  | Hardware_Feedback_2/angle_reg[5]_1          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    | InterfaceTiva1/E[0]                  | Hardware_Feedback_2/angle_reg[6]_1          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    | InterfaceTiva1/E[0]                  | Hardware_Feedback_2/angle_reg[4]_1          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    | InterfaceTiva1/E[0]                  | Hardware_Feedback_2/angle_reg[7]_1          |                1 |              1 |
+| ~JA_IBUF_BUFG[0]                    | InterfaceTiva1/E[0]                  | Hardware_Feedback_2/angle_reg[3]_1          |                1 |              1 |
+| ~JA_IBUF_BUFG[1]                    |                                      |                                             |                1 |              1 |
+|  Hardware_Feedback_1/angle_reg[2]_1 |                                      | Hardware_Feedback_1/angle_reg[2]_0          |                1 |              1 |
+|  Hardware_Feedback_1/angle_reg[3]_1 |                                      | Hardware_Feedback_1/angle_reg[3]_0          |                1 |              1 |
+|  Hardware_Feedback_1/angle_reg[4]_1 |                                      | Hardware_Feedback_1/angle_reg[4]_0          |                1 |              1 |
+|  Hardware_Feedback_1/angle_reg[0]_1 |                                      | Hardware_Feedback_1/angle_reg[0]_0          |                1 |              1 |
+|  Hardware_Feedback_1/angle_reg[1]_1 |                                      | Hardware_Feedback_1/angle_reg[1]_0          |                1 |              1 |
+|  Hardware_Feedback_1/angle_reg[5]_1 |                                      | Hardware_Feedback_1/angle_reg[5]_0          |                1 |              1 |
 |  clk_IBUF_BUFG                      | Hardware_Control_1/Scaled_clk        |                                             |                1 |              2 |
 |  clk_IBUF_BUFG                      | Hardware_Control_2/Scaled_clk        |                                             |                1 |              2 |
-| ~JA_IBUF_BUFG[0]                    |                                      | Hardware_Feedback_1/angle_reg[5]_0          |                1 |              2 |
-| ~JA_IBUF_BUFG[0]                    |                                      | Hardware_Feedback_1/angle_reg[6]_0          |                1 |              2 |
-| ~JA_IBUF_BUFG[0]                    |                                      | Hardware_Feedback_1/angle_reg[7]_0          |                1 |              2 |
-| ~JA_IBUF_BUFG[0]                    |                                      | Hardware_Feedback_1/angle_reg[1]_0          |                1 |              2 |
-| ~JA_IBUF_BUFG[0]                    |                                      | Hardware_Feedback_1/angle_reg[3]_0          |                1 |              2 |
-| ~JA_IBUF_BUFG[0]                    |                                      | Hardware_Feedback_1/angle_reg[4]_0          |                1 |              2 |
-| ~JA_IBUF_BUFG[0]                    |                                      | Hardware_Feedback_1/angle_reg[2]_0          |                1 |              2 |
-| ~JA_IBUF_BUFG[0]                    | InterfaceTiva1/E[0]                  | Hardware_Feedback_1/angle_reg[4]_1          |                1 |              2 |
-| ~JA_IBUF_BUFG[0]                    | InterfaceTiva1/E[0]                  | Hardware_Feedback_1/angle_reg[5]_1          |                1 |              2 |
-| ~JA_IBUF_BUFG[0]                    | InterfaceTiva1/E[0]                  | Hardware_Feedback_1/angle_reg[2]_1          |                1 |              2 |
-| ~JA_IBUF_BUFG[0]                    | InterfaceTiva1/E[0]                  | Hardware_Feedback_1/angle_reg[6]_1          |                1 |              2 |
-| ~JA_IBUF_BUFG[0]                    | InterfaceTiva1/E[0]                  | Hardware_Feedback_1/angle_reg[7]_1          |                1 |              2 |
-| ~JA_IBUF_BUFG[0]                    | InterfaceTiva1/E[0]                  | Hardware_Feedback_1/angle_reg[0]_1          |                1 |              2 |
-| ~JA_IBUF_BUFG[0]                    | InterfaceTiva1/E[0]                  | Hardware_Feedback_1/angle_reg[1]_1          |                1 |              2 |
-| ~JA_IBUF_BUFG[0]                    | InterfaceTiva1/E[0]                  | Hardware_Feedback_1/angle_reg[3]_1          |                1 |              2 |
 |  clk_IBUF_BUFG                      | Hardware_Control_1/Scaled_clk        | Hardware_Control_1/PWM_Count                |                1 |              5 |
 |  clk_IBUF_BUFG                      | Hardware_Control_2/Scaled_clk        | Hardware_Control_2/PWM_Count                |                1 |              5 |
-|  InterfaceTiva1/index[31]           |                                      |                                             |                6 |             16 |
-|  clk_IBUF_BUFG                      |                                      |                                             |                7 |             21 |
+|  clk_IBUF_BUFG                      |                                      | InterfaceTiva2/SR[0]                        |                5 |             16 |
+|  InterfaceTiva1/index[31]           |                                      |                                             |                7 |             16 |
+|  clk_IBUF_BUFG                      |                                      |                                             |               12 |             24 |
 |  clk_IBUF_BUFG                      |                                      | Hardware_Control_1/clear                    |                7 |             26 |
 |  clk_IBUF_BUFG                      |                                      | Hardware_Control_2/Scaled_clk0_carry__2_n_3 |                7 |             26 |
 |  JA_IBUF_BUFG[0]                    | InterfaceTiva1/E[0]                  | InterfaceTiva1/index[31]_i_1_n_0            |                9 |             32 |

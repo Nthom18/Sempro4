@@ -36,8 +36,8 @@
 /*****************************   Variables   *******************************/
 
 //Queues for samples from frame 1 and 2
-extern QueueHandle_t placementFrame1Queue;
-extern QueueHandle_t placementFrame2Queue;
+extern QueueHandle_t placementPanFrameQueue;
+extern QueueHandle_t placementTiltFrameQueue;
 
 
 //Test
@@ -228,22 +228,22 @@ void spi_task()
         received_data_frame2 = (received_data & 0xFF);
 
         //Store samples from frame 1 and 2 in respective queues,
-        xStatus = xQueueSendToBack( placementFrame1Queue, &received_data_frame1, 0);
-        xStatus = xQueueSendToBack( placementFrame2Queue, &received_data_frame2, 0);
+        xStatus = xQueueSendToBack( placementPanFrameQueue, &received_data_frame1, 0);
+        xStatus = xQueueSendToBack( placementTiltFrameQueue, &received_data_frame2, 0);
 
 
-        //Test code / send data via uart,
-        xStatus = xQueueSendToBack( uart0Queue, &received_data_frame1, 0);
-        xStatus = xQueueSendToBack( uart0Queue, &received_data_frame2, 0);
-        //end test
+//        //Test code / send data via uart,
+//        xStatus = xQueueSendToBack( uart0Queue, &received_data_frame1, 0);
+//        xStatus = xQueueSendToBack( uart0Queue, &received_data_frame2, 0);
+//        //end test
+//
+//
+//        //test
+//        //received_data = 0;
+//        //end test
 
 
-        //test
-        //received_data = 0;
-        //end test
-
-
-        vTaskDelayUntil( &xLastWakeTime, pdMS_TO_TICKS(100) );
+        vTaskDelayUntil( &xLastWakeTime, pdMS_TO_TICKS(10) );
     }
 
 

@@ -43,8 +43,8 @@
 
 QueueHandle_t uart0Queue;
 //Queues for samples from frame 1 and 2
-QueueHandle_t placementFrame1Queue;
-QueueHandle_t placementFrame2Queue;
+QueueHandle_t placementPanFrameQueue;
+QueueHandle_t placementTiltFrameQueue;
 
 
 //PWM Motor 1 register
@@ -82,44 +82,51 @@ void task_manager()
 {
 
     uart0Queue = xQueueCreate(48, sizeof(INT8U));
-    placementFrame1Queue = xQueueCreate(16, sizeof(INT8U));
-    placementFrame2Queue = xQueueCreate(16, sizeof(INT8U));
+    placementPanFrameQueue = xQueueCreate(16, sizeof(INT8U));
+    placementTiltFrameQueue = xQueueCreate(16, sizeof(INT8U));
 
 
     xTaskCreate( spi_task,
                  "SPI",
                  configMINIMAL_STACK_SIZE,
                  NULL,
-                 3,
+                 4,
                  NULL);
 
-    xTaskCreate( uart0_task,
-                 "Uart0",
-                 256,//configMINIMAL_STACK_SIZE,
-                 NULL,
-                 2,
-                 NULL);
+//    xTaskCreate( uart0_task,
+//                 "Uart0",
+//                 128,//configMINIMAL_STACK_SIZE,
+//                 NULL,
+//                 2,
+//                 NULL);
 
-    xTaskCreate( driver_test_led,
-                 "Test",
-                 configMINIMAL_STACK_SIZE,
-                 NULL,
-                 1,
-                 NULL);
+//    xTaskCreate( driver_test_led,
+//                 "Test",
+//                 configMINIMAL_STACK_SIZE,
+//                 NULL,
+//                 1,
+//                 NULL);
 
     xTaskCreate( pid_controller_tilt,
                  "tilt",
-                 configMINIMAL_STACK_SIZE,
+                 128,
                  NULL,
-                 1,
+                 3,
                  NULL);
 
     xTaskCreate( pid_controller_pan,
                  "Pan",
-                 configMINIMAL_STACK_SIZE,
+                 128,
                  NULL,
-                 1,
+                 3,
                  NULL);
+
+//    xTaskCreate( uart0_rx_task,
+//                     "Rx",
+//                     configMINIMAL_STACK_SIZE,
+//                     NULL,
+//                     1,
+//                     NULL);
 
 
 

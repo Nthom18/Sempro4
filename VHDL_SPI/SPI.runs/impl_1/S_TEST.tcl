@@ -69,12 +69,12 @@ set rc [catch {
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/dotte/Documents/Sempro4/VHDL_SPI/SPI.cache/wt [current_project]
-  set_property parent.project_path C:/Users/dotte/Documents/Sempro4/VHDL_SPI/SPI.xpr [current_project]
-  set_property ip_output_repo C:/Users/dotte/Documents/Sempro4/VHDL_SPI/SPI.cache/ip [current_project]
+  set_property webtalk.parent_dir {C:/Users/chris/Desktop/UNI/4 Semester/PRO4/Sempro4/VHDL_SPI/SPI.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/chris/Desktop/UNI/4 Semester/PRO4/Sempro4/VHDL_SPI/SPI.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/chris/Desktop/UNI/4 Semester/PRO4/Sempro4/VHDL_SPI/SPI.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/dotte/Documents/Sempro4/VHDL_SPI/SPI.runs/synth_1/S_TEST.dcp
-  read_xdc C:/Users/dotte/Documents/Sempro4/VHDL_SPI/SPI.srcs/constrs_1/imports/SPI/Basys-3-Master_v2.xdc
+  add_files -quiet {{C:/Users/chris/Desktop/UNI/4 Semester/PRO4/Sempro4/VHDL_SPI/SPI.runs/synth_1/S_TEST.dcp}}
+  read_xdc {{C:/Users/chris/Desktop/UNI/4 Semester/PRO4/Sempro4/VHDL_SPI/SPI.srcs/constrs_1/imports/SPI/Basys-3-Master_v2.xdc}}
   link_design -top S_TEST -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]

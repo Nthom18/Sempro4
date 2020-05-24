@@ -35,6 +35,8 @@
 /*****************************   Variables   *******************************/
 extern QueueHandle_t uart0Queue;
 
+INT8U ref_tilt = 0;
+
 /*****************************   Functions   *******************************/
 
 
@@ -191,11 +193,32 @@ void uart0_task()
         xStatus = xQueueReceive( uart0Queue, &receivedValue,  portMAX_DELAY );
 
         //Send received value via. uart0
-        uart0_putc(receivedValue + '0');  //Add '0' is used to convert from hex to char,
+        uart0_putc(receivedValue);  //Add '0' is used to convert from hex to char,
 
 
         //vTaskDelay( xDelay100ms );
     }
+}
+
+void uart0_rx_task()
+/*
+ *   Function : See module specification (.h-file).
+ */
+{
+    INT8U received_data;
+    BaseType_t xStatus;
+    static const TickType_t xDelay100ms = pdMS_TO_TICKS( 100 );
+
+    while(1)
+    {
+        if (UART0_FR_R & UART_FR_RXFF)
+        {
+            received_data = uart0_getc();
+            ref_tilt = received_data - '0';
+        }
+        vTaskDelay( xDelay100ms );
+    }
+
 }
 
 extern void uart0_init(INT32U baud_rate, INT8U databits, INT8U stopbits,

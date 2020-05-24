@@ -46,9 +46,9 @@
 								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_7.0.compilerID.INCLUDE_PATH.1234580521" name="Include paths (-I)" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_7.0.compilerID.INCLUDE_PATH" valueType="includePath">
 									<listOptionValue builtIn="false" value="${PROJECT_ROOT}"/>
 									<listOptionValue builtIn="false" value="${CG_TOOL_INCLUDE_PATH}"/>
-									<listOptionValue builtIn="false" value="&quot;C:\Users\frida\Documents\4_semester\Projekt\Sempro4\TIVA_program\includes&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:\Users\frida\Documents\4_semester\Projekt\Sempro4\TIVA_program\frt10\inc&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:\Users\frida\Documents\4_semester\Projekt\Sempro4\TIVA_program\frt10\port\TivaM4&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Users\chris\Desktop\UNI\4 Semester\PRO4\Sempro4\TIVA_program\includes&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Users\chris\Desktop\UNI\4 Semester\PRO4\Sempro4\TIVA_program\frt10\inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Users\chris\Desktop\UNI\4 Semester\PRO4\Sempro4\TIVA_program\frt10\port\TivaM4&quot;"/>
 								</option>
 								<option id="com.ti.ccstudio.buildDefinitions.TMS470_GNU_7.0.compilerID.ASM_SPECIFIC_FLAGS.1640951055" name="Miscellaneous assembly source specific flags" superClass="com.ti.ccstudio.buildDefinitions.TMS470_GNU_7.0.compilerID.ASM_SPECIFIC_FLAGS" useByScannerDiscovery="false" valueType="stringList">
 									<listOptionValue builtIn="false" value="-x assembler-with-cpp"/>

@@ -15,49 +15,70 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11768 
+INFO: Helper process launched with PID 14532 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 835.082 ; gain = 234.551
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 835.684 ; gain = 233.723
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'TopLevel' [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/TopLevel.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'TopLevel' [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/TopLevel.vhd:49]
 	Parameter data_length bound to: 16 - type: integer 
 	Parameter N bound to: 8 - type: integer 
 	Parameter MAX bound to: 128 - type: integer 
-INFO: [Synth 8-3491] module 'PWM_Module' declared at 'C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/PWM.vhd:37' bound to instance 'Hardware_Control_1' of component 'PWM_Module' [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/TopLevel.vhd:141]
-INFO: [Synth 8-638] synthesizing module 'PWM_Module' [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/PWM.vhd:46]
+INFO: [Synth 8-3491] module 'PWM_Module' declared at 'C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/PWM.vhd:37' bound to instance 'Hardware_Control_1' of component 'PWM_Module' [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/TopLevel.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'PWM_Module' [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/PWM.vhd:46]
 	Parameter N bound to: 8 - type: integer 
 	Parameter MAX bound to: 128 - type: integer 
-WARNING: [Synth 8-614] signal 'PWM_Count' is read in the process but is not in the sensitivity list [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/PWM.vhd:68]
-INFO: [Synth 8-256] done synthesizing module 'PWM_Module' (1#1) [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/PWM.vhd:46]
+WARNING: [Synth 8-614] signal 'PWM_Count' is read in the process but is not in the sensitivity list [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/PWM.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'PWM_Module' (1#1) [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/PWM.vhd:46]
 	Parameter N bound to: 8 - type: integer 
 	Parameter MAX bound to: 128 - type: integer 
-INFO: [Synth 8-3491] module 'PWM_Module' declared at 'C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/PWM.vhd:37' bound to instance 'Hardware_Control_2' of component 'PWM_Module' [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/TopLevel.vhd:143]
-INFO: [Synth 8-3491] module 'Encoder' declared at 'C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/Encoder.vhd:39' bound to instance 'Hardware_Feedback_1' of component 'Encoder' [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/TopLevel.vhd:146]
-INFO: [Synth 8-638] synthesizing module 'Encoder' [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/Encoder.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'Encoder' (2#1) [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/Encoder.vhd:48]
-INFO: [Synth 8-3491] module 'Encoder' declared at 'C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/Encoder.vhd:39' bound to instance 'Hardware_Feedback_2' of component 'Encoder' [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/TopLevel.vhd:149]
-INFO: [Synth 8-3491] module 'SPI_Analysis' declared at 'C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_Analysis.vhd:36' bound to instance 'Interface_Analysis' of component 'SPI_Analysis' [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/TopLevel.vhd:151]
-INFO: [Synth 8-638] synthesizing module 'SPI_Analysis' [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_Analysis.vhd:48]
-WARNING: [Synth 8-3848] Net enable_MISO in module/entity SPI_Analysis does not have driver. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_Analysis.vhd:39]
-INFO: [Synth 8-256] done synthesizing module 'SPI_Analysis' (3#1) [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_Analysis.vhd:48]
+INFO: [Synth 8-3491] module 'PWM_Module' declared at 'C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/PWM.vhd:37' bound to instance 'Hardware_Control_2' of component 'PWM_Module' [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/TopLevel.vhd:156]
+INFO: [Synth 8-3491] module 'Encoder' declared at 'C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/Encoder.vhd:39' bound to instance 'Hardware_Feedback_1' of component 'Encoder' [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/TopLevel.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'Encoder' [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/Encoder.vhd:49]
+WARNING: [Synth 8-6014] Unused sequential element int_ABab_reg was removed.  [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/Encoder.vhd:59]
+WARNING: [Synth 8-3848] Net leds in module/entity Encoder does not have driver. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/Encoder.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'Encoder' (2#1) [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/Encoder.vhd:49]
+INFO: [Synth 8-3491] module 'Encoder' declared at 'C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/Encoder.vhd:39' bound to instance 'Hardware_Feedback_2' of component 'Encoder' [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/TopLevel.vhd:162]
+INFO: [Synth 8-3491] module 'Encoder_filter' declared at 'C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/Encoder_filter.vhd:34' bound to instance 'encoder_filter_1' of component 'Encoder_filter' [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/TopLevel.vhd:164]
+INFO: [Synth 8-638] synthesizing module 'Encoder_filter' [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/Encoder_filter.vhd:40]
+WARNING: [Synth 8-6014] Unused sequential element AB_reg was removed.  [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/Encoder_filter.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'Encoder_filter' (3#1) [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/Encoder_filter.vhd:40]
+INFO: [Synth 8-3491] module 'Encoder_filter' declared at 'C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/Encoder_filter.vhd:34' bound to instance 'encoder_filter_2' of component 'Encoder_filter' [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/TopLevel.vhd:171]
+INFO: [Synth 8-3491] module 'SPI_Analysis' declared at 'C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_Analysis.vhd:36' bound to instance 'Interface_Analysis' of component 'SPI_Analysis' [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/TopLevel.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'SPI_Analysis' [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_Analysis.vhd:48]
+WARNING: [Synth 8-3848] Net enable_MISO in module/entity SPI_Analysis does not have driver. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_Analysis.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'SPI_Analysis' (4#1) [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_Analysis.vhd:48]
 	Parameter data_length bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'SPI_MOSI' declared at 'C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_MOSI.vhd:5' bound to instance 'InterfaceTiva1' of component 'SPI_MOSI' [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/TopLevel.vhd:161]
-INFO: [Synth 8-638] synthesizing module 'SPI_MOSI' [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_MOSI.vhd:15]
+INFO: [Synth 8-3491] module 'SPI_MOSI' declared at 'C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_MOSI.vhd:5' bound to instance 'InterfaceTiva1' of component 'SPI_MOSI' [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/TopLevel.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'SPI_MOSI' [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_MOSI.vhd:15]
 	Parameter data_length bound to: 16 - type: integer 
-WARNING: [Synth 8-614] signal 'index' is read in the process but is not in the sensitivity list [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_MOSI.vhd:23]
-WARNING: [Synth 8-614] signal 'data_temp' is read in the process but is not in the sensitivity list [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_MOSI.vhd:23]
-INFO: [Synth 8-256] done synthesizing module 'SPI_MOSI' (4#1) [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_MOSI.vhd:15]
-INFO: [Synth 8-3491] module 'SPI_MISO' declared at 'C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_MISO.vhd:4' bound to instance 'InterfaceTiva2' of component 'SPI_MISO' [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/TopLevel.vhd:169]
-INFO: [Synth 8-638] synthesizing module 'SPI_MISO' [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_MISO.vhd:13]
+WARNING: [Synth 8-614] signal 'index' is read in the process but is not in the sensitivity list [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_MOSI.vhd:23]
+WARNING: [Synth 8-614] signal 'data_temp' is read in the process but is not in the sensitivity list [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_MOSI.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'SPI_MOSI' (5#1) [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_MOSI.vhd:15]
+INFO: [Synth 8-3491] module 'SPI_MISO' declared at 'C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_MISO.vhd:4' bound to instance 'InterfaceTiva2' of component 'SPI_MISO' [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/TopLevel.vhd:196]
+INFO: [Synth 8-638] synthesizing module 'SPI_MISO' [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_MISO.vhd:13]
 	Parameter data_length bound to: 16 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'SPI_MISO' (5#1) [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_MISO.vhd:13]
-WARNING: [Synth 8-3848] Net led in module/entity TopLevel does not have driver. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/TopLevel.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'TopLevel' (6#1) [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/TopLevel.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'SPI_MISO' (6#1) [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_MISO.vhd:13]
+WARNING: [Synth 8-3848] Net led in module/entity TopLevel does not have driver. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/TopLevel.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'TopLevel' (7#1) [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/TopLevel.vhd:49]
 WARNING: [Synth 8-3917] design TopLevel has port JC[4] driven by constant 1
 WARNING: [Synth 8-3917] design TopLevel has port JC[0] driven by constant 1
 WARNING: [Synth 8-3331] design SPI_Analysis has unconnected port enable_MISO
 WARNING: [Synth 8-3331] design SPI_Analysis has unconnected port Clk
-WARNING: [Synth 8-3331] design Encoder has unconnected port RESET_COUNT
+WARNING: [Synth 8-3331] design Encoder has unconnected port leds[14]
+WARNING: [Synth 8-3331] design Encoder has unconnected port leds[13]
+WARNING: [Synth 8-3331] design Encoder has unconnected port leds[12]
+WARNING: [Synth 8-3331] design Encoder has unconnected port leds[11]
+WARNING: [Synth 8-3331] design Encoder has unconnected port leds[10]
+WARNING: [Synth 8-3331] design Encoder has unconnected port leds[9]
+WARNING: [Synth 8-3331] design Encoder has unconnected port leds[8]
+WARNING: [Synth 8-3331] design Encoder has unconnected port leds[7]
+WARNING: [Synth 8-3331] design Encoder has unconnected port leds[6]
+WARNING: [Synth 8-3331] design Encoder has unconnected port leds[5]
+WARNING: [Synth 8-3331] design Encoder has unconnected port leds[4]
+WARNING: [Synth 8-3331] design Encoder has unconnected port leds[3]
+WARNING: [Synth 8-3331] design Encoder has unconnected port leds[2]
+WARNING: [Synth 8-3331] design Encoder has unconnected port leds[1]
+WARNING: [Synth 8-3331] design Encoder has unconnected port leds[0]
 WARNING: [Synth 8-3331] design TopLevel has unconnected port led[15]
 WARNING: [Synth 8-3331] design TopLevel has unconnected port led[14]
 WARNING: [Synth 8-3331] design TopLevel has unconnected port led[13]
@@ -76,12 +97,10 @@ WARNING: [Synth 8-3331] design TopLevel has unconnected port led[1]
 WARNING: [Synth 8-3331] design TopLevel has unconnected port led[0]
 WARNING: [Synth 8-3331] design TopLevel has unconnected port JC[7]
 WARNING: [Synth 8-3331] design TopLevel has unconnected port JC[3]
-WARNING: [Synth 8-3331] design TopLevel has unconnected port JB[7]
-WARNING: [Synth 8-3331] design TopLevel has unconnected port JB[6]
-WARNING: [Synth 8-3331] design TopLevel has unconnected port JB[3]
-WARNING: [Synth 8-3331] design TopLevel has unconnected port JB[2]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port JB[5]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port JB[4]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 907.672 ; gain = 307.141
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 907.961 ; gain = 306.000
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -94,290 +113,290 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 907.672 ; gain = 307.141
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 907.961 ; gain = 306.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 907.672 ; gain = 307.141
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 907.961 ; gain = 306.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 907.672 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 907.961 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc]
-CRITICAL WARNING: [Common 17-165] Too many positional options when parsing 'clk', please type 'create_clock -help' for usage info. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:13]
-WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:16]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:16]
+Parsing XDC File [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc]
+CRITICAL WARNING: [Common 17-165] Too many positional options when parsing 'clk', please type 'create_clock -help' for usage info. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:16]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:17]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:17]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:18]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:18]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:19]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:19]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:20]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:20]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:21]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:21]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:22]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:22]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:23]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:23]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:24]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:24]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:25]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:25]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:26]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:26]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:27]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:27]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:28]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:28]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:29]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:29]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:30]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:30]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:31]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:31]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:32]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:32]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:33]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:33]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:34]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:34]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:35]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:35]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:36]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:36]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:37]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:37]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:38]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:38]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:39]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:39]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:40]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:40]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:41]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:41]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:42]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:42]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:43]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:43]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:44]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:44]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:45]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:45]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:46]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:46]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:47]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:47]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:84]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:84]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:85]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:85]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:86]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:86]
+WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:86]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:87]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:87]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:88]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:88]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:89]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:89]
+WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:89]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:90]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:90]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:91]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:91]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:92]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:92]
+WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:92]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:93]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:93]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:94]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:94]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:95]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:95]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:96]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:96]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:97]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:97]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:99]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:99]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:100]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:100]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:102]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:102]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:103]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:103]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:104]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:104]
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:104]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:105]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:105]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:106]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:106]
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:106]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:107]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:107]
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:107]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:108]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:108]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:109]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:109]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btnC'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:112]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'btnC'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:112]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btnC'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:113]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:113]
+WARNING: [Vivado 12-584] No ports matched 'btnC'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:113]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btnU'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:114]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:114]
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:114]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btnU'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:115]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:115]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:116]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:116]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:117]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:117]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:118]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:118]
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:118]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:119]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:119]
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:119]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:120]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:120]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:121]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:121]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'btnC_IBUF'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:125]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:125]
+WARNING: [Vivado 12-507] No nets matched 'btnC_IBUF'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:125]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'btnU_IBUF'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:126]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:126]
+WARNING: [Vivado 12-507] No nets matched 'btnU_IBUF'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:126]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'btnL_IBUF'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:127]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:127]
+WARNING: [Vivado 12-507] No nets matched 'btnL_IBUF'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:127]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'btnR_IBUF'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:128]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:128]
+WARNING: [Vivado 12-507] No nets matched 'btnR_IBUF'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:128]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:128]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'btnD_IBUF'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:129]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:129]
+WARNING: [Vivado 12-507] No nets matched 'btnD_IBUF'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:129]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'JA_IBUF[0]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:135]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:135]
+WARNING: [Vivado 12-507] No nets matched 'JA_IBUF[0]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:135]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'JA_IBUF[1]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:139]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:139]
+WARNING: [Vivado 12-507] No nets matched 'JA_IBUF[1]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:139]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:139]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JA[3]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:145]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:145]
+WARNING: [Vivado 12-584] No ports matched 'JA[3]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:145]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:145]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JB[0]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:163]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:163]
+WARNING: [Vivado 12-584] No ports matched 'JB[0]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:163]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:163]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JB[0]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:164]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:164]
+WARNING: [Vivado 12-584] No ports matched 'JB[0]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:164]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:164]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JB[1]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:166]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:166]
+WARNING: [Vivado 12-584] No ports matched 'JB[1]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:166]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JB[1]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:167]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:167]
+WARNING: [Vivado 12-584] No ports matched 'JB[1]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:167]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:167]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JB[1]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:310]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:310]
+WARNING: [Vivado 12-584] No ports matched 'JB[1]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:310]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:310]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JB[0]'. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:311]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:311]
+WARNING: [Vivado 12-584] No ports matched 'JB[0]'. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:311]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc:311]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TopLevel_propImpl.xdc].
+Finished Parsing XDC File [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/constr_1/Basys-3-Master_v2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TopLevel_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/TopLevel_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 999.715 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 999.367 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 999.715 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 999.367 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 999.715 ; gain = 399.184
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 999.367 ; gain = 397.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 999.715 ; gain = 399.184
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 999.367 ; gain = 397.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 999.715 ; gain = 399.184
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 999.367 ; gain = 397.406
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-327] inferring latch for variable 'data_reg' [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_MOSI.vhd:35]
-WARNING: [Synth 8-327] inferring latch for variable 'miso_reg' [C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_MISO.vhd:19]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/Encoder.vhd:61]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg' [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_MOSI.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'miso_reg' [C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.srcs/sources_1/new/SPI_MISO.vhd:19]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 999.715 ; gain = 399.184
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 999.367 ; gain = 397.406
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-223] decloning instance 'Hardware_Feedback_1' (Encoder) to 'Hardware_Feedback_2'
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -394,16 +413,14 @@ Detailed RTL Component Info :
 +---Registers : 
 	               32 Bit    Registers := 1     
 	               16 Bit    Registers := 2     
-	               15 Bit    Registers := 1     
-	                8 Bit    Registers := 4     
-	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 10    
+	                8 Bit    Registers := 6     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 13    
 +---Muxes : 
 	   3 Input     32 Bit        Muxes := 2     
 	   2 Input     16 Bit        Muxes := 3     
-	   6 Input     15 Bit        Muxes := 2     
-	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 6     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -421,16 +438,18 @@ Detailed RTL Component Info :
 Module Encoder 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      8 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
 +---Registers : 
-	               15 Bit    Registers := 1     
 	                8 Bit    Registers := 2     
 	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
 +---Muxes : 
-	   6 Input     15 Bit        Muxes := 2     
-	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 1     
+Module Encoder_filter 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 3     
 Module SPI_MOSI 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -485,14 +504,12 @@ WARNING: [Synth 8-3331] design TopLevel has unconnected port led[1]
 WARNING: [Synth 8-3331] design TopLevel has unconnected port led[0]
 WARNING: [Synth 8-3331] design TopLevel has unconnected port JC[7]
 WARNING: [Synth 8-3331] design TopLevel has unconnected port JC[3]
-WARNING: [Synth 8-3331] design TopLevel has unconnected port JB[7]
-WARNING: [Synth 8-3331] design TopLevel has unconnected port JB[6]
-WARNING: [Synth 8-3331] design TopLevel has unconnected port JB[3]
-WARNING: [Synth 8-3331] design TopLevel has unconnected port JB[2]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port JB[5]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port JB[4]
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InterfaceTiva2/data_out_reg[0]_C )
 WARNING: [Synth 8-3332] Sequential element (InterfaceTiva2/data_out_reg[0]_C) is unused and will be removed from module TopLevel.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 999.715 ; gain = 399.184
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 999.367 ; gain = 397.406
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -504,13 +521,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 999.715 ; gain = 399.184
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 999.367 ; gain = 397.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 999.715 ; gain = 399.184
+Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 999.367 ; gain = 397.406
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -522,7 +539,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1007.516 ; gain = 406.984
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 1013.996 ; gain = 412.035
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -546,13 +563,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1013.289 ; gain = 412.758
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1019.781 ; gain = 417.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1013.289 ; gain = 412.758
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1019.781 ; gain = 417.820
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -571,25 +588,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1013.289 ; gain = 412.758
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1019.781 ; gain = 417.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1013.289 ; gain = 412.758
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1019.781 ; gain = 417.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1013.289 ; gain = 412.758
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1019.781 ; gain = 417.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1013.289 ; gain = 412.758
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1019.781 ; gain = 417.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -607,59 +624,62 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     3|
 |2     |CARRY4 |    36|
-|3     |LUT1   |    37|
-|4     |LUT2   |    82|
-|5     |LUT3   |    21|
+|3     |LUT1   |    39|
+|4     |LUT2   |   104|
+|5     |LUT3   |    23|
 |6     |LUT4   |    20|
 |7     |LUT5   |    23|
-|8     |LUT6   |    30|
-|9     |FDCE   |    43|
+|8     |LUT6   |    37|
+|9     |FDCE   |    44|
 |10    |FDPE   |    20|
-|11    |FDRE   |   109|
+|11    |FDRE   |   130|
 |12    |LD     |    17|
-|13    |LDC    |     8|
-|14    |IBUF   |     6|
+|13    |LDC    |    16|
+|14    |IBUF   |     8|
 |15    |OBUF   |     7|
 |16    |OBUFT  |    18|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+----------------------+-------------+------+
-|      |Instance              |Module       |Cells |
-+------+----------------------+-------------+------+
-|1     |top                   |             |   480|
-|2     |  Hardware_Control_1  |PWM_Module   |    86|
-|3     |  Hardware_Control_2  |PWM_Module_0 |    86|
-|4     |  Hardware_Feedback_1 |Encoder      |    58|
-|5     |  InterfaceTiva1      |SPI_MOSI     |   145|
-|6     |  InterfaceTiva2      |SPI_MISO     |    71|
-+------+----------------------+-------------+------+
++------+----------------------+-----------------+------+
+|      |Instance              |Module           |Cells |
++------+----------------------+-----------------+------+
+|1     |top                   |                 |   545|
+|2     |  Hardware_Control_1  |PWM_Module       |    88|
+|3     |  Hardware_Control_2  |PWM_Module_0     |    88|
+|4     |  Hardware_Feedback_1 |Encoder          |    52|
+|5     |  Hardware_Feedback_2 |Encoder_1        |    52|
+|6     |  InterfaceTiva1      |SPI_MOSI         |   141|
+|7     |  InterfaceTiva2      |SPI_MISO         |    80|
+|8     |  encoder_filter_1    |Encoder_filter   |     4|
+|9     |  encoder_filter_2    |Encoder_filter_2 |     4|
++------+----------------------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1013.289 ; gain = 412.758
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1019.781 ; gain = 417.820
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1013.289 ; gain = 320.715
-Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1013.289 ; gain = 412.758
+Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:53 . Memory (MB): peak = 1019.781 ; gain = 326.414
+Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 1019.781 ; gain = 417.820
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1013.289 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 61 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1019.781 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 69 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1022.695 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1027.168 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 25 instances were transformed.
+  A total of 33 instances were transformed.
   LD => LDCE: 16 instances
   LD => LDCE (inverted pins: G): 1 instance 
-  LDC => LDCE: 8 instances
+  LDC => LDCE: 16 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-33 Infos, 139 Warnings, 81 Critical Warnings and 0 Errors encountered.
+37 Infos, 152 Warnings, 81 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1022.695 ; gain = 717.543
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1022.695 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:10 . Memory (MB): peak = 1027.168 ; gain = 721.078
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1027.168 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/frida/Documents/4_semester/Projekt/Sempro4/VHDL_program/VHDL_program.runs/synth_1/TopLevel.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.runs/synth_1/TopLevel.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file TopLevel_utilization_synth.rpt -pb TopLevel_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat May 23 10:36:33 2020...
+INFO: [Common 17-206] Exiting Vivado at Sun May 24 15:27:59 2020...
