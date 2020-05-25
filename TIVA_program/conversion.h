@@ -35,7 +35,7 @@ void textToArray(INT8U array[], INT8U length, INT8U *ptr_Array);
 *   Function : Copy array to other array,
 ******************************************************************************/
 
-void numberToArray(INT16U number, INT8U *ptr_tempArray);
+void numberToArray(INT16S number, INT8U *ptr_tempArray);
 /*****************************************************************************
 *   Input    : Number to be converted, array to save converted number
 *   Output   : -

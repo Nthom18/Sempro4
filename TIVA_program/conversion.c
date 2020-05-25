@@ -47,45 +47,52 @@ void textToArray(INT8U array[], INT8U length, INT8U *ptr_Array)
 
 
 
-void numberToArray(INT16U number, INT8U *ptr_tempArray)
+void numberToArray(INT16S number, INT8U *ptr_tempArray)
 /*****************************************************************************
 *   Function : See module specification (.h-file).
 *****************************************************************************/
 {
+	if (number < 0) {
+		ptr_tempArray[0] = '-';
+		number = -number;
+	}
+	else
+	{
+		ptr_tempArray[0] = ' ';
+	}
     if (number >= 10000)
     {
-        ptr_tempArray[0] = (number / 10000) + '0';
-    }
-    else
-    {
-        ptr_tempArray[0] = ' ';
-    }
-    if (number >= 1000)
-    {
-        ptr_tempArray[1] = ((number % 10000) / 1000) + '0';
+        ptr_tempArray[1] = (number / 10000) + '0';
     }
     else
     {
         ptr_tempArray[1] = ' ';
     }
-    if (number >= 100)
+    if (number >= 1000)
     {
-        ptr_tempArray[2] = ((number % 1000) / 100) + '0';      //hundreds
+        ptr_tempArray[2] = ((number % 10000) / 1000) + '0';
     }
     else
     {
         ptr_tempArray[2] = ' ';
     }
-    if (number >= 10)
+    if (number >= 100)
     {
-        ptr_tempArray[3] = ((number % 100) / 10) + '0';
+        ptr_tempArray[3] = ((number % 1000) / 100) + '0';      //hundreds
     }
     else
     {
         ptr_tempArray[3] = ' ';
     }
-    ptr_tempArray[4] = (number % 10) + '0';
-    //ptr_tempArray[5] = '\n';
+    if (number >= 10)
+    {
+        ptr_tempArray[4] = ((number % 100) / 10) + '0';
+    }
+    else
+    {
+        ptr_tempArray[4] = ' ';
+    }
+    ptr_tempArray[5] = (number % 10) + '0';
 }
 
 

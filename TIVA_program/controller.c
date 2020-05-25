@@ -95,7 +95,7 @@ void pid_controller_pan(void)
     INT8U y_rad_array_TEMP[] = "None  ";
 	INT8U *ptr_y_rad_array_TEMP = &y_rad_array_TEMP;
 
-	INT16U y_rad_temp = 0;
+	INT16S y_rad_temp = 0;
 	INT8U uart_counter = 0;
 
     while (1)
@@ -217,7 +217,7 @@ void pid_controller_tilt(void)
     INT8U y_rad_array_TEMP[] = "None  ";
     INT8U *ptr_y_rad_array_TEMP = &y_rad_array_TEMP;
 
-    INT16U y_rad_temp = 0;
+    INT16S y_rad_temp = 0;
     INT8U uart_counter = 0;
 
     while (1)
