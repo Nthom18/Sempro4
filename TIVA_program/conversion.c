@@ -107,6 +107,13 @@ void floatToArray(FP64 number, INT8U *ptr_tempArray)  //numbers from 0.01 to 99.
     INT8U counterTenths = 0;
     INT8U counterHundredths = 0;
 
+    if (number < 0) {
+        	ptr_tempArray[0] = '-';
+        	tempNumber = -tempNumber;
+        } else {
+        	ptr_tempArray[0] = ' ';
+        }
+
     while (tempNumber >= 10)
     {
         counterTens++;
@@ -134,38 +141,38 @@ void floatToArray(FP64 number, INT8U *ptr_tempArray)  //numbers from 0.01 to 99.
 
     if (counterTens > 0)
     {
-        ptr_tempArray[0] = counterTens + '0';     //tens
+        ptr_tempArray[1] = counterTens + '0';     //tens
     }
     else
     {
-        ptr_tempArray[0] = ' ';
+        ptr_tempArray[1] = ' ';
     }
     if (counterOnes >= 0)
     {
-        ptr_tempArray[1] = counterOnes + '0';  //ones
+        ptr_tempArray[2] = counterOnes + '0';  //ones
     }
     else
     {
-        ptr_tempArray[1] = '0';
+        ptr_tempArray[2] = '0';
     }
 
-    ptr_tempArray[2] = '.';
+    ptr_tempArray[3] = '.';
 
     if (counterTenths > 0)
     {
-        ptr_tempArray[3] = counterTenths + '0';      //0.1
-    }
-    else
-    {
-        ptr_tempArray[3] = '0';
-    }
-    if (counterHundredths  > 0)
-    {
-        ptr_tempArray[4] = counterHundredths  + '0';      //0.01
+        ptr_tempArray[4] = counterTenths + '0';      //0.1
     }
     else
     {
         ptr_tempArray[4] = '0';
+    }
+    if (counterHundredths  > 0)
+    {
+        ptr_tempArray[5] = counterHundredths  + '0';      //0.01
+    }
+    else
+    {
+        ptr_tempArray[5] = '0';
     }
 }
 
@@ -183,6 +190,12 @@ void floatToArrayTenThousand(FP32 number, INT8U *ptr_tempArray)  //numbers from 
     INT8U counterTenths = 0;
     INT8U counterHundredths = 0;
 
+    if (number < 0) {
+    	ptr_tempArray[0] = '-';
+    	number = -number;
+    } else {
+    	ptr_tempArray[0] = ' ';
+    }
 
     while (tempNumber >= 10000)
     {
@@ -225,62 +238,62 @@ void floatToArrayTenThousand(FP32 number, INT8U *ptr_tempArray)  //numbers from 
 
     if (counterTenThousands > 0)
     {
-        ptr_tempArray[0] = counterTenThousands + '0';     //ten thousands
-    }
-    else
-    {
-        ptr_tempArray[0] = ' ';
-    }
-    if ((counterThousands > 0) | (counterTenThousands > 0))
-    {
-        ptr_tempArray[1] = counterThousands + '0';     //thousands
+        ptr_tempArray[1] = counterTenThousands + '0';     //ten thousands
     }
     else
     {
         ptr_tempArray[1] = ' ';
     }
-    if ((counterHundreds >0) | (counterThousands > 0) | (counterTenThousands > 0))
+    if ((counterThousands > 0) | (counterTenThousands > 0))
     {
-        ptr_tempArray[2] = counterHundreds + '0';     //hundreds
+        ptr_tempArray[2] = counterThousands + '0';     //thousands
     }
     else
     {
         ptr_tempArray[2] = ' ';
     }
-    if ((counterTens > 0) | (counterHundreds > 0) | (counterThousands > 0) | (counterTenThousands > 0))
+    if ((counterHundreds >0) | (counterThousands > 0) | (counterTenThousands > 0))
     {
-        ptr_tempArray[3] = counterTens + '0';     //tens
+        ptr_tempArray[3] = counterHundreds + '0';     //hundreds
     }
     else
     {
         ptr_tempArray[3] = ' ';
     }
-    if (counterOnes >= 0)
+    if ((counterTens > 0) | (counterHundreds > 0) | (counterThousands > 0) | (counterTenThousands > 0))
     {
-        ptr_tempArray[4] = counterOnes + '0';  //ones
+        ptr_tempArray[4] = counterTens + '0';     //tens
     }
     else
     {
-        ptr_tempArray[4] = '0';
+        ptr_tempArray[4] = ' ';
+    }
+    if (counterOnes >= 0)
+    {
+        ptr_tempArray[5] = counterOnes + '0';  //ones
+    }
+    else
+    {
+        ptr_tempArray[5] = '0';
     }
 
-    ptr_tempArray[5] = '.';
+    ptr_tempArray[6] = '.';
 
     if (counterTenths > 0)
     {
-        ptr_tempArray[6] = counterTenths + '0';      //0.1
-    }
-    else
-    {
-        ptr_tempArray[6] = '0';
-    }
-    if (counterHundredths  > 0)
-    {
-        ptr_tempArray[7] = counterHundredths  + '0';      //0.01
+        ptr_tempArray[7] = counterTenths + '0';      //0.1
     }
     else
     {
         ptr_tempArray[7] = '0';
+    }
+    if (counterHundredths  > 0)
+    {
+        ptr_tempArray[8] = counterHundredths  + '0';      //0.01
+    }
+    else
+    {
+        ptr_tempArray[8] = '0';
     }
 
 }

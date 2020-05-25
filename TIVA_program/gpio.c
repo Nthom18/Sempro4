@@ -44,6 +44,9 @@ void init_gpio(void)
   // Do a dummy read to insert a few cycles after enabling the peripheral.
   dummy = SYSCTL_RCGC2_R;
 
+  GPIO_PORTF_LOCK_R = 0x4C4F434B;	//unlock GPIO_PORT_F
+  GPIO_PORTF_CR_R = 0x1F;			// Allow changes to PF4-PF0
+
   // Set the direction as output
   GPIO_PORTA_DIR_R &= 0x1F;   //Set PA7 to PA5 as input
   GPIO_PORTF_DIR_R = 0x0E;    //(PF1, PF2 and PF3).

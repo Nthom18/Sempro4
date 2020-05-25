@@ -13,6 +13,7 @@ C_SRCS += \
 ../conversion.c \
 ../gpio.c \
 ../heap_2.c \
+../joystick.c \
 ../list.c \
 ../main.c \
 ../port.c \
@@ -29,6 +30,7 @@ C_DEPS += \
 ./conversion.d \
 ./gpio.d \
 ./heap_2.d \
+./joystick.d \
 ./list.d \
 ./main.d \
 ./port.d \
@@ -45,6 +47,7 @@ OBJS += \
 ./conversion.o \
 ./gpio.o \
 ./heap_2.o \
+./joystick.o \
 ./list.o \
 ./main.o \
 ./port.o \
@@ -61,6 +64,7 @@ OBJS__QUOTED += \
 "conversion.o" \
 "gpio.o" \
 "heap_2.o" \
+"joystick.o" \
 "list.o" \
 "main.o" \
 "port.o" \
@@ -77,6 +81,7 @@ C_DEPS__QUOTED += \
 "conversion.d" \
 "gpio.d" \
 "heap_2.d" \
+"joystick.d" \
 "list.d" \
 "main.d" \
 "port.d" \
@@ -93,6 +98,7 @@ C_SRCS__QUOTED += \
 "../conversion.c" \
 "../gpio.c" \
 "../heap_2.c" \
+"../joystick.c" \
 "../list.c" \
 "../main.c" \
 "../port.c" \

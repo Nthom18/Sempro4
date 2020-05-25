@@ -36,6 +36,9 @@ int main(void)
     //Initialize uart0
     uart0_init(BAUD_RATE, DATA_BITS, STOP_BITS, PARITY);
 
+    // Initialize adc for joystick input
+    init_adc();
+
     //FreeRTOS task scheduler
     task_manager();
 

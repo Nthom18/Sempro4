@@ -32,7 +32,19 @@
 
 #define UMAX        12
 #define UMIN        -12
-#define INCREMENT (PI/4.0)
+
+#define TICKS_PAN_CW   241.1
+#define TICKS_PAN_CCW  264.8
+#define TICKS_TILT_CW  251.3
+#define TICKS_TILT_CCW 270
+
+#define PWM_LIM_PAN_CW   10
+#define PWM_LIM_PAN_CCW   9
+#define PWM_LIM_TILT_CW  20
+#define PWM_LIM_TILT_CCW 25
+
+#define POS_LIM_PAN_CW  -1.41
+#define POS_LIM_PAN_CCW  1.25
 
 //Queues for samples from frame 1 and 2
 extern QueueHandle_t placementPanFrameQueue, placementTiltFrameQueue;
@@ -48,7 +60,8 @@ extern QueueHandle_t uart0Queue;
 
 /*****************************   Variables   *******************************/
 
-extern INT8U ref_tilt;
+extern FP32 joystick_pan;
+extern FP32 joystick_tilt;
 
 
 /*****************************   Functions   *******************************/
@@ -100,23 +113,38 @@ void pid_controller_pan(void)
 
     while (1)
     {
+    	r += joystick_pan;
+
+    	// Limit reference to workspace bounds.
+    	if (r < POS_LIM_PAN_CW) {			// Check if r is exceeding lower bound.
+    		r = POS_LIM_PAN_CW;				//Limit r to lower bound
+    	} else if (r > POS_LIM_PAN_CCW) {   // Check if r is exceeding upper bound.
+    		r = POS_LIM_PAN_CCW;			//Limit r to upper bound
+    	}
+
         //Blocks task if queue is empty, otherwise save next value from queue in receivedValue
         xStatus = xQueueReceive( placementPanFrameQueue, &y_third_degree,  portMAX_DELAY );
 
         // Temp value for logging position
         y_rad_temp += y_third_degree;
 
-        //Convert from 1/3 degrees to rad
-        y_rad += (2*PI/240)*y_third_degree;    //Possibly added, and MSB possibly sign bit OBS!
+        //Convert from encoder ticks to rad. Take the CW and CCW resolution into account.
+        if (y_third_degree > 0) {
+        	y_rad += (2*PI/TICKS_PAN_CCW)*y_third_degree;	//Convert from positive ticks to rad.
+        } else {
+        	y_rad += (2*PI/TICKS_PAN_CW)*y_third_degree;   //Convert from negative ticks to rad.
+        }
+
 
         // Write temp value to uart for logging
-//      uart_counter++;
-//		if (uart_counter >= 50) {
-//			uart_counter = 0;
-//			numberToArray(y_rad_temp, ptr_y_rad_array_TEMP);
-//			uart0_putca(y_rad_array_TEMP);
-//			uart0_putc('\n');
-//		}
+      uart_counter++;
+		if (uart_counter >= 50) {
+			uart_counter = 0;
+			//numberToArray(y_rad_temp, ptr_y_rad_array_TEMP);
+			floatToArray(y_rad, ptr_y_rad_array_TEMP);
+			uart0_putca(y_rad_array_TEMP);
+			uart0_putc('\n');
+		}
 
         //update variables,
         w2 = w1;
@@ -169,6 +197,14 @@ void pid_controller_pan(void)
 			u0_PWM = (127.0/12.0)*u0;   //cast to integer
 			u0_PWM |= 0x80;         //Negative number MSB = 1
 		}
+
+        // Limit lower PWM
+	   if (u0_PWM & 0x80) {//Negative PWM
+		(u0_PWM & 0x7F) < PWM_LIM_PAN_CW ? u0_PWM = 0 : u0_PWM;
+	   } else {//Positive PWM
+		u0_PWM < PWM_LIM_PAN_CCW ? u0_PWM = 0 : u0_PWM;
+	   }
+
         pwm_pan = u0_PWM;
     }
 }
@@ -214,7 +250,7 @@ void pid_controller_tilt(void)
     FP64 b1 = -(Ts*((8*(Kp + Kd*N))/(Ts*Ts) - 2*Ki*N))/(2*(N + 2/Ts));
     FP64 b2 = (Ts*((4*(Kp + Kd*N))/(Ts*Ts) - (2*Ki + 2*Kp*N)/Ts + Ki*N))/(2*(N + 2/Ts));
 
-    INT8U y_rad_array_TEMP[] = "None  ";
+    INT8U y_rad_array_TEMP[] = "None   ";
     INT8U *ptr_y_rad_array_TEMP = &y_rad_array_TEMP;
 
     INT16S y_rad_temp = 0;
@@ -222,7 +258,7 @@ void pid_controller_tilt(void)
 
     while (1)
     {
-    	//r = ref_tilt * INCREMENT;
+    	r += joystick_tilt;
 
         //Blocks task if queue is empty, otherwise save next value from queue in receivedValue
         xStatus = xQueueReceive( placementTiltFrameQueue, &y_third_degree,  portMAX_DELAY );
@@ -230,17 +266,23 @@ void pid_controller_tilt(void)
         // Temp value for logging position
         y_rad_temp += y_third_degree;
 
-        //Convert from 1/3 degrees to rad
-        y_rad += (2*PI/270)*y_third_degree;    //Possibly added, and MSB possibly sign bit OBS!
+        //Convert from encoder ticks to rad. Take the CW and CCW resolution into account.
+        if (y_third_degree > 0) {
+        	y_rad += (2*PI/TICKS_TILT_CCW)*y_third_degree;	//Convert from positive ticks to rad.
+        } else {
+        	y_rad += (2*PI/TICKS_TILT_CW)*y_third_degree;   //Convert from negative ticks to rad.
+        }
+
 
         // Write temp value to uart for logging
-        uart_counter++;
-        if (uart_counter >= 50) {
-			uart_counter = 0;
-			numberToArray(y_rad_temp, ptr_y_rad_array_TEMP);
-			uart0_putca(y_rad_array_TEMP);
-			uart0_putc('\n');
-        }
+//        uart_counter++;
+//        if (uart_counter >= 50) {
+//			uart_counter = 0;
+//			//numberToArray(y_rad_temp, ptr_y_rad_array_TEMP);
+//			floatToArray(y_rad / (2*PI), ptr_y_rad_array_TEMP);
+//			uart0_putca(y_rad_array_TEMP);
+//			uart0_putc('\n');
+//        }
 
 
         //update variables,
@@ -294,6 +336,14 @@ void pid_controller_tilt(void)
         	u0_PWM = (127.0/12.0)*u0;   //cast to integer
             u0_PWM |= 0x80;         //Negative number MSB = 1
         }
+
+        // Limit lower PWM
+        if (u0_PWM & 0x80) {//Negative PWM
+        	(u0_PWM & 0x7F) < PWM_LIM_TILT_CW ? u0_PWM = 0 : u0_PWM;
+        } else {//Positive PWM
+        	u0_PWM < PWM_LIM_TILT_CCW ? u0_PWM = 0 : u0_PWM;
+        }
+
         pwm_tilt = u0_PWM;
     }
 }

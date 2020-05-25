@@ -13,7 +13,7 @@ task_manager.o: ../task_manager.c \
  C:/Users/chris/Desktop/UNI/4\ Semester/PRO4/Sempro4/TIVA_program/frt10/inc/list.h \
  C:/Users/chris/Desktop/UNI/4\ Semester/PRO4/Sempro4/TIVA_program/frt10/inc/queue.h \
  C:/Users/chris/Desktop/UNI/4\ Semester/PRO4/Sempro4/TIVA_program/frt10/inc/task.h \
- ../uart0.h ../spi.h ../glob_def.h ../controller.h
+ ../uart0.h ../spi.h ../glob_def.h ../controller.h ../joystick.h
 
 C:/Users/chris/Desktop/UNI/4\ Semester/PRO4/Sempro4/TIVA_program/includes/tm4c123gh6pm.h:
 
@@ -50,3 +50,5 @@ C:/Users/chris/Desktop/UNI/4\ Semester/PRO4/Sempro4/TIVA_program/frt10/inc/task.
 ../glob_def.h:
 
 ../controller.h:
+
+../joystick.h:

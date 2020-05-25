@@ -33,6 +33,7 @@
 #include "spi.h"
 #include "glob_def.h"
 #include "controller.h"
+#include "joystick.h"
 
 
 /*****************************    Defines    *******************************/
@@ -128,7 +129,12 @@ void task_manager()
 //                     1,
 //                     NULL);
 
-
+    xTaskCreate(joystick_task,
+				"joystick",
+				configMINIMAL_STACK_SIZE,
+				NULL,
+				2,
+				NULL);
 
     vTaskStartScheduler();
 
