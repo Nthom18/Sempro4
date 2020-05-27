@@ -1,6 +1,12 @@
+----------------------------------------------------------------------------------
+-- University of Southern Denmark
+-- RB-PRO4 - Group 4 
+-- Semesterproject in control and regulation of robotic systems
+-- Module: SPI_MOSI
+-- Create Date: 03/28/2020 03:08:09 PM
+----------------------------------------------------------------------------------
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
-
 
 ENTITY SPI_MOSI IS
     GENERIC(data_length : INTEGER := 16);
@@ -18,8 +24,6 @@ SIGNAL data_temp : STD_LOGIC_VECTOR (data_length-1 downto 0) := (others => '0');
 SIGNAL index : INTEGER := data_length - 1;
 
 BEGIN
-  
-    
     PROCESS(sck, ss)
     BEGIN
         IF Rising_edge(sck) THEN                --If rising edge of clock, read bit from mosi into data_temp at index, and update index
@@ -42,5 +46,4 @@ BEGIN
             index <= data_length - 1;
         END IF;
     END PROCESS;
-
 END Behavioral;

@@ -1,35 +1,13 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 24.05.2020 14:43:40
--- Design Name: 
--- Module Name: Encoder_filter - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
+-- University of Southern Denmark
+-- RB-PRO4 - Group 4 
+-- Semesterproject in control and regulation of robotic systems
+-- Module: Encoder_filter
+-- Create Date: 03/28/2020 03:08:09 PM
+-- NOTE: This module is based on material given during the course "Indlejret programmering og digital programmebar elektronik"
 ----------------------------------------------------------------------------------
-
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity Encoder_filter is
   Port ( Clk : in STD_LOGIC;

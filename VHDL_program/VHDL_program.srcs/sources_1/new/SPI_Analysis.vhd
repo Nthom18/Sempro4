@@ -1,37 +1,14 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 04/28/2020 10:44:29 AM
--- Design Name: 
--- Module Name: SPI_Analysis - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
+-- University of Southern Denmark
+-- RB-PRO4 - Group 4 
+-- Semesterproject in control and regulation of robotic systems
+-- Module: SPI_analysis
+-- Create Date: 03/28/2020 03:08:09 PM
 ----------------------------------------------------------------------------------
-
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity SPI_Analysis is
   Port (Clk: in STD_LOGIC;
@@ -47,43 +24,6 @@ end SPI_Analysis;
 
 architecture Behavioral of SPI_Analysis is
 begin
-
---process(ready)
---    variable SPI_angle_send : std_logic := '0';
---    variable SPI_register : std_logic_vector(6 downto 0);
-    
---    begin
---        if (Rising_edge(ready)) then
---            --Last received data was receive new angle
---            if (SPI_angle_send = '1') then
---                SPI_angle_send := '0';  --reset bool to allow for next transfer
---                case SPI_register(6 downto 0) is
---                    when "0000010" =>
---                        PWMMotor1 <= data_received(7 downto 0); 
-                        
---                    when "0000011" =>
---                        PWMMotor2 <= data_received(7 downto 0); 
-                    
---                    when others =>
---                end case;     
---            -- "read" - send angle placement in register data_received(6 downto 0)
---            elsif (data_received(7) = '0') then  
---                case  data_received(6 downto 0) is
---                    when "0000000" =>
---                        data_send <= AngleMotor1(7 downto 0);
---                    when "0000001" =>
---                        data_send <= AngleMotor2(7 downto 0);
---                    when others =>                  
---                 end case;
---                 enable_MISO <= '1';
-                  
---            --"Write" - change register(6 downto 0) to the content of next SPI transmission (MOSI)
---            elsif (data_received(7) = '1' ) then
---                SPI_angle_send := '1';
---                SPI_register := data_received(6 downto 0);                    
---            end if; 
---        end if;
---    end process;
     
     data_send <= AngleMotor1(7 downto 0) & AngleMotor2(7 downto 0);
     PWMMotor1 <= data_received(15 downto 8);

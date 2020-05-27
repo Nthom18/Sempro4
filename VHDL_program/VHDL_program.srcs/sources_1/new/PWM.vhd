@@ -1,38 +1,15 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 03/13/2020 01:13:32 PM
--- Design Name: 
--- Module Name: PWM - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
+-- University of Southern Denmark
+-- RB-PRO4 - Group 4 
+-- Semesterproject in control and regulation of robotic systems
+-- Module: PWM
+-- Create Date: 03/28/2020 03:08:09 PM
+-- NOTE: This module is based on material given during the course "Indlejret programmering og digital programmebar elektronik"
 ----------------------------------------------------------------------------------
-
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
-
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity PWM_Module is
     generic (N: natural := 8; --Should be chosen to fit the applicaiton (have chosen 8 bits because this is the number of bits pr data transfer, fix if nessesary)
@@ -56,7 +33,7 @@ begin
     --Implements clockscaling
     if rising_edge(Clk)then
         if Count>=Scalex then
-            Scaled_clk <= '1';--Sets Scaled_clk to one once every scaled_clock cycle
+            Scaled_clk <= '1'; --Sets Scaled_clk to one once every scaled_clock cycle
             Count      := 0;
         else
             Scaled_clk <= '0';

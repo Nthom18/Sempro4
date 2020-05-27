@@ -1,0 +1,59 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed May 27 15:36:27 2020
+# Process ID: 4872
+# Current directory: C:/Users/chris/Desktop/UNI/4 Semester/PRO4/Sempro4/VHDL_program
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32444 C:\Users\chris\Desktop\UNI\4 Semester\PRO4\Sempro4\VHDL_program\VHDL_program.xpr
+# Log file: C:/Users/chris/Desktop/UNI/4 Semester/PRO4/Sempro4/VHDL_program/vivado.log
+# Journal file: C:/Users/chris/Desktop/UNI/4 Semester/PRO4/Sempro4/VHDL_program\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/chris/Desktop/UNI/4 Semester/PRO4/Sempro4/VHDL_program/VHDL_program.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/chris/Desktop/UNI/4 Semester/PRO4/Sempro4/VHDL_program/VHDL_program.ip_user_files', nor could it be found using path 'C:/Users/sunes/Documents/4.semester/Sempro4/VHDL_program/VHDL_program.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 793.023 ; gain = 117.762
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May 27 15:58:35 2020] Launched synth_1...
+Run output will be captured here: C:/Users/chris/Desktop/UNI/4 Semester/PRO4/Sempro4/VHDL_program/VHDL_program.runs/synth_1/runme.log
+[Wed May 27 15:58:35 2020] Launched impl_1...
+Run output will be captured here: C:/Users/chris/Desktop/UNI/4 Semester/PRO4/Sempro4/VHDL_program/VHDL_program.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May 27 15:59:43 2020] Launched synth_1...
+Run output will be captured here: C:/Users/chris/Desktop/UNI/4 Semester/PRO4/Sempro4/VHDL_program/VHDL_program.runs/synth_1/runme.log
+[Wed May 27 15:59:43 2020] Launched impl_1...
+Run output will be captured here: C:/Users/chris/Desktop/UNI/4 Semester/PRO4/Sempro4/VHDL_program/VHDL_program.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1122.809 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1783.461 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1783.461 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1783.461 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 1912.777 ; gain = 1012.637
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 27 16:02:25 2020...
