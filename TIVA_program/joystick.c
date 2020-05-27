@@ -109,8 +109,8 @@ void joystick_task()
                 adc_get_samples(&tempx, &tempy);
                 //joystick_hard_offset(&tempx, &tempy);		//Works without calibration on Christopher's Tiva
                 //convert;
-                joystick_pan  = 3*(tempx - 2009) / (500000.0 / 3.1415926532);
-                joystick_tilt = 3*(tempy - 2123) / (500000.0 / 3.1415926532);
+                joystick_pan  = (tempx - 2009) / 32404.0;
+                joystick_tilt = (tempy - 2123) / 34242.0;
 
                 if ((tempx - 2009) < 100 && (tempx - 2009) > -100) {
                 	joystick_pan = 0;
