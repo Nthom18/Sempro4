@@ -94,12 +94,12 @@ void task_manager()
                  4,
                  NULL);
 
-//    xTaskCreate( uart0_task,
-//                 "Uart0",
-//                 128,//configMINIMAL_STACK_SIZE,
-//                 NULL,
-//                 2,
-//                 NULL);
+    xTaskCreate( uart0_task,
+                 "Uart0",
+                 128,//configMINIMAL_STACK_SIZE,
+                 NULL,
+                 2,
+                 NULL);
 
 //    xTaskCreate( driver_test_led,
 //                 "Test",

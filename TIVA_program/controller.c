@@ -110,6 +110,7 @@ void pid_controller_pan(void)
 
 	INT16S y_rad_temp = 0;
 	INT8U uart_counter = 0;
+	const INT8U ch = 'P';
 
     while (1)
     {
@@ -136,14 +137,12 @@ void pid_controller_pan(void)
         }
 
 
-        // Write temp value to uart for logging
-      uart_counter++;
+        // Write value to uart for logging
+		uart_counter++;
 		if (uart_counter >= 50) {
 			uart_counter = 0;
-			//numberToArray(y_rad_temp, ptr_y_rad_array_TEMP);
 			floatToArray(y_rad, ptr_y_rad_array_TEMP);
-			uart0_putca(y_rad_array_TEMP);
-			uart0_putc('\n');
+			log_data(ch, ptr_y_rad_array_TEMP);
 		}
 
         //update variables,
@@ -255,6 +254,7 @@ void pid_controller_tilt(void)
 
     INT16S y_rad_temp = 0;
     INT8U uart_counter = 0;
+    const INT8U ch = 'T';
 
     while (1)
     {
@@ -274,15 +274,13 @@ void pid_controller_tilt(void)
         }
 
 
-        // Write temp value to uart for logging
-//        uart_counter++;
-//        if (uart_counter >= 50) {
-//			uart_counter = 0;
-//			//numberToArray(y_rad_temp, ptr_y_rad_array_TEMP);
-//			floatToArray(y_rad / (2*PI), ptr_y_rad_array_TEMP);
-//			uart0_putca(y_rad_array_TEMP);
-//			uart0_putc('\n');
-//        }
+        // Write value to uart for logging
+        uart_counter++;
+        if (uart_counter >= 50) {
+			uart_counter = 0;
+			floatToArray(y_rad, ptr_y_rad_array_TEMP);
+			log_data(ch, ptr_y_rad_array_TEMP);
+        }
 
 
         //update variables,
@@ -347,4 +345,20 @@ void pid_controller_tilt(void)
         pwm_tilt = u0_PWM;
     }
 }
+
+void log_data(INT8U ch, INT8U *ptr_data) {
+	INT8U col = ':';
+
+	xQueueSendToBack(uart0Queue, &ch, 0);
+	xQueueSendToBack(uart0Queue, &col, 0);
+
+	for (INT8U i = 0; i < 7; i++) {
+		col = ptr_data[i];
+		xQueueSendToBack(uart0Queue, &col, 0);
+	}
+	col = '\n';
+	xQueueSendToBack(uart0Queue, &col, 0);
+	return;
+}
+
 /****************************** End Of Module *******************************/
