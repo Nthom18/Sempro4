@@ -1,27 +1,9 @@
-/*
- * controller.h
- *
- *  Created on: 12. maj 2020
- *      Author: frida
- */
-
-
 /*****************************************************************************
 * University of Southern Denmark
-*
-* MODULENAME.: controller.h
-*
-* PROJECT....: Semester project F20
-*
-* DESCRIPTION: .
-*
-* Change Log:
-******************************************************************************
-* Date    Id    Change
-* YYMMDD
-* --------------------
-* 200512  FBS   Module created.
-*
+* RB-PRO4 - Group 4
+* Semesterproject in control and regulation of robotic systems
+* Module: controller.h
+* Created 12/05/2020
 *****************************************************************************/
 
 #ifndef CONTROLLER_H_
@@ -38,14 +20,14 @@ void pid_controller_pan(void);
 /*****************************************************************************
 *   Input    : -
 *   Output   : -
-*   Function :
+*   Function : Implementation of the designed controller for the pan frame.
 ******************************************************************************/
 
 void pid_controller_tilt(void);
 /*****************************************************************************
 *   Input    : -
 *   Output   : -
-*   Function :
+*   Function : Implementation of the designed controller for the tilt frame.
 ******************************************************************************/
 
 

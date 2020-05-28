@@ -1,21 +1,9 @@
 /*****************************************************************************
 * University of Southern Denmark
-*
-*
-* MODULENAME.: spi.h
-*
-* PROJECT....: EMP
-*
-* DESCRIPTION: Test.
-*
-* Change Log:
-******************************************************************************
-* Date    Id          Change
-* YYMMDD
-* --------------------
-* 200306  CH          Module created.
-* 200505  CSN & FBS   SPI task created.
-*
+* RB-PRO4 - Group 4
+* Semesterproject in control and regulation of robotic systems
+* Module: spi.h
+* Created 20/03/2020
 *****************************************************************************/
 
 #ifndef _SPI_H

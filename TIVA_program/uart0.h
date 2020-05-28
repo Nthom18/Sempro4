@@ -1,20 +1,10 @@
 /*****************************************************************************
 * University of Southern Denmark
-* Embedded Programming (EMP)
-*
-* MODULENAME.: uart.h
-*
-* PROJECT....: EMP
-*
-* DESCRIPTION: Test.
-*
-* Change Log:
-******************************************************************************
-* Date    Id    Change
-* YYMMDD
-* --------------------
-* 150228  MoH   Module created.
-*
+* RB-PRO4 - Group 4
+* Semesterproject in control and regulation of robotic systems
+* Module: uart0.h
+* Created -
+* NOTE: This module is based on material given during the course "Indlejret programmering og digital programmebar elektronik"
 *****************************************************************************/
 
 #ifndef _UART_H

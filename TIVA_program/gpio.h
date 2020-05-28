@@ -1,19 +1,10 @@
 /*****************************************************************************
 * University of Southern Denmark
-*
-* MODULENAME.: gpio.h
-*
-* PROJECT....: Semester project F20
-*
-* DESCRIPTION: Setup of GPIO.
-*
-* Change Log:
-******************************************************************************
-* Date    Id    Change
-* YYMMDD
-* --------------------
-* 200403  FBS   Module created.
-*
+* RB-PRO4 - Group 4
+* Semesterproject in control and regulation of robotic systems
+* Module: gpio.h
+* Created 03/04/2020
+* NOTE: This module is based on material given during the course "Indlejret programmering og digital programmebar elektronik"
 *****************************************************************************/
 
 #ifndef GPIO_H_

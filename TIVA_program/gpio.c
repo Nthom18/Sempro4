@@ -1,19 +1,10 @@
 /*****************************************************************************
 * University of Southern Denmark
-*
-* MODULENAME.: gpio.c
-*
-* PROJECT....: Semester project F20
-*
-* DESCRIPTION: See module specification file (.h-file).
-*
-* Change Log:
-*****************************************************************************
-* Date    Id    Change
-* YYMMDD
-* --------------------
-* 200403  FBS   Module created.
-*
+* RB-PRO4 - Group 4
+* Semesterproject in control and regulation of robotic systems
+* Module: gpio.c
+* Created 03/04/2020
+* NOTE: This module is based on material given during the course "Indlejret programmering og digital programmebar elektronik"
 *****************************************************************************/
 
 /***************************** Include files *******************************/

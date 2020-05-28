@@ -1,20 +1,9 @@
 /*****************************************************************************
 * University of Southern Denmark
-* Embedded Programming (EMP)
-*
-* MODULENAME.: conversion.h
-*
-* PROJECT....: EMP
-*
-* DESCRIPTION: Conversions from text, INT8U, INT16U and INT32U to array
-*
-* Change Log:
-*****************************************************************************
-* Date    Id    Change
-* YYMMDD
-* --------------------
-* 200517  FBS   Module created.
-*
+* RB-PRO4 - Group 4
+* Semesterproject in control and regulation of robotic systems
+* Module: conversion.h
+* Created 17/05/2020
 *****************************************************************************/
 #ifndef CONVERSION_H_
 #define CONVERSION_H_

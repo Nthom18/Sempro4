@@ -1,20 +1,9 @@
 /*****************************************************************************
 * University of Southern Denmark
-* Embedded C Programming (ECP)
-*
-* MODULENAME.: glob_def.h
-*
-* PROJECT....: ECP
-*
-* DESCRIPTION: Definements of variable types.
-*
-* Change Log:
-******************************************************************************
-* Date    Id    Change
-* YYMMDD
-* --------------------
-* 050128  KA    Module created.
-*
+* RB-PRO4 - Group 4
+* Semesterproject in control and regulation of robotic systems
+* Module: glob_def.h
+* Created 13/03/2020
 *****************************************************************************/
 
 #ifndef _GLOB_DEF_H
@@ -40,16 +29,6 @@
 #define PI      3.141592
 
 #define DONE    2
-
-////Clock commands
-//#define TURN_ON_OFF     '0'
-//#define SET_CLOCK       '1'
-//#define GET_CLOCK       '2'
-
-
-////Queues
-//#define QUEUE_UART0_ID  1
-////#define QUEUE_SPI_TX_ID  2
 
 /*****************************   Constants   *******************************/
 

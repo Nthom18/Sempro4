@@ -1,28 +1,16 @@
 /*****************************************************************************
- * University of Southern Denmark
- * Embedded Programming (EMP)
- *
- * MODULENAME.: emp.c
- *
- * PROJECT....: EMP
- *
- * DESCRIPTION: See module specification file (.h-file).
- *
- * Change Log:
- *****************************************************************************
- * Date    Id          Change
- * YYMMDD
- * --------------------
- * 150228  MoH         Module created.
- * 200505  CSN & FBS   uart0_task created.
- *
- *****************************************************************************/
+* University of Southern Denmark
+* RB-PRO4 - Group 4
+* Semesterproject in control and regulation of robotic systems
+* Module: uart0.c
+* Created -
+* NOTE: This module is based on material given during the course "Indlejret programmering og digital programmebar elektronik"
+*****************************************************************************/
 
 /***************************** Include files *******************************/
 #include <stdint.h>
 #include "tm4c123gh6pm.h"
 #include "emp_type.h"
-/* Kernel includes. */
 #include "FreeRTOS.h"
 #include "task.h"
 #include "queue.h"
@@ -180,8 +168,6 @@ void uart0_task()
  *   Function : See module specification (.h-file).
  *****************************************************************************/
 {
-    //static const TickType_t xDelay1ms = pdMS_TO_TICKS( 1 );
-    //Test
     static const TickType_t xDelay100ms = pdMS_TO_TICKS( 100 );
 
     INT8U receivedValue;
@@ -195,15 +181,10 @@ void uart0_task()
         //Send received value via. uart0
         uart0_putc(receivedValue);  //Add '0' is used to convert from hex to char,
 
-
-        //vTaskDelay( xDelay100ms );
     }
 }
 
 void uart0_rx_task()
-/*
- *   Function : See module specification (.h-file).
- */
 {
     INT8U received_data;
     BaseType_t xStatus;
@@ -243,7 +224,6 @@ extern void uart0_init(INT32U baud_rate, INT8U databits, INT8U stopbits,
 	GPIO_PORTA_DIR_R |= 0x00000002;     // set PA1 (uart0 tx) to output
 	GPIO_PORTA_DIR_R &= 0xFFFFFFFE;     // set PA0 (uart0 rx) to input
 	GPIO_PORTA_DEN_R |= 0x00000003;	// enable digital operation of PA0 and PA1
-	//GPIO_PORTA_PUR_R   |= 0x00000002;
 
 	BRD = 64000000 / baud_rate;   	// X-sys*64/(16*baudrate) = 16M*4/baudrate
 	UART0_IBRD_R = BRD / 64;

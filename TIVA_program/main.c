@@ -1,10 +1,16 @@
+/*****************************************************************************
+* University of Southern Denmark
+* RB-PRO4 - Group 4
+* Semesterproject in control and regulation of robotic systems
+* Module: main.c
+* Created -
+*****************************************************************************/
+
 #include "tm4c123gh6pm.h"
 #include "emp_type.h"
 #include <stdint.h>
 #include <stdio.h>
 #include <task_manager.h>
-
-
 #include "gpio.h"
 #include "glob_def.h"
 #include "spi.h"

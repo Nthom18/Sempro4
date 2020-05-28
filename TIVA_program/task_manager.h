@@ -1,20 +1,9 @@
 /*****************************************************************************
 * University of Southern Denmark
-* Embedded C Programming (ECP)
-*
-* MODULENAME.: gpio.h
-*
-* PROJECT....: ECP
-*
-* DESCRIPTION: RTOS task creation and control
-*
-* Change Log:
-******************************************************************************
-* Date    Id    Change
-* YYMMDD
-* --------------------
-* 200403  FBS   Module created.
-*
+* RB-PRO4 - Group 4
+* Semesterproject in control and regulation of robotic systems
+* Module: task_manage.h
+* Created 03/04/2020
 *****************************************************************************/
 
 #ifndef TASK_MANAGER_H_
@@ -32,7 +21,7 @@ void task_manager();
 /*****************************************************************************
 *   Input    : -
 *   Output   : -
-*   Function : Task handler,
+*   Function : Task handler
 ******************************************************************************/
 
 /****************************** End Of Module *******************************/

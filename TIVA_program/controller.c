@@ -1,19 +1,9 @@
 /*****************************************************************************
 * University of Southern Denmark
-*
-* MODULENAME.: controller.c
-*
-* PROJECT....: Semester project F20
-*
-* DESCRIPTION: See module specification file (.h-file).
-*
-* Change Log:
-*****************************************************************************
-* Date    Id    Change
-* YYMMDD
-* --------------------
-* 200512  FBS   Module created.
-*
+* RB-PRO4 - Group 4
+* Semesterproject in control and regulation of robotic systems
+* Module: gpio.c
+* Created 12/05/2020
 *****************************************************************************/
 
 /***************************** Include files *******************************/
@@ -73,7 +63,7 @@ void pid_controller_pan(void)
 ******************************************************************************/
 {
     FP64 Kp    =      4.3555;        //Proportional gain
-    FP64 Ti    =      51.5717;
+    FP64 Ti    =      51.5717;		 //Integral constant
     FP64 Td    =      0.11358;       //Derivative constant
     FP64 Ts    =      0.01;          //Sampling time
 
@@ -84,19 +74,13 @@ void pid_controller_pan(void)
 
     INT8U u0_PWM;
 
-    FP64 r = 0;         //reference
+    FP64 r = 0;         	//reference
 
-    //FP64 y;         //output
-
-    //user adjustable parameters -- should be change,
     FP64 Ki = Kp/Ti;        //Integral gain    --set to zero when out of bounds,
     FP64 Kd = Kp*Td;        //Derivative gain
 
-
-    INT8U reference;
     INT8S y_third_degree;
     FP32  y_rad = 0;
-    BaseType_t xStatus;
 
     FP64 a0 = 1;
     FP64 a1 = -4/(Ts*(N+2/Ts));
@@ -217,10 +201,10 @@ void pid_controller_tilt(void)
 *   Function : .
 ******************************************************************************/
 {
-    FP64 Kp    =      10; //3.797;        //Proportional gain
-    FP64 Ti    =      10; //45.9571;
+    FP64 Kp    =      3.797;        //Proportional gain
+    FP64 Ti    =      45.9571;		//Integral constant
     FP64 Td    =      0.071717;     //Derivative constant
-    FP64 Ts    =      0.01;        //Sampling time
+    FP64 Ts    =      0.01;         //Sampling time
 
     FP64 N     =      20.4131;       //Cutoff frequency in rad/s of lowpass filter
 
@@ -230,17 +214,11 @@ void pid_controller_tilt(void)
 
     FP64 r = 0;         //reference
 
-    //FP64 y;         //output
-
-    //user adjustable parameters -- should be change,
     FP64 Ki = Kp/Ti;        //Integral gain    --set to zero when out of bounds,
     FP64 Kd = Kp*Td;        //Derivative gain
 
-
-    INT8U reference;
     INT8S y_third_degree;
     FP32  y_rad = 0;
-    BaseType_t xStatus;
 
     FP64 a0 = 1;
     FP64 a1 = -4/(Ts*(N+2/Ts));
@@ -272,7 +250,6 @@ void pid_controller_tilt(void)
         } else {
         	y_rad += (2*PI/TICKS_TILT_CW)*y_third_degree;   //Convert from negative ticks to rad.
         }
-
 
         // Write value to uart for logging
         uart_counter++;

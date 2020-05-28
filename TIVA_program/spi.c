@@ -1,22 +1,10 @@
 /*****************************************************************************
- * University of Southern Denmark
- * Embedded Programming (EMP)
- *
- * MODULENAME.: spi.c
- *
- * PROJECT....: EMP
- *
- * DESCRIPTION: See module specification file (.h-file).
- *
- * Change Log:
- *****************************************************************************
- * Date    Id          Change
- * YYMMDD
- * --------------------
- * 200306  CH          Module created.
- * 200505  CSN & FBS   SPI task created.
- *
- *****************************************************************************/
+* University of Southern Denmark
+* RB-PRO4 - Group 4
+* Semesterproject in control and regulation of robotic systems
+* Module: spi.c
+* Created 20/03/2020
+*****************************************************************************/
 
 /***************************** Include files *******************************/
 #include "emp_type.h"
@@ -39,10 +27,7 @@
 extern QueueHandle_t placementPanFrameQueue;
 extern QueueHandle_t placementTiltFrameQueue;
 
-
-//Test
 extern QueueHandle_t uart0Queue;
-//End test
 
 //PWM Motor registers
 extern INT8U pwm_pan;
@@ -91,9 +76,6 @@ extern void spi_init(INT8U DDS, INT8U CPSDVSR, BOOLEAN SPH, BOOLEAN SPO)
     //Set polarity
     SSI2_CR0_R |= (SPH << 7);
     SSI2_CR0_R |= (SPO << 6);
-
-    //NB!
-    //SSI2_CR0_R |= 0x400;
 
     //Enable SSI
     SSI2_CR1_R |= 0x2;
@@ -205,24 +187,8 @@ void spi_task()
 
     while(1)
     {
-
-
         //Following function to transmit PWM signals and receive placement of M1 and M2
         received_data = FPGA_update(pwm_pan, pwm_tilt);
-
-
-
-        //test
-        //received_data = '9U';
-
-        //if(received_data != 0){
-            //received_data_frame1 = ((received_data & 0xFF00) >> 8)+ '0';
-//            received_data_frame2 = (received_data & 0xFF) + '0';
-//            xStatus = xQueueSendToBack( uart0Queue, &received_data_frame2, 0);
-        //}
-        //end test
-
-
 
         received_data_frame1 = ((received_data & 0xFF00) >> 8);
         received_data_frame2 = (received_data & 0xFF);
@@ -230,18 +196,6 @@ void spi_task()
         //Store samples from frame 1 and 2 in respective queues,
         xStatus = xQueueSendToBack( placementPanFrameQueue, &received_data_frame1, 0);
         xStatus = xQueueSendToBack( placementTiltFrameQueue, &received_data_frame2, 0);
-
-
-//        //Test code / send data via uart,
-//        xStatus = xQueueSendToBack( uart0Queue, &received_data_frame1, 0);
-//        xStatus = xQueueSendToBack( uart0Queue, &received_data_frame2, 0);
-//        //end test
-//
-//
-//        //test
-//        //received_data = 0;
-//        //end test
-
 
         vTaskDelayUntil( &xLastWakeTime, pdMS_TO_TICKS(10) );
     }

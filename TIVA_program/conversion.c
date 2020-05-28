@@ -1,20 +1,9 @@
 /*****************************************************************************
 * University of Southern Denmark
-* Embedded Programming (EMP)
-*
-* MODULENAME.: conversion.c
-*
-* PROJECT....: EMP
-*
-* DESCRIPTION: See module specification file (.h-file).
-*
-* Change Log:
-*****************************************************************************
-* Date    Id    Change
-* YYMMDD
-* --------------------
-* 200517  FBS   Module created.
-
+* RB-PRO4 - Group 4
+* Semesterproject in control and regulation of robotic systems
+* Module: gpio.c
+* Created 17/05/2020
 *****************************************************************************/
 
 /***************************** Include files *******************************/
