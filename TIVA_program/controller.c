@@ -108,7 +108,7 @@ void pid_controller_pan(void)
     	}
 
         //Blocks task if queue is empty, otherwise save next value from queue in receivedValue
-        xStatus = xQueueReceive( placementPanFrameQueue, &y_third_degree,  portMAX_DELAY );
+        xQueueReceive( placementPanFrameQueue, &y_third_degree,  portMAX_DELAY );
 
         // Temp value for logging position
         y_rad_temp += y_third_degree;
@@ -239,7 +239,7 @@ void pid_controller_tilt(void)
     	r += joystick_tilt;
 
         //Blocks task if queue is empty, otherwise save next value from queue in receivedValue
-        xStatus = xQueueReceive( placementTiltFrameQueue, &y_third_degree,  portMAX_DELAY );
+        xQueueReceive( placementTiltFrameQueue, &y_third_degree,  portMAX_DELAY );
 
         // Temp value for logging position
         y_rad_temp += y_third_degree;

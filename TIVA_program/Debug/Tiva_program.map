@@ -1164,47 +1164,47 @@ OUTPUT(Tiva_program.out elf32-littlearm)
  .comment       0x0000007e       0x7f ./frt10/src/stream_buffer.o
  .comment       0x0000007e       0x7f ./frt10/src/timers.o
 
-.debug_info     0x00000000     0xa965
- .debug_info    0x00000000      0x597 ./controller.o
- .debug_info    0x00000597      0xa93 ./conversion.o
- .debug_info    0x0000102a       0xaf ./gpio.o
- .debug_info    0x000010d9      0xb12 ./heap_2.o
- .debug_info    0x00001beb      0x219 ./joystick.o
- .debug_info    0x00001e04      0xae2 ./list.o
- .debug_info    0x000028e6      0x8d7 ./main.o
- .debug_info    0x000031bd      0x2f8 ./port.o
- .debug_info    0x000034b5     0x17a6 ./queue.o
- .debug_info    0x00004c5b      0x340 ./spi.o
- .debug_info    0x00004f9b      0x190 ./startup_frt.o
- .debug_info    0x0000512b       0xc6 ./systick_frt.o
- .debug_info    0x000051f1      0x954 ./task_manager.o
- .debug_info    0x00005b45     0x1dcd ./tasks.o
- .debug_info    0x00007912      0x375 ./uart0.o
- .debug_info    0x00007c87       0x72 ./frt10/src/croutine.o
- .debug_info    0x00007cf9      0xef2 ./frt10/src/event_groups.o
- .debug_info    0x00008beb     0x14d3 ./frt10/src/stream_buffer.o
- .debug_info    0x0000a0be      0x8a7 ./frt10/src/timers.o
+.debug_info     0x00000000     0xa936
+ .debug_info    0x00000000      0x569 ./controller.o
+ .debug_info    0x00000569      0xa93 ./conversion.o
+ .debug_info    0x00000ffc       0xaf ./gpio.o
+ .debug_info    0x000010ab      0xb12 ./heap_2.o
+ .debug_info    0x00001bbd      0x219 ./joystick.o
+ .debug_info    0x00001dd6      0xae2 ./list.o
+ .debug_info    0x000028b8      0x8d7 ./main.o
+ .debug_info    0x0000318f      0x2f8 ./port.o
+ .debug_info    0x00003487     0x17a6 ./queue.o
+ .debug_info    0x00004c2d      0x33f ./spi.o
+ .debug_info    0x00004f6c      0x190 ./startup_frt.o
+ .debug_info    0x000050fc       0xc6 ./systick_frt.o
+ .debug_info    0x000051c2      0x954 ./task_manager.o
+ .debug_info    0x00005b16     0x1dcd ./tasks.o
+ .debug_info    0x000078e3      0x375 ./uart0.o
+ .debug_info    0x00007c58       0x72 ./frt10/src/croutine.o
+ .debug_info    0x00007cca      0xef2 ./frt10/src/event_groups.o
+ .debug_info    0x00008bbc     0x14d3 ./frt10/src/stream_buffer.o
+ .debug_info    0x0000a08f      0x8a7 ./frt10/src/timers.o
 
-.debug_abbrev   0x00000000     0x1fb6
- .debug_abbrev  0x00000000      0x186 ./controller.o
- .debug_abbrev  0x00000186      0x1ed ./conversion.o
- .debug_abbrev  0x00000373       0x59 ./gpio.o
- .debug_abbrev  0x000003cc      0x26a ./heap_2.o
- .debug_abbrev  0x00000636       0xbc ./joystick.o
- .debug_abbrev  0x000006f2      0x217 ./list.o
- .debug_abbrev  0x00000909      0x1ab ./main.o
- .debug_abbrev  0x00000ab4      0x1a4 ./port.o
- .debug_abbrev  0x00000c58      0x2f8 ./queue.o
- .debug_abbrev  0x00000f50      0x14c ./spi.o
- .debug_abbrev  0x0000109c       0xca ./startup_frt.o
- .debug_abbrev  0x00001166       0x4a ./systick_frt.o
- .debug_abbrev  0x000011b0      0x1a2 ./task_manager.o
- .debug_abbrev  0x00001352      0x34f ./tasks.o
- .debug_abbrev  0x000016a1      0x182 ./uart0.o
- .debug_abbrev  0x00001823       0x26 ./frt10/src/croutine.o
- .debug_abbrev  0x00001849      0x2e6 ./frt10/src/event_groups.o
- .debug_abbrev  0x00001b2f      0x2fc ./frt10/src/stream_buffer.o
- .debug_abbrev  0x00001e2b      0x18b ./frt10/src/timers.o
+.debug_abbrev   0x00000000     0x1f98
+ .debug_abbrev  0x00000000      0x168 ./controller.o
+ .debug_abbrev  0x00000168      0x1ed ./conversion.o
+ .debug_abbrev  0x00000355       0x59 ./gpio.o
+ .debug_abbrev  0x000003ae      0x26a ./heap_2.o
+ .debug_abbrev  0x00000618       0xbc ./joystick.o
+ .debug_abbrev  0x000006d4      0x217 ./list.o
+ .debug_abbrev  0x000008eb      0x1ab ./main.o
+ .debug_abbrev  0x00000a96      0x1a4 ./port.o
+ .debug_abbrev  0x00000c3a      0x2f8 ./queue.o
+ .debug_abbrev  0x00000f32      0x14c ./spi.o
+ .debug_abbrev  0x0000107e       0xca ./startup_frt.o
+ .debug_abbrev  0x00001148       0x4a ./systick_frt.o
+ .debug_abbrev  0x00001192      0x1a2 ./task_manager.o
+ .debug_abbrev  0x00001334      0x34f ./tasks.o
+ .debug_abbrev  0x00001683      0x182 ./uart0.o
+ .debug_abbrev  0x00001805       0x26 ./frt10/src/croutine.o
+ .debug_abbrev  0x0000182b      0x2e6 ./frt10/src/event_groups.o
+ .debug_abbrev  0x00001b11      0x2fc ./frt10/src/stream_buffer.o
+ .debug_abbrev  0x00001e0d      0x18b ./frt10/src/timers.o
 
 .debug_loc      0x00000000     0x3b26
  .debug_loc     0x00000000      0x464 ./controller.o
@@ -1280,65 +1280,65 @@ OUTPUT(Tiva_program.out elf32-littlearm)
  .debug_ranges  0x00000668       0x78 ./frt10/src/event_groups.o
  .debug_ranges  0x000006e0       0xb0 ./frt10/src/stream_buffer.o
 
-.debug_line     0x00000000     0x3aad
- .debug_line    0x00000000      0x2e7 ./controller.o
- .debug_line    0x000002e7      0x261 ./conversion.o
- .debug_line    0x00000548      0x126 ./gpio.o
- .debug_line    0x0000066e      0x2f5 ./heap_2.o
- .debug_line    0x00000963      0x1d1 ./joystick.o
- .debug_line    0x00000b34      0x33b ./list.o
- .debug_line    0x00000e6f      0x130 ./main.o
- .debug_line    0x00000f9f      0x2f2 ./port.o
- .debug_line    0x00001291      0x74f ./queue.o
- .debug_line    0x000019e0      0x2e8 ./spi.o
- .debug_line    0x00001cc8      0x15c ./startup_frt.o
- .debug_line    0x00001e24      0x14b ./systick_frt.o
- .debug_line    0x00001f6f      0x269 ./task_manager.o
- .debug_line    0x000021d8      0xa4b ./tasks.o
- .debug_line    0x00002c23      0x33e ./uart0.o
- .debug_line    0x00002f61       0x1d ./frt10/src/croutine.o
- .debug_line    0x00002f7e      0x453 ./frt10/src/event_groups.o
- .debug_line    0x000033d1      0x569 ./frt10/src/stream_buffer.o
- .debug_line    0x0000393a      0x173 ./frt10/src/timers.o
+.debug_line     0x00000000     0x3aa7
+ .debug_line    0x00000000      0x2e6 ./controller.o
+ .debug_line    0x000002e6      0x261 ./conversion.o
+ .debug_line    0x00000547      0x126 ./gpio.o
+ .debug_line    0x0000066d      0x2f5 ./heap_2.o
+ .debug_line    0x00000962      0x1d1 ./joystick.o
+ .debug_line    0x00000b33      0x33b ./list.o
+ .debug_line    0x00000e6e      0x130 ./main.o
+ .debug_line    0x00000f9e      0x2f2 ./port.o
+ .debug_line    0x00001290      0x74f ./queue.o
+ .debug_line    0x000019df      0x2e4 ./spi.o
+ .debug_line    0x00001cc3      0x15c ./startup_frt.o
+ .debug_line    0x00001e1f      0x14b ./systick_frt.o
+ .debug_line    0x00001f6a      0x269 ./task_manager.o
+ .debug_line    0x000021d3      0xa4b ./tasks.o
+ .debug_line    0x00002c1e      0x33d ./uart0.o
+ .debug_line    0x00002f5b       0x1d ./frt10/src/croutine.o
+ .debug_line    0x00002f78      0x453 ./frt10/src/event_groups.o
+ .debug_line    0x000033cb      0x569 ./frt10/src/stream_buffer.o
+ .debug_line    0x00003934      0x173 ./frt10/src/timers.o
 
-.debug_str      0x00000000     0x2557
- .debug_str     0x00000000      0x2db ./controller.o
-                                0x340 (size before relaxing)
- .debug_str     0x000002db      0x4a2 ./conversion.o
+.debug_str      0x00000000     0x254d
+ .debug_str     0x00000000      0x2c9 ./controller.o
+                                0x32e (size before relaxing)
+ .debug_str     0x000002c9      0x4a2 ./conversion.o
                                 0x6a6 (size before relaxing)
- .debug_str     0x0000077d       0x1a ./gpio.o
+ .debug_str     0x0000076b       0x1a ./gpio.o
                                 0x1dd (size before relaxing)
- .debug_str     0x00000797      0x171 ./heap_2.o
+ .debug_str     0x00000785      0x171 ./heap_2.o
                                 0x730 (size before relaxing)
- .debug_str     0x00000908       0xdc ./joystick.o
+ .debug_str     0x000008f6       0xdc ./joystick.o
                                 0x2bf (size before relaxing)
- .debug_str     0x000009e4      0x11f ./list.o
+ .debug_str     0x000009d2      0x11f ./list.o
                                 0x6f6 (size before relaxing)
- .debug_str     0x00000b03        0xf ./main.o
+ .debug_str     0x00000af1        0xf ./main.o
                                 0x5b4 (size before relaxing)
- .debug_str     0x00000b12      0x185 ./port.o
+ .debug_str     0x00000b00      0x185 ./port.o
                                 0x36e (size before relaxing)
- .debug_str     0x00000c97      0x515 ./queue.o
+ .debug_str     0x00000c85      0x515 ./queue.o
                                 0xc25 (size before relaxing)
- .debug_str     0x000011ac      0x119 ./spi.o
+ .debug_str     0x0000119a      0x121 ./spi.o
                                 0x37f (size before relaxing)
- .debug_str     0x000012c5       0xaa ./startup_frt.o
+ .debug_str     0x000012bb       0xaa ./startup_frt.o
                                 0x260 (size before relaxing)
- .debug_str     0x0000136f       0x43 ./systick_frt.o
+ .debug_str     0x00001365       0x43 ./systick_frt.o
                                 0x206 (size before relaxing)
- .debug_str     0x000013b2       0x1f ./task_manager.o
+ .debug_str     0x000013a8       0x1f ./task_manager.o
                                 0x63c (size before relaxing)
- .debug_str     0x000013d1      0x9d4 ./tasks.o
+ .debug_str     0x000013c7      0x9d4 ./tasks.o
                                0x11c8 (size before relaxing)
- .debug_str     0x00001da5      0x107 ./uart0.o
+ .debug_str     0x00001d9b      0x107 ./uart0.o
                                 0x36f (size before relaxing)
- .debug_str     0x00001eac       0x18 ./frt10/src/croutine.o
+ .debug_str     0x00001ea2       0x18 ./frt10/src/croutine.o
                                 0x1cb (size before relaxing)
- .debug_str     0x00001ec4      0x25f ./frt10/src/event_groups.o
+ .debug_str     0x00001eba      0x25f ./frt10/src/event_groups.o
                                 0x96c (size before relaxing)
- .debug_str     0x00002123      0x41e ./frt10/src/stream_buffer.o
+ .debug_str     0x00002119      0x41e ./frt10/src/stream_buffer.o
                                 0xb5c (size before relaxing)
- .debug_str     0x00002541       0x16 ./frt10/src/timers.o
+ .debug_str     0x00002537       0x16 ./frt10/src/timers.o
                                 0x5af (size before relaxing)
 
 .debug_frame    0x00000000     0x1630
