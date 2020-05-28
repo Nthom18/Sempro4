@@ -33,8 +33,8 @@
 #define PWM_LIM_TILT_CW  20
 #define PWM_LIM_TILT_CCW 25
 
-#define POS_LIM_PAN_CW  -1.41
-#define POS_LIM_PAN_CCW  1.25
+#define POS_LIM_PAN_CW  -1.46
+#define POS_LIM_PAN_CCW  1.46
 
 //Queues for samples from frame 1 and 2
 extern QueueHandle_t placementPanFrameQueue, placementTiltFrameQueue;

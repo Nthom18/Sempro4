@@ -195,9 +195,8 @@ LOAD ./frt10/src/timers.o
                 0x00000edc       0x6c ./controller.o
                 0x00000edc                log_data
  .text.pid_controller_pan
-                0x00000f48      0x31c ./controller.o
+                0x00000f48      0x320 ./controller.o
                 0x00000f48                pid_controller_pan
- *fill*         0x00001264        0x4 
  .text.pid_controller_tilt
                 0x00001268      0x2e8 ./controller.o
                 0x00001268                pid_controller_tilt
